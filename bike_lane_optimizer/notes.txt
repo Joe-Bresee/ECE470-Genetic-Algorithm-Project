@@ -49,23 +49,55 @@ That's a genuinely strong pipeline and well above average for the course. Make s
 
 Do you want me to update the context document to include the data mining components?
 
-Bike Lanes
+COV Bike Lanes
 https://opendata.victoria.ca/datasets/VicMap::bike-lanes/about:
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/23/query?outFields=*&where=1%3D1
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/23/query?outFields=*&where=1%3D1&f=geojson
 
-Streets
+COV Streets
 https://opendata.victoria.ca/datasets/streets/about:
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/25/query?outFields=*&where=1%3D1
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/25/query?outFields=*&where=1%3D1&f=geojson
 
-Intersections
+COV Intersections
 https://opendata.victoria.ca/datasets/VicMap::intersections/about:
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/15/query?outFields=*&where=1%3D1
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/15/query?outFields=*&where=1%3D1&f=geojson
 
-Traffic Volume
+COV Traffic Volume
 https://opendata.victoria.ca/datasets/VicMap::traffic-volume/about:
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/28/query?outFields=*&where=1%3D1
 https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/28/query?outFields=*&where=1%3D1&f=geojson
 
+COV Zoning
+https://opendata.victoria.ca/datasets/84dde8f57dd7428f8a34d67f13c55051_12/explore?location=48.426700%2C-123.358350%2C13
+
+COV Park Paths
+
+ICBC VanIsl Crash Map
+https://public.tableau.com/app/profile/icbc/viz/VancouverIslandCrashes/VIDashboard
+
+ICBC Cyclists/Pedestrian Crash 
+https://public.tableau.com/app/profile/icbc/viz/QuickStatistics-Crashesinvolving/CrashesInvolving
+
+
+CRD Bike Path Map
+https://www.crd.ca/programs-services/getting-around/find-bike-map
+
+Victoria Open Street Map
+<OSMnx Python library>
+
+CRD Pedestrian & Cycling Master Plan data
+https://www.crd.ca/media/file/pedestrian-amp-cycling-master-plan
+
+
+other
+
+We are building a Bike Lane Optimizer for the City of Victoria, BC. The goal is to determine which road segments in Victoria should have bike lanes added or upgraded, given a fixed budget, in order to maximize some combination of network connectivity, cyclist safety, and access to key destinations.
+
+This is fundamentally a combinatorial optimization problem: with hundreds of candidate road segments, there are astronomically many possible combinations to evaluate. We use a Genetic Algorithm (GA) to search this space efficiently.
+
+What is a Genetic Algorithm?
+https://www12.statcan.gc.ca/census-recensement/2021/
+https://catalogue.data.gov.bc.ca
+https://www.arcgis.com/home/item.html?id=efaf04c6e3914c059bfb7298e784a8 

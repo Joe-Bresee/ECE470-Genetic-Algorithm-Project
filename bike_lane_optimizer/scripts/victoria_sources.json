@@ -1,0 +1,22 @@
+[
+  {
+    "name": "bike_lanes",
+    "title": "Bike Lanes",
+    "layer_url": "https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/23"
+  },
+  {
+    "name": "streets",
+    "title": "Streets",
+    "layer_url": "https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/25"
+  },
+  {
+    "name": "intersections",
+    "title": "Intersections",
+    "layer_url": "https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/15"
+  },
+  {
+    "name": "traffic_volume",
+    "title": "Traffic Volume",
+    "layer_url": "https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/28"
+  }
+]
