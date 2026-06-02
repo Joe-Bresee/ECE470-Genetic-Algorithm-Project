@@ -48,3 +48,24 @@ You now have three techniques to justify: GA (required for ECE 470), LP (inner f
 That's a genuinely strong pipeline and well above average for the course. Make sure the proposal clearly states each technique's role so the instructor sees the integration, not just a list of buzzwords.
 
 Do you want me to update the context document to include the data mining components?
+
+Bike Lanes
+https://opendata.victoria.ca/datasets/VicMap::bike-lanes/about:
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/23/query?outFields=*&where=1%3D1
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/23/query?outFields=*&where=1%3D1&f=geojson
+
+Streets
+https://opendata.victoria.ca/datasets/streets/about:
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/25/query?outFields=*&where=1%3D1
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/25/query?outFields=*&where=1%3D1&f=geojson
+
+Intersections
+https://opendata.victoria.ca/datasets/VicMap::intersections/about:
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/15/query?outFields=*&where=1%3D1
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/15/query?outFields=*&where=1%3D1&f=geojson
+
+Traffic Volume
+https://opendata.victoria.ca/datasets/VicMap::traffic-volume/about:
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/28/query?outFields=*&where=1%3D1
+https://maps.victoria.ca/server/rest/services/OpenData/OpenData_Transportation/MapServer/28/query?outFields=*&where=1%3D1&f=geojson
+
