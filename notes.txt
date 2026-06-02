@@ -1,0 +1,50 @@
+Data sources confirmed and available:
+From City of Victoria Open Data Portal (opendata.victoria.ca — all free GeoJSON/Shapefile):
+
+Bike Lanes dataset with AAA protected, off-street, painted, shared bus/bike lane types Victoria
+Streets dataset with classification codes, travel direction, speed limits, road width, and number of lanes Victoria
+Intersections — all road intersections in Victoria, useful for building your graph nodes Victoria
+Traffic Volume — 24-hour counts by segment, updated by the Transportation department Victoria
+Zoning Boundary data for land use / origin-destination demand
+
+From ICBC (all BC, filterable to Victoria):
+
+Crash data filterable to municipality level by severity, street name, and whether a pedestrian or cyclist was involved ICBC
+Crash maps covering the most recent five years of BC data, downloadable as raw data from the BC Government open data catalogue DriveSmartBC
+
+Regional + national:
+
+CRD Bike Map (updated October 2025) showing routes across 13 municipalities as part of the regional Pedestrian & Cycling Master Plan Capital Regional District
+Victoria already has 40+ km of AAA bike routes in place — your optimizer would be extending this existing network Province of British Columbia
+OpenStreetMap via OSMnx Python library — gives you the full road graph in one function call
+Statistics Canada 2021 Census — population by dissemination area, commute mode data
+BC Open Data Catalogue — school and hospital locations as destination nodes
+Can-BICS (Canadian Bikeway Comfort and Safety) data from 2024 — a standardized national dataset derived from OSM, already used in recent Victoria cycling research Findingspress
+
+
+also i'm in data mining does that fit in
+
+11:09 AM
+Yes, very naturally. Here's how data mining slotted in fits:
+
+Where data mining fits in the project
+1. Cluster analysis on origin-destination demand
+
+Before the GA even runs, you need to know where people actually want to go in Victoria. You can run clustering (k-means or DBSCAN) on the census commute data, school/hospital/transit stop locations, and traffic volume data to identify the highest-demand corridors and destination hubs. This tells your fitness function which connections matter most — you're not just optimizing connectivity abstractly, you're optimizing toward where real travel demand is.
+
+2. Association rule mining on crash data
+
+The ICBC crash dataset has attributes like road type, speed limit, time of day, intersection vs mid-block, presence/absence of bike infrastructure. You can mine association rules to find patterns like "crashes involving cyclists are 3× more likely on roads with speed limits ≥ 50 km/h AND no bike lane." These patterns directly feed into your safety scoring weights in the fitness function — instead of guessing the weights, you're deriving them from data.
+
+3. Feature importance / classification for segment scoring
+
+You can frame the safety scoring as a classification problem: given a road segment's attributes (width, speed, traffic volume, crash history, road type), predict a danger score. Train a simple classifier on the ICBC data. That classifier then scores every candidate segment before the GA runs, giving you a data-driven safety weight per segment rather than a hand-tuned one.
+
+What this means for your proposal
+You now have three techniques to justify: GA (required for ECE 470), LP (inner fitness evaluation), and data mining (preprocessing and weight derivation). The story becomes:
+
+"We use data mining to derive safety weights and demand patterns from real Victoria datasets, LP to evaluate network quality for each candidate layout, and GA to search the combinatorial space of possible lane configurations."
+
+That's a genuinely strong pipeline and well above average for the course. Make sure the proposal clearly states each technique's role so the instructor sees the integration, not just a list of buzzwords.
+
+Do you want me to update the context document to include the data mining components?
