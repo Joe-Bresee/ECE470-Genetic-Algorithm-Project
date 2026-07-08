@@ -3,6 +3,7 @@
 # organize repo: /data for all data, /scripts for helper scripts, /code for code with further organization within it -> /genetic-algorithm, /data-processing, /UI...
 
 import pandas as pd
+import geopandas as gpd
 import folium
 import random
 import math
@@ -143,32 +144,55 @@ def weightFunction(stops):
 
 
 # One-time setup, similar to OTHER_ROUTE_STOPS — compute once, not per-generation
-def build_equity_lookup(equity_df):
-    """
-    equity_df: DataFrame with columns like DGUID, pct_low_income, transit_commute_mode_norm, etc.
-    Returns: dict {DGUID: equity_multiplier}
-    """
-    # normalize each variable to 0-1, combine (simple average, or weighted)
-    equity_df["equity_score"] = (
-        equity_df["pct_low_income_norm"] * 0.5
-        + equity_df["transit_commute_mode_norm"] * 0.5
-    )
-    return dict(zip(equity_df["DGUID"], equity_df["equity_score"]))
+import geopandas as gpd
 
+def build_equity_lookup(geojson_path):
+    # Load your processed data
+    gdf = gpd.read_file(geojson_path)
+    
+    # Create a dictionary: DGUID -> {pop, income_norm, transit_norm}
+    # This makes looking up equity data by ID lightning fast during the GA loop
+    lookup = {
+        row["DGUID"]: {
+            "pop": row["population"],
+            "income": row["pct_low_income_norm"],
+            "transit": row["pct_transit_commute_mode_norm"]
+        }
+        for _, row in gdf.iterrows()
+    }
+    return lookup
 
-EQUITY_LOOKUP = build_equity_lookup(equity_df)  # add from datasource
-
+# --- Implementation ---
+# Use the file you just generated
+EQUITY_LOOKUP = build_equity_lookup("victoria_equity_data.geojson")
 
 # may look confusing - build_equity_lookup + coverage() combines weighting low-income/transit_commute_mode_norm norms with population density.
 # This approach is fine for living areas etc, but in places where people still need transit even if they aren't low income like to bars venues or sports arenas, 
 # those won't get a fair bonus here. That must be logically captured by POIS or something else - else split coverage() into raw pop density, and include secondary
 # equity bias bonus. TODO^
-def coverage(stops):
+# TODO: getting into scope creep here...maybe just pop dens no income / transit method stuff. but : need to precalculate DA centroids because in the loops extremely slow
+# pre-filter DAs near route.
+# perhaps include weights for incom and transit as genes themselves instead of fixed at 0.5.
+# use sindex from gdf if for da in DAs_near_route is slow.
+def coverage(stops, COVERAGE_RADIUS_M=400):
     total = 0
-    for da in DAs_near_route:  # your DA-level geodata -> scotty pipe ur 
-        if any(haversine_m(stop, da_centroid(da)) < COVERAGE_RADIUS_M for stop in stops):
-            equity_mult = EQUITY_LOOKUP.get(da["DGUID"], 1.0)  # default 1.0 if missing
+    for da in DAs_near_route: # Assuming DAs_near_route is a list/GeoDataFrame
+        # 1. Check if ANY stop in the proposed route covers this DA
+        is_covered = any(haversine_m(stop, da_centroid(da)) < COVERAGE_RADIUS_M for stop in stops)
+        
+        if is_covered:
+            # 2. Retrieve equity data for this DA
+            # If the DA is missing from our lookup, default to zero impact (or 1.0 if you prefer)
+            equity_data = EQUITY_LOOKUP.get(da["DGUID"], {"income": 0, "transit": 0})
+            
+            # 3. Calculate dynamic weight
+            # Combine income and transit into a single multiplier (e.g., 0-2 range)
+            # Higher score = higher priority
+            equity_mult = 1.0 + (equity_data["income"] * 0.5) + (equity_data["transit"] * 0.5)
+            
+            # 4. Add weighted population to total
             total += da["population"] * equity_mult
+            
     return total
 
 
