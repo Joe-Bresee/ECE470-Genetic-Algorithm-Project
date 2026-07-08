@@ -33,12 +33,40 @@ WEIGHTS = {
 shapes = pd.read_csv("shapes.txt")
 routes = pd.read_csv("routes.txt")
 trips = pd.read_csv("trips.txt")
+stop_times = pd.read_csv("stop_times.txt")
+stops = pd.read_csv("stops.txt")
+
+# Add these to your existing reads
+stop_times = pd.read_csv("stop_times.txt")
+stops = pd.read_csv("stops.txt")
+
+
+def get_stops_for_routes(route_numbers, routes_df, trips_df, stop_times_df, stops_df):
+    """Given a list of route_short_names (e.g. [14, 26]), return their stop coordinates."""
+    route_numbers_str = [str(r) for r in route_numbers]
+    route_ids = routes_df[routes_df["route_short_name"].astype(str).isin(route_numbers_str)]["route_id"]
+
+    trip_ids = trips_df[trips_df["route_id"].isin(route_ids)]["trip_id"]
+
+    stop_ids = stop_times_df[stop_times_df["trip_id"].isin(trip_ids)]["stop_id"].unique()
+
+    matched_stops = stops_df[stops_df["stop_id"].isin(stop_ids)]
+
+    return list(zip(matched_stops["stop_lat"], matched_stops["stop_lon"]))
+
 
 # Precompute once, not per-generation — used by transfer/connectivity bonus
-# TODO: populate this from other routes' stop data (GTFS stops.txt filtered to routes != ROUTE_NUMBER)
-OTHER_ROUTE_STOPS = []  # List of (lat, lon)
+OTHER_ROUTE_NUMBERS_HARDCODED = [95, 14, 26]
+_other_route_numbers = [r for r in OTHER_ROUTE_NUMBERS_HARDCODED if r != ROUTE_NUMBER]
 
-# distance formula
+OTHER_ROUTE_STOPS = get_stops_for_routes(_other_route_numbers, routes, trips, stop_times, stops)
+
+# TODO (later): swap to all other routes instead of the hardcoded three (uncomment next 3 lines and above OTHER_ROUTE_STOPS assignment)
+# _all_route_numbers = routes["route_short_name"].unique().tolist()
+# _other_route_numbers = [r for r in _all_route_numbers if str(r) != str(ROUTE_NUMBER)]
+# OTHER_ROUTE_STOPS = get_stops_for_routes(_other_route_numbers, routes, trips, stop_times, stops)
+
+# distance formula for lat and longs
 def haversine_m(p1, p2):
     """Distance in meters between two (lat, lon) points."""
     R = 6371000
@@ -110,11 +138,34 @@ def weightFunction(stops):
     return fitness
 
 
+# One-time setup, similar to OTHER_ROUTE_STOPS — compute once, not per-generation
+def build_equity_lookup(equity_df):
+    """
+    equity_df: DataFrame with columns like DGUID, pct_low_income, pct_no_vehicle, etc.
+    Returns: dict {DGUID: equity_multiplier}
+    """
+    # normalize each variable to 0-1, combine (simple average, or weighted)
+    equity_df["equity_score"] = (
+        equity_df["pct_low_income_norm"] * 0.5
+        + equity_df["pct_no_vehicle_norm"] * 0.5
+    )
+    return dict(zip(equity_df["DGUID"], equity_df["equity_score"]))
+
+
+EQUITY_LOOKUP = build_equity_lookup(equity_df)  # add from datasource
+
+
+# may look confusing - build_equity_lookup + coverage() combines weighting low-income/no vehicle norms with population density.
+# This approach is fine for living areas etc, but in places where people still need transit even if they aren't low income like to bars venues or sports arenas, 
+# those won't get a fair bonus here. That must be logically captured by POIS or something else - else split coverage() into raw pop density, and include secondary
+# equity bias bonus. TODO^
 def coverage(stops):
-    # TODO: population coverage, weighted by equity multiplier per DA.
-    # weighted_coverage = sum(population_in_da * equity_multiplier(DA) for DA in DAs_within_radius(stops))
-    # equity_multiplier() should pull from census DA-level income/no-vehicle-household data
-    return -1
+    total = 0
+    for da in DAs_near_route:  # your DA-level geodata -> scotty pipe ur 
+        if any(haversine_m(stop, da_centroid(da)) < COVERAGE_RADIUS_M for stop in stops):
+            equity_mult = EQUITY_LOOKUP.get(da["DGUID"], 1.0)  # default 1.0 if missing
+            total += da["population"] * equity_mult
+    return total
 
 
 def spacing_penalty(stops):
