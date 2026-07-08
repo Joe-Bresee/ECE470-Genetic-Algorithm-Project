@@ -1,3 +1,7 @@
+# GENERAL TODO: 
+# choose snake case or camle case
+# organize repo: /data for all data, /scripts for helper scripts, /code for code with further organization within it -> /genetic-algorithm, /data-processing, /UI...
+
 import pandas as pd
 import folium
 import random
@@ -80,7 +84,7 @@ def haversine_m(p1, p2):
 def is_feasible(point, routeCoords):
     """
     Hard feasibility check for a candidate stop.
-    TODO: replace placeholder logic with real checks:
+    TODO (low priority): replace placeholder logic with real checks:
       - distance to nearest road-network edge under some threshold
       - not within X meters of a highway/off-ramp segment
       - not on private property / restricted zone if that data is available
@@ -141,13 +145,13 @@ def weightFunction(stops):
 # One-time setup, similar to OTHER_ROUTE_STOPS — compute once, not per-generation
 def build_equity_lookup(equity_df):
     """
-    equity_df: DataFrame with columns like DGUID, pct_low_income, pct_no_vehicle, etc.
+    equity_df: DataFrame with columns like DGUID, pct_low_income, transit_commute_mode_norm, etc.
     Returns: dict {DGUID: equity_multiplier}
     """
     # normalize each variable to 0-1, combine (simple average, or weighted)
     equity_df["equity_score"] = (
         equity_df["pct_low_income_norm"] * 0.5
-        + equity_df["pct_no_vehicle_norm"] * 0.5
+        + equity_df["transit_commute_mode_norm"] * 0.5
     )
     return dict(zip(equity_df["DGUID"], equity_df["equity_score"]))
 
@@ -155,7 +159,7 @@ def build_equity_lookup(equity_df):
 EQUITY_LOOKUP = build_equity_lookup(equity_df)  # add from datasource
 
 
-# may look confusing - build_equity_lookup + coverage() combines weighting low-income/no vehicle norms with population density.
+# may look confusing - build_equity_lookup + coverage() combines weighting low-income/transit_commute_mode_norm norms with population density.
 # This approach is fine for living areas etc, but in places where people still need transit even if they aren't low income like to bars venues or sports arenas, 
 # those won't get a fair bonus here. That must be logically captured by POIS or something else - else split coverage() into raw pop density, and include secondary
 # equity bias bonus. TODO^
@@ -190,7 +194,7 @@ def averageWalkingDistanceToStop(stops):
 def estimated_travel_time(stops):
     """
     NEW: penalizes route slowness as stop count grows.
-    TODO: replace flat per-stop dwell time with something informed by ridership data if available.
+    TODO: replace flat per-stop dwell time with something informed by ridership data https://www.bctransit.com/plans-and-projects/service-performance/ SEE THE MD.
     """
     BASE_TRAVEL_TIME_S = 900       # placeholder base route time in seconds
     AVG_DWELL_TIME_S = 20          # placeholder seconds lost per stop (accel/decel + boarding)
@@ -208,14 +212,15 @@ def transfer_bonus(stops):
     return bonus
 
 
+# TODO
 def parentsMate():
     return [()]
 
-
+# TODO
 def mutateChild():
     return ()
 
-
+# TODO: selection, crossover, mutation
 randomlyGeneratedBusStops = []  # List of dicts {"routeNumber": int, "generationNumber": int, "stops": List of (lat, lon)}
 
 for generationNumber in range(GA_CONFIG["num_generations"]):
