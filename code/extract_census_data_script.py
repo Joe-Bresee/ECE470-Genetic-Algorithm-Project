@@ -1,3 +1,6 @@
+# TODO: find where commute data actually is, its currently zero.
+# TODO: accidentally deleted some sort of something in data/.
+
 import folium
 import geopandas as gpd
 import pandas as pd
@@ -42,12 +45,12 @@ print(f"Found {len(victoria_dguids)} Dissemination Areas in Victoria BBox.")
 # --- 2. Load and filter the Census CSV ---
 print("Extracting census data for Victoria DAs...")
 TARGET_VARIABLES = {
-    1: "population",              
-    340: "low_income_count",     
-    2595: "commute_transit",      
-    2596: "commute_walk",         
-    2597: "commute_bike",         
-    2590: "commute_total",        
+    1:    "population",
+    340:  "low_income_count",
+    2603: "commute_total",
+    2607: "commute_transit",
+    2608: "commute_walk",
+    2609: "commute_bike"
 }
 
 cols_to_use = ["DGUID", "GEO_LEVEL", "CHARACTERISTIC_ID", "C1_COUNT_TOTAL"]
