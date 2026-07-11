@@ -1,5 +1,6 @@
 # GENERAL TODO: 
 # choose snake case or camle case
+# future work: do alpha beta GA values for income / transit mode norm weights. future work.
 # organize repo: /data for all data, /scripts for helper scripts, /code for code with further organization within it -> /genetic-algorithm, /data-processing, /UI...
 
 import pandas as pd
@@ -7,6 +8,7 @@ import geopandas as gpd
 import folium
 import random
 import math
+from shapely.geometry import LineString
 
 from busRoutes import randomStopsOnRoute, getRouteShape
 
@@ -142,57 +144,56 @@ def weightFunction(stops):
     )
     return fitness
 
+# module level vars used in coverage calculation.
+EQUITY_GEOJSON_PATH = "victoria_equity_data.geojson"
+DA_CRS_METRIC = "EPSG:32610"
+COVERAGE_RADIUS_M = 400
+ROUTE_BUFFER_M = 1000
 
-# One-time setup, similar to OTHER_ROUTE_STOPS — compute once, not per-generation
-import geopandas as gpd
+_equity_gdf = gpd.read_file(EQUITY_GEOJSON_PATH)
+_equity_gdf_metric = _equity_gdf.to_crs(DA_CRS_METRIC)
+_centroids_wgs84 = _equity_gdf_metric.geometry.centroid.to_crs(_equity_gdf.crs)
 
-def build_equity_lookup(geojson_path):
-    # Load your processed data
-    gdf = gpd.read_file(geojson_path)
-    
-    # Create a dictionary: DGUID -> {pop, income_norm, transit_norm}
-    # This makes looking up equity data by ID lightning fast during the GA loop
-    lookup = {
-        row["DGUID"]: {
-            "pop": row["population"],
-            "income": row["pct_low_income_norm"],
-            "transit": row["pct_transit_commute_mode_norm"]
-        }
-        for _, row in gdf.iterrows()
+# Single unified lookup — pop, equity vars, AND centroid all in one place per DGUID
+EQUITY_LOOKUP = {}
+for i, row in _equity_gdf.iterrows():
+    EQUITY_LOOKUP[row["DGUID"]] = {
+        "population": row["population"],
+        "income": row["pct_low_income_norm"],
+        "transit": row["pct_transit_commute_mode_norm"],
+        "centroid": (_centroids_wgs84.iloc[i].y, _centroids_wgs84.iloc[i].x),  # (lat, lon)
     }
-    return lookup
 
-# --- Implementation ---
-# Use the file you just generated
-EQUITY_LOOKUP = build_equity_lookup("victoria_equity_data.geojson")
 
-# may look confusing - build_equity_lookup + coverage() combines weighting low-income/transit_commute_mode_norm norms with population density.
-# This approach is fine for living areas etc, but in places where people still need transit even if they aren't low income like to bars venues or sports arenas, 
-# those won't get a fair bonus here. That must be logically captured by POIS or something else - else split coverage() into raw pop density, and include secondary
-# equity bias bonus. TODO^
-# TODO: getting into scope creep here...maybe just pop dens no income / transit method stuff. but : need to precalculate DA centroids because in the loops extremely slow
-# pre-filter DAs near route.
-# perhaps include weights for incom and transit as genes themselves instead of fixed at 0.5.
-# use sindex from gdf if for da in DAs_near_route is slow.
-def coverage(stops, COVERAGE_RADIUS_M=400):
+def get_das_near_route(route_coords, buffer_m=ROUTE_BUFFER_M):
+    """
+    Pre-filter step: which DAs are even worth checking for this specific route.
+    Uses sindex so this is fast even against the full DA set — but this only
+    needs to run ONCE per route, not per individual/generation.
+    """
+    route_line = LineString([(lon, lat) for lat, lon in route_coords])  # shapely wants (x, y) = (lon, lat)
+    route_gdf = gpd.GeoDataFrame(geometry=[route_line], crs="EPSG:4326").to_crs(DA_CRS_METRIC)
+    buffered_route = route_gdf.geometry.iloc[0].buffer(buffer_m)
+
+    nearby_idx = _equity_gdf_metric.sindex.query(buffered_route, predicate="intersects")
+    return _equity_gdf.iloc[nearby_idx]["DGUID"].tolist()
+
+
+# Precompute once, using the actual route geometry
+_route_shapes_for_filter = getRouteShape(ROUTE_NUMBER, routes, trips, shapes)
+_route_coords_for_filter = _route_shapes_for_filter[0][1] if _route_shapes_for_filter else []
+DAS_NEAR_ROUTE = get_das_near_route(_route_coords_for_filter)
+
+print(f"Filtered to {len(DAS_NEAR_ROUTE)} DAs near route {ROUTE_NUMBER} (out of {len(_equity_gdf)} total)")
+
+
+def coverage(stops, coverage_radius_m=COVERAGE_RADIUS_M):
     total = 0
-    for da in DAs_near_route: # Assuming DAs_near_route is a list/GeoDataFrame
-        # 1. Check if ANY stop in the proposed route covers this DA
-        is_covered = any(haversine_m(stop, da_centroid(da)) < COVERAGE_RADIUS_M for stop in stops)
-        
-        if is_covered:
-            # 2. Retrieve equity data for this DA
-            # If the DA is missing from our lookup, default to zero impact (or 1.0 if you prefer)
-            equity_data = EQUITY_LOOKUP.get(da["DGUID"], {"income": 0, "transit": 0})
-            
-            # 3. Calculate dynamic weight
-            # Combine income and transit into a single multiplier (e.g., 0-2 range)
-            # Higher score = higher priority
-            equity_mult = 1.0 + (equity_data["income"] * 0.5) + (equity_data["transit"] * 0.5)
-            
-            # 4. Add weighted population to total
+    for dguid in DAS_NEAR_ROUTE:          # now ~dozens, not 487
+        da = EQUITY_LOOKUP[dguid]
+        if any(haversine_m(stop, da["centroid"]) < coverage_radius_m for stop in stops):
+            equity_mult = 1.0 + (da["income"] * 0.5) + (da["transit"] * 0.5)
             total += da["population"] * equity_mult
-            
     return total
 
 
