@@ -1,8 +1,10 @@
-from genetic_algorithm_skeleton import randomlyGenerateBusStops, weightFunction
+from weight_function import randomlyGenerateBusStops, weightFunction
 from config import GA_CONFIG, ROUTE_NUMBER, WEIGHTS
 import random
+import math
 import folium
 import pandas as pd
+from evenlySpacedBusStops import getPoints
 
 
 def createInitialPopulation():
@@ -72,18 +74,49 @@ def crossoverTwoParents(parent1, parent2):
         "fitness": None
     }
 
-def mutate(child):
-    # Skipping mutation for now, since we need to make sure our mutated point is still on the bus route
-    pass
+def segmentLength(p1, p2):
+    return math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
 
-def createNextGeneration(population):
+
+# We should actually pass in a proper sigma value, rn its hardcoded
+def mutate(child, candidate_stops, sigma=0.195424042632881): 
+
+    stops = child["stops"]
+    idxToMutate = random.randrange(len(stops))
+    oldStop = stops[idxToMutate]
+
+    distances = [segmentLength(oldStop, candidate) for candidate in candidate_stops]
+
+    weights = [math.exp(-d**2 / (2 * sigma**2)) for d in distances]
+
+    newStop = random.choices(candidate_stops, weights=weights, k=1)[0]
+
+    newStops = stops.copy()
+    newStops[idxToMutate] = newStop
+
+    return {
+        "routeNumber": child["routeNumber"],
+        "stops": newStops,
+        "fitness": None
+    }
+
+
+def createNextGeneration(population, candidate_stops, sigma):
 
     parents = selectParents(population)
 
     children = crossover(parents)
 
-    return children  # For now, we are not doing mutation or elitism, just returning the children as the next generation
+    mutatedChildren = []
 
+    for child in children:
+        if random.random() < GA_CONFIG["mutation_probability"]:
+            child = mutate(child, candidate_stops, sigma)
+        mutatedChildren.append(child)
+
+    return mutatedChildren  
+
+    return children
 
 
 
@@ -177,10 +210,14 @@ def mapBusStops(stops, routeNumber):
     return m
 
 def runGeneticAlgorithm():
-    
+
+    candidateSpots, sigma = getPoints()
+
     # This is the initial population
     population = createInitialPopulation()
 
+    # Currently doing a fixed number of generations, but we could also do a convergence check
+    # Once the weight function is better, we will switch
     for generation in range(GA_CONFIG["num_generations"]):
         print(f"Generation {generation + 1}/{GA_CONFIG['num_generations']}")
 
@@ -192,7 +229,7 @@ def runGeneticAlgorithm():
         print(f"Best individual fitness: {bestIndividual['fitness']:.2f}")
         print(f"Worst individual fitness: {worstIndividual['fitness']:.2f}")
         print(f"Population diversity: {populationDiversity(evaluatedPopulation)}")
-        population  = createNextGeneration(evaluatedPopulation)
+        population  = createNextGeneration(evaluatedPopulation, candidateSpots, sigma)
 
     mapBusStops(bestIndividual["stops"], bestIndividual["routeNumber"]).save("best_bus_stops.html")
 
