@@ -1,16 +1,16 @@
 GA_CONFIG = {
     # Genetic algorithm hyper-parameters
-    # 'initial_population_size': 100,
-    'initial_population_size': 1000,
+    'initial_population_size': 100,
+    # 'initial_population_size': 1000,
 
-    # 'desired_population_size': 100,
-    'desired_population_size': 1000,
+    'desired_population_size': 100,
+    # 'desired_population_size': 1000,
 
-    # "num_generations": 20,
-    "num_generations": 100,
+    "num_generations": 20,
+    # "num_generations": 100,
 
-    # "num_parents_mating": 30,
-    "num_parents_mating": 300,
+    "num_parents_mating": 30,
+    # "num_parents_mating": 300,
     "mutation_probability": 0.8,  # Probability of mutation for each child
 
     "min_stops": 20,                 # variable stop count
