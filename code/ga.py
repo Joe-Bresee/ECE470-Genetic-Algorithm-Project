@@ -226,12 +226,14 @@ def runGeneticAlgorithm():
         bestIndividual = getBestIndividual(evaluatedPopulation)
         worstIndividual = getWorstIndividual(evaluatedPopulation)
 
-        print(f"Best individual fitness: {bestIndividual['fitness']:.2f}")
-        print(f"Worst individual fitness: {worstIndividual['fitness']:.2f}")
-        print(f"Population diversity: {populationDiversity(evaluatedPopulation)}")
+        print(f"Best individual fitness: {bestIndividual['fitness']:.7f}")
+        # print(f"Worst individual fitness: {worstIndividual['fitness']:.2f}")
+        # print(f"Population diversity: {populationDiversity(evaluatedPopulation)}")
         population  = createNextGeneration(evaluatedPopulation, candidateSpots, sigma)
 
     mapBusStops(bestIndividual["stops"], bestIndividual["routeNumber"]).save("best_bus_stops.html")
 
    
 runGeneticAlgorithm()
+
+

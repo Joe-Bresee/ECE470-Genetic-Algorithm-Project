@@ -109,18 +109,93 @@ def randomlyGenerateBusStops(routeNumber: int):
     return {"routeNumber": routeNumber,  "stops": stops}
 
 
-# TODO: Should probably normalize this to 0-1, idk if normalize input our output would be better
+
+from busRoutes import getRouteShape
+
+# Precompute once, same pattern as OTHER_ROUTE_STOPS below —
+# not per-generation, not per-call.
+_routeShapes = getRouteShape(ROUTE_NUMBER, routes, trips, shapes)
+ROUTE_COORDS = _routeShapes[0][1]  # coords for the single route we're optimizing
+
+
+def segmentLength(p1, p2):
+    return math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
+
+
+def buildCumulativeDist(routeCoords):
+    cumulativeDist = [0]
+    for i in range(len(routeCoords) - 1):
+        cumulativeDist.append(cumulativeDist[-1] + segmentLength(routeCoords[i], routeCoords[i + 1]))
+    return cumulativeDist
+
+
+CUMULATIVE_DIST = buildCumulativeDist(ROUTE_COORDS)
+
+
+def positionAlongRoute(point, routeCoords=ROUTE_COORDS, cumulativeDist=CUMULATIVE_DIST):
+    best_dist_along = 0
+    best_perp_dist = float("inf")
+
+    for i in range(len(routeCoords) - 1):
+        p1, p2 = routeCoords[i], routeCoords[i + 1]
+        segVec = (p2[0] - p1[0], p2[1] - p1[1])
+        segLenSq = segVec[0]**2 + segVec[1]**2
+
+        if segLenSq == 0:
+            continue
+
+        toPoint = (point[0] - p1[0], point[1] - p1[1])
+        t = (toPoint[0] * segVec[0] + toPoint[1] * segVec[1]) / segLenSq
+        t = max(0, min(1, t))
+
+        proj = (p1[0] + t * segVec[0], p1[1] + t * segVec[1])
+        perp_dist = segmentLength(point, proj)
+
+        if perp_dist < best_perp_dist:
+            best_perp_dist = perp_dist
+            best_dist_along = cumulativeDist[i] + t * segmentLength(p1, p2)
+
+    return best_dist_along
+
+
+def spacing_penalty(stops):
+    if len(stops) < 2:
+        return 0
+
+    positions = sorted(positionAlongRoute(s) for s in stops)
+    gaps = [positions[i+1] - positions[i] for i in range(len(positions) - 1)]
+
+    totalLength = CUMULATIVE_DIST[-1]
+    idealGap = totalLength / (len(stops) - 1)
+
+    deviation = sum((g - idealGap) ** 2 for g in gaps)
+    return deviation
+
+
 def weightFunction(stops):
-    fitness = (
-        # coverage(stops) * WEIGHTS["w_coverage"]
-        - averageWalkingDistanceToStop(stops) * WEIGHTS["w_walking_distance"]
-        - spacing_penalty(stops) * WEIGHTS["w_spacing_penalty"]
-        + destination_bonus(stops) * WEIGHTS["w_destination_bonus"]
-        - len(stops) * WEIGHTS["w_cost_per_stop"]
-        - estimated_travel_time(stops) * WEIGHTS["w_travel_time"]
-        + transfer_bonus(stops) * WEIGHTS["w_transfer"]
-    )
-    return fitness
+    penalty = spacing_penalty(stops)
+    # print("spacing_penalty raw:", repr(penalty))
+    return -penalty
+
+# Sanity check — run this standalone, not through the GA
+# evenly_spaced = [ROUTE_COORDS[i] for i in range(0, len(ROUTE_COORDS), max(1, len(ROUTE_COORDS)//10))]
+# clustered = [ROUTE_COORDS[0]] * 9 + [ROUTE_COORDS[-1]]
+
+
+# # TODO: Should probably normalize this to 0-1, idk if normalize input our output would be better
+# def weightFunction(stops):
+#     print("The stops are ", stops)
+#     fitness = (
+#         # coverage(stops) * WEIGHTS["w_coverage"]
+#         # - averageWalkingDistanceToStop(stops) * WEIGHTS["w_walking_distance"]
+#         # - spacing_penalty(stops) * WEIGHTS["w_spacing_penalty"]
+#         # + destination_bonus(stops) * WEIGHTS["w_destination_bonus"]
+#         # - len(stops) * WEIGHTS["w_cost_per_stop"]
+#         # - estimated_travel_time(stops) * WEIGHTS["w_travel_time"]
+#         # + transfer_bonus(stops) * WEIGHTS["w_transfer"] # We are only doing one route rn so I uncommented this
+#     )
+#     # return fitness
+#     return random.random()
 
 
 # One-time setup, similar to OTHER_ROUTE_STOPS — compute once, not per-generation
@@ -176,11 +251,11 @@ def coverage(stops, COVERAGE_RADIUS_M=400):
     return total
 
 
-def spacing_penalty(stops):
-    # NOTE: hard min-spacing is now enforced at generation time (enforce_min_spacing).
-    # This soft penalty can instead reward *even* spacing rather than just minimum spacing —
-    # e.g. penalize high variance in gap distances between consecutive stops.
-    return -1
+# def spacing_penalty(stops):
+#     # NOTE: hard min-spacing is now enforced at generation time (enforce_min_spacing).
+#     # This soft penalty can instead reward *even* spacing rather than just minimum spacing —
+#     # e.g. penalize high variance in gap distances between consecutive stops.
+#     return -1
 
 
 def destination_bonus(stops):
