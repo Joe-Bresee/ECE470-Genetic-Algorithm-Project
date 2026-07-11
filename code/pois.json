@@ -1,0 +1,8060 @@
+[
+  {
+    "lat": 48.4230466,
+    "lon": -123.3641874,
+    "type": "library",
+    "name": "GVPL: Central Branch"
+  },
+  {
+    "lat": 48.4270971,
+    "lon": -123.335011,
+    "type": "pharmacy",
+    "name": "Shoppers Drug Mart"
+  },
+  {
+    "lat": 48.4246869,
+    "lon": -123.366774,
+    "type": "pharmacy",
+    "name": "I.D.A. Cridge Family"
+  },
+  {
+    "lat": 48.4689439,
+    "lon": -123.3315842,
+    "type": "supermarket",
+    "name": "Thrifty Foods"
+  },
+  {
+    "lat": 48.4255616,
+    "lon": -123.3150821,
+    "type": "library",
+    "name": "GVPL: Oak Bay Branch"
+  },
+  {
+    "lat": 48.4379459,
+    "lon": -123.3124029,
+    "type": "supermarket",
+    "name": "The Old Farm Market"
+  },
+  {
+    "lat": 48.4255715,
+    "lon": -123.367493,
+    "type": "restaurant",
+    "name": "Earls"
+  },
+  {
+    "lat": 48.5243562,
+    "lon": -123.4311522,
+    "type": "cafe",
+    "name": "Prospect Lake Market"
+  },
+  {
+    "lat": 48.453874,
+    "lon": -123.3988109,
+    "type": "library",
+    "name": "GVPL: Saanich Centennial Library Branch"
+  },
+  {
+    "lat": 48.4325919,
+    "lon": -123.3214699,
+    "type": "restaurant",
+    "name": "Baan Thai"
+  },
+  {
+    "lat": 48.4323138,
+    "lon": -123.3226677,
+    "type": "restaurant",
+    "name": "Le Pho"
+  },
+  {
+    "lat": 48.4609521,
+    "lon": -123.296921,
+    "type": "supermarket",
+    "name": "Pepper's Foods"
+  },
+  {
+    "lat": 48.4608923,
+    "lon": -123.2970002,
+    "type": "pharmacy",
+    "name": "Heart Pharmacy"
+  },
+  {
+    "lat": 48.4692219,
+    "lon": -123.3631912,
+    "type": "supermarket",
+    "name": "Thrifty Foods Quadra"
+  },
+  {
+    "lat": 48.4699326,
+    "lon": -123.362532,
+    "type": "pharmacy",
+    "name": "London Drugs"
+  },
+  {
+    "lat": 48.4255248,
+    "lon": -123.3558777,
+    "type": "restaurant",
+    "name": "Moxie's"
+  },
+  {
+    "lat": 48.4573206,
+    "lon": -123.3392489,
+    "type": "convenience",
+    "name": "Doncaster Grocery"
+  },
+  {
+    "lat": 48.426198,
+    "lon": -123.3625952,
+    "type": "restaurant",
+    "name": "Brickyard Pizza"
+  },
+  {
+    "lat": 48.4350902,
+    "lon": -123.4896472,
+    "type": "community_centre",
+    "name": "Colwood Community Hall"
+  },
+  {
+    "lat": 48.4350817,
+    "lon": -123.4883058,
+    "type": "restaurant",
+    "name": "Yokohama Sushi"
+  },
+  {
+    "lat": 48.4263755,
+    "lon": -123.3164599,
+    "type": "supermarket",
+    "name": "Fairway Market Athlone Court"
+  },
+  {
+    "lat": 48.4412816,
+    "lon": -123.4686693,
+    "type": "pharmacy",
+    "name": "London Drugs"
+  },
+  {
+    "lat": 48.4427024,
+    "lon": -123.4709366,
+    "type": "restaurant",
+    "name": "Momo Sushi"
+  },
+  {
+    "lat": 48.4467786,
+    "lon": -123.487277,
+    "type": "pharmacy",
+    "name": "Saint Anthony's Pharmacy"
+  },
+  {
+    "lat": 48.4388043,
+    "lon": -123.3789086,
+    "type": "restaurant",
+    "name": "Glo Restaurant & Lounge"
+  },
+  {
+    "lat": 48.4124149,
+    "lon": -123.337687,
+    "type": "pharmacy",
+    "name": "Heart Pharmacy IDA"
+  },
+  {
+    "lat": 48.4139867,
+    "lon": -123.357004,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.4139466,
+    "lon": -123.3565198,
+    "type": "supermarket",
+    "name": "The Root Cellar Village Green Grocer"
+  },
+  {
+    "lat": 48.4141056,
+    "lon": -123.3569086,
+    "type": "restaurant",
+    "name": "Pizzeria PrimaStrada"
+  },
+  {
+    "lat": 48.4126809,
+    "lon": -123.337688,
+    "type": "restaurant",
+    "name": "Sushi Field"
+  },
+  {
+    "lat": 48.4376968,
+    "lon": -123.3077791,
+    "type": "restaurant",
+    "name": "The Village Estevan Restaurant"
+  },
+  {
+    "lat": 48.4979981,
+    "lon": -123.383641,
+    "type": "supermarket",
+    "name": "Thrifty Foods"
+  },
+  {
+    "lat": 48.4968094,
+    "lon": -123.382628,
+    "type": "pharmacy",
+    "name": "Pharmasave"
+  },
+  {
+    "lat": 48.4523682,
+    "lon": -123.4338301,
+    "type": "restaurant",
+    "name": "4 Mile Restaurant"
+  },
+  {
+    "lat": 48.4298611,
+    "lon": -123.4127511,
+    "type": "restaurant",
+    "name": "Saigon Char-Broil Restaurant"
+  },
+  {
+    "lat": 48.4203847,
+    "lon": -123.365962,
+    "type": "restaurant",
+    "name": "The Old Spaghetti Factory"
+  },
+  {
+    "lat": 48.4387199,
+    "lon": -123.358564,
+    "type": "convenience",
+    "name": "Circle K"
+  },
+  {
+    "lat": 48.4434859,
+    "lon": -123.3542197,
+    "type": "place_of_worship",
+    "name": "Sikh Temple"
+  },
+  {
+    "lat": 48.4262422,
+    "lon": -123.3664245,
+    "type": "school",
+    "name": "Global Village English Centres"
+  },
+  {
+    "lat": 48.4372156,
+    "lon": -123.3660103,
+    "type": "restaurant",
+    "name": "Local Urban Bites"
+  },
+  {
+    "lat": 48.4385933,
+    "lon": -123.3637244,
+    "type": "restaurant",
+    "name": "MeeT on Blanshard"
+  },
+  {
+    "lat": 48.4213472,
+    "lon": -123.379757,
+    "type": "convenience",
+    "name": "Little Gem Grocery"
+  },
+  {
+    "lat": 48.4601309,
+    "lon": -123.3319591,
+    "type": "supermarket",
+    "name": "Fairway Market Shelbourne Plaza"
+  },
+  {
+    "lat": 48.448325,
+    "lon": -123.4981063,
+    "type": "library",
+    "name": "GVPL: Goudy Branch"
+  },
+  {
+    "lat": 48.4692865,
+    "lon": -123.3627052,
+    "type": "supermarket",
+    "name": "Planet Organic Market"
+  },
+  {
+    "lat": 48.4270728,
+    "lon": -123.3591091,
+    "type": "restaurant",
+    "name": "Mantu"
+  },
+  {
+    "lat": 48.4471726,
+    "lon": -123.4987523,
+    "type": "restaurant",
+    "name": "Emporia"
+  },
+  {
+    "lat": 48.4471972,
+    "lon": -123.4988578,
+    "type": "restaurant",
+    "name": "Akemi Sushi"
+  },
+  {
+    "lat": 48.4294858,
+    "lon": -123.3650885,
+    "type": "place_of_worship",
+    "name": "Eckankar Canada"
+  },
+  {
+    "lat": 48.4277007,
+    "lon": -123.3600218,
+    "type": "place_of_worship",
+    "name": "Unity Church of Victoria"
+  },
+  {
+    "lat": 48.4326456,
+    "lon": -123.380311,
+    "type": "pharmacy",
+    "name": "Save-On-Foods"
+  },
+  {
+    "lat": 48.4292325,
+    "lon": -123.410494,
+    "type": "supermarket",
+    "name": "Country Grocer"
+  },
+  {
+    "lat": 48.4296752,
+    "lon": -123.4143124,
+    "type": "library",
+    "name": "GVPL: Esquimalt Branch"
+  },
+  {
+    "lat": 48.4787104,
+    "lon": -123.4113693,
+    "type": "restaurant",
+    "name": "Crooked Goose Bistro"
+  },
+  {
+    "lat": 48.4649275,
+    "lon": -123.3734038,
+    "type": "shelter",
+    "name": "Teaching Shelter"
+  },
+  {
+    "lat": 48.3519643,
+    "lon": -123.5769991,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4771386,
+    "lon": -123.5319737,
+    "type": "restaurant",
+    "name": "Kuma Sushi"
+  },
+  {
+    "lat": 48.4137289,
+    "lon": -123.375629,
+    "type": "convenience",
+    "name": "Don's Food Market"
+  },
+  {
+    "lat": 48.4589763,
+    "lon": -123.5529697,
+    "type": "convenience",
+    "name": "Streamside Grocery"
+  },
+  {
+    "lat": 48.4970694,
+    "lon": -123.3812956,
+    "type": "restaurant",
+    "name": "Baan Thai"
+  },
+  {
+    "lat": 48.4972358,
+    "lon": -123.3819156,
+    "type": "restaurant",
+    "name": "Romeo's Pizza"
+  },
+  {
+    "lat": 48.4545813,
+    "lon": -123.394938,
+    "type": "pharmacy",
+    "name": NaN
+  },
+  {
+    "lat": 48.4251236,
+    "lon": -123.3631436,
+    "type": "hairdresser",
+    "name": "Sweeny Todd's"
+  },
+  {
+    "lat": 48.4860098,
+    "lon": -123.4447256,
+    "type": "shelter",
+    "name": "Percy Dumbleton Rest Stop"
+  },
+  {
+    "lat": 48.4548044,
+    "lon": -123.3586919,
+    "type": "supermarket",
+    "name": "Thrifty Foods"
+  },
+  {
+    "lat": 48.4549183,
+    "lon": -123.3586766,
+    "type": "pharmacy",
+    "name": "Thrifty Foods"
+  },
+  {
+    "lat": 48.5170866,
+    "lon": -123.3688462,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4262042,
+    "lon": -123.3661008,
+    "type": "restaurant",
+    "name": "West Coast Waffles"
+  },
+  {
+    "lat": 48.4246384,
+    "lon": -123.3597718,
+    "type": "clinic",
+    "name": "Downtown Victoria Optometry"
+  },
+  {
+    "lat": 48.4234114,
+    "lon": -123.3630074,
+    "type": "restaurant",
+    "name": "Kanpai Asian Eatery & Bar"
+  },
+  {
+    "lat": 48.4487264,
+    "lon": -123.4977564,
+    "type": "clinic",
+    "name": "Connect Hearing"
+  },
+  {
+    "lat": 48.4490519,
+    "lon": -123.4980701,
+    "type": "restaurant",
+    "name": "Donair Express"
+  },
+  {
+    "lat": 48.4484799,
+    "lon": -123.4971832,
+    "type": "restaurant",
+    "name": "Fu Wah Express Cafe"
+  },
+  {
+    "lat": 48.4483244,
+    "lon": -123.4969957,
+    "type": "restaurant",
+    "name": "Salty's Fish & Chips"
+  },
+  {
+    "lat": 48.4487682,
+    "lon": -123.4978002,
+    "type": "hairdresser",
+    "name": "Sullivan's Barber Shop"
+  },
+  {
+    "lat": 48.4492832,
+    "lon": -123.4985819,
+    "type": "laundry",
+    "name": "Westbrook Homestyle Laundromat"
+  },
+  {
+    "lat": 48.449203,
+    "lon": -123.4982506,
+    "type": "supermarket",
+    "name": "Fairway Market"
+  },
+  {
+    "lat": 48.4488519,
+    "lon": -123.4978896,
+    "type": "hairdresser",
+    "name": "Head Case Hair Studio"
+  },
+  {
+    "lat": 48.4489728,
+    "lon": -123.4979947,
+    "type": "restaurant",
+    "name": "Sushi Ya"
+  },
+  {
+    "lat": 48.4493065,
+    "lon": -123.49868,
+    "type": "alternative",
+    "name": "Aurora Health and Wellness"
+  },
+  {
+    "lat": 48.4433411,
+    "lon": -123.370379,
+    "type": "supermarket",
+    "name": "Lifestyle Markets Health Foods"
+  },
+  {
+    "lat": 48.4286307,
+    "lon": -123.3675675,
+    "type": "restaurant",
+    "name": "Dumpling Drop"
+  },
+  {
+    "lat": 48.426229,
+    "lon": -123.3628256,
+    "type": "restaurant",
+    "name": "Cenote Restaurant and Lounge"
+  },
+  {
+    "lat": 48.4252436,
+    "lon": -123.356851,
+    "type": "restaurant",
+    "name": "Bin 4 Burger Lounge"
+  },
+  {
+    "lat": 48.4485415,
+    "lon": -123.3981823,
+    "type": "restaurant",
+    "name": "Villages Pizza"
+  },
+  {
+    "lat": 48.4542109,
+    "lon": -123.3748326,
+    "type": "restaurant",
+    "name": "Erito Sushi"
+  },
+  {
+    "lat": 48.4542716,
+    "lon": -123.3746423,
+    "type": "restaurant",
+    "name": "Ono Pok\u00e9"
+  },
+  {
+    "lat": 48.4164263,
+    "lon": -123.3115308,
+    "type": "hairdresser",
+    "name": NaN
+  },
+  {
+    "lat": 48.4467267,
+    "lon": -123.4967549,
+    "type": "restaurant",
+    "name": "Floyds Diner"
+  },
+  {
+    "lat": 48.4570375,
+    "lon": -123.5399648,
+    "type": "convenience",
+    "name": "Shell Select"
+  },
+  {
+    "lat": 48.4540841,
+    "lon": -123.3756387,
+    "type": "restaurant",
+    "name": "Noodle Box"
+  },
+  {
+    "lat": 48.4558082,
+    "lon": -123.3739371,
+    "type": "library",
+    "name": "GVPL: Emily Carr Branch"
+  },
+  {
+    "lat": 48.4246559,
+    "lon": -123.3622104,
+    "type": "restaurant",
+    "name": "Shiki Sushi"
+  },
+  {
+    "lat": 48.4128555,
+    "lon": -123.337763,
+    "type": "supermarket",
+    "name": "Thrifty Foods"
+  },
+  {
+    "lat": 48.4268761,
+    "lon": -123.3705268,
+    "type": "college",
+    "name": "Pacific Design Academy"
+  },
+  {
+    "lat": 48.458369,
+    "lon": -123.3764273,
+    "type": "restaurant",
+    "name": "Yoshi Sushi"
+  },
+  {
+    "lat": 48.4242924,
+    "lon": -123.3611471,
+    "type": "restaurant",
+    "name": "Jiang Yum Noodle House"
+  },
+  {
+    "lat": 48.4227679,
+    "lon": -123.3661265,
+    "type": "restaurant",
+    "name": "Noodle Box"
+  },
+  {
+    "lat": 48.4795697,
+    "lon": -123.4110007,
+    "type": "restaurant",
+    "name": "Jack's Restaurant"
+  },
+  {
+    "lat": 48.4227278,
+    "lon": -123.3688365,
+    "type": "restaurant",
+    "name": "Milestones"
+  },
+  {
+    "lat": 48.4419827,
+    "lon": -123.3697153,
+    "type": "veterinary",
+    "name": "Burnside Animal Hospital"
+  },
+  {
+    "lat": 48.421873,
+    "lon": -123.3807289,
+    "type": "restaurant",
+    "name": "Il Covo Trattoria"
+  },
+  {
+    "lat": 48.4405721,
+    "lon": -123.356336,
+    "type": "place_of_worship",
+    "name": "Punjabi Akali Sikh Temple"
+  },
+  {
+    "lat": 48.4125141,
+    "lon": -123.3659653,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4424246,
+    "lon": -123.5151994,
+    "type": "supermarket",
+    "name": "Quality Foods"
+  },
+  {
+    "lat": 48.4236145,
+    "lon": -123.370532,
+    "type": "restaurant",
+    "name": "Flying Otter Grill"
+  },
+  {
+    "lat": 48.4322197,
+    "lon": -123.3648053,
+    "type": "convenience",
+    "name": "Filipino Mart"
+  },
+  {
+    "lat": 48.420071,
+    "lon": -123.3628864,
+    "type": "restaurant",
+    "name": "Tre Fantastico"
+  },
+  {
+    "lat": 48.4265201,
+    "lon": -123.3651105,
+    "type": "convenience",
+    "name": "Circle K"
+  },
+  {
+    "lat": 48.425118,
+    "lon": -123.3690118,
+    "type": "restaurant",
+    "name": "Siam Thai Cuisine"
+  },
+  {
+    "lat": 48.4251845,
+    "lon": -123.369662,
+    "type": "restaurant",
+    "name": "The Keg"
+  },
+  {
+    "lat": 48.4288828,
+    "lon": -123.3694851,
+    "type": "hairdresser",
+    "name": "Tango Hair"
+  },
+  {
+    "lat": 48.4335461,
+    "lon": -123.515854,
+    "type": "alternative",
+    "name": "Stillpoint Community Acupuncture"
+  },
+  {
+    "lat": 48.4632977,
+    "lon": -123.3095091,
+    "type": "library",
+    "name": "McPherson Library"
+  },
+  {
+    "lat": 48.5440628,
+    "lon": -123.5642905,
+    "type": "restaurant",
+    "name": "Malahat Chalet"
+  },
+  {
+    "lat": 48.442482,
+    "lon": -123.469811,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.4244549,
+    "lon": -123.369405,
+    "type": "restaurant",
+    "name": "Nautical Nellies Steak & Seafood House"
+  },
+  {
+    "lat": 48.4224433,
+    "lon": -123.365665,
+    "type": "convenience",
+    "name": "7-Eleven"
+  },
+  {
+    "lat": 48.4263099,
+    "lon": -123.3261852,
+    "type": "restaurant",
+    "name": "White Heather Tea Room"
+  },
+  {
+    "lat": 48.4263546,
+    "lon": -123.3264783,
+    "type": "restaurant",
+    "name": "Confit"
+  },
+  {
+    "lat": 48.4164346,
+    "lon": -123.373059,
+    "type": "restaurant",
+    "name": "The Bop"
+  },
+  {
+    "lat": 48.4362585,
+    "lon": -123.3399869,
+    "type": "convenience",
+    "name": "Adams' Food Fair"
+  },
+  {
+    "lat": 48.4488252,
+    "lon": -123.3622094,
+    "type": "convenience",
+    "name": "B&V Market"
+  },
+  {
+    "lat": 48.4339428,
+    "lon": -123.3352375,
+    "type": "convenience",
+    "name": "Bay Grocery"
+  },
+  {
+    "lat": 48.4297526,
+    "lon": -123.3647163,
+    "type": "convenience",
+    "name": "Best Buy"
+  },
+  {
+    "lat": 48.4609501,
+    "lon": -123.400235,
+    "type": "convenience",
+    "name": "Burnside Food Market"
+  },
+  {
+    "lat": 48.4277461,
+    "lon": -123.3642968,
+    "type": "convenience",
+    "name": "Casa Convenience Store"
+  },
+  {
+    "lat": 48.435544,
+    "lon": -123.4884669,
+    "type": "convenience",
+    "name": "Corona Foods"
+  },
+  {
+    "lat": 48.4394778,
+    "lon": -123.3936734,
+    "type": "convenience",
+    "name": "Craigflower Foods"
+  },
+  {
+    "lat": 48.4298682,
+    "lon": -123.4130754,
+    "type": "convenience",
+    "name": "Fraser25 Convenience Store"
+  },
+  {
+    "lat": 48.4292604,
+    "lon": -123.3675318,
+    "type": "convenience",
+    "name": "Jia Hua Trading"
+  },
+  {
+    "lat": 48.4196795,
+    "lon": -123.4846832,
+    "type": "convenience",
+    "name": "Lagoon Food Market"
+  },
+  {
+    "lat": 48.4275918,
+    "lon": -123.3577658,
+    "type": "restaurant",
+    "name": "Chicken World"
+  },
+  {
+    "lat": 48.4408914,
+    "lon": -123.373259,
+    "type": "convenience",
+    "name": "Mega Mart"
+  },
+  {
+    "lat": 48.4533383,
+    "lon": -123.3265326,
+    "type": "convenience",
+    "name": "Mount Tolmie Market"
+  },
+  {
+    "lat": 48.4298763,
+    "lon": -123.3669036,
+    "type": "convenience",
+    "name": "Tai Sang Company"
+  },
+  {
+    "lat": 48.4324515,
+    "lon": -123.3594023,
+    "type": "convenience",
+    "name": "Vegas Convenience Store"
+  },
+  {
+    "lat": 48.4288155,
+    "lon": -123.3672665,
+    "type": "convenience",
+    "name": "Victoria Giftplus"
+  },
+  {
+    "lat": 48.4537126,
+    "lon": -123.4368989,
+    "type": "convenience",
+    "name": "View Royal Food Market"
+  },
+  {
+    "lat": 48.4261861,
+    "lon": -123.3374354,
+    "type": "convenience",
+    "name": "153 with J Flowers & Convenience Store"
+  },
+  {
+    "lat": 48.4216062,
+    "lon": -123.4928952,
+    "type": "convenience",
+    "name": "88 Mini Market"
+  },
+  {
+    "lat": 48.4229094,
+    "lon": -123.5325912,
+    "type": "convenience",
+    "name": "Happy Valley Market"
+  },
+  {
+    "lat": 48.4473328,
+    "lon": -123.4936212,
+    "type": "restaurant",
+    "name": "Peter's Sushi"
+  },
+  {
+    "lat": 48.429475,
+    "lon": -123.3675857,
+    "type": "restaurant",
+    "name": "Wah Laiyuen"
+  },
+  {
+    "lat": 48.4391775,
+    "lon": -123.378293,
+    "type": "restaurant",
+    "name": "Sol Fine Foods"
+  },
+  {
+    "lat": 48.4443669,
+    "lon": -123.369127,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.4330299,
+    "lon": -123.3803987,
+    "type": "physiotherapist",
+    "name": "Physiotherapy"
+  },
+  {
+    "lat": 48.4456444,
+    "lon": -123.5335653,
+    "type": "library",
+    "name": "GVPL: Langford Heritage Branch"
+  },
+  {
+    "lat": 48.4457316,
+    "lon": -123.5337542,
+    "type": "school",
+    "name": "Victoria Conservatory of Music"
+  },
+  {
+    "lat": 48.4613545,
+    "lon": -123.3347704,
+    "type": "restaurant",
+    "name": "Fig Delicatessen"
+  },
+  {
+    "lat": 48.4620062,
+    "lon": -123.3326233,
+    "type": "convenience",
+    "name": "Mac's"
+  },
+  {
+    "lat": 48.459381,
+    "lon": -123.3332227,
+    "type": "restaurant",
+    "name": "Fujiya"
+  },
+  {
+    "lat": 48.4598904,
+    "lon": -123.333205,
+    "type": "restaurant",
+    "name": "Tropical Island"
+  },
+  {
+    "lat": 48.4684828,
+    "lon": -123.4285855,
+    "type": "sports_centre",
+    "name": "YMCA-YWCA Eagle Creek"
+  },
+  {
+    "lat": 48.468033,
+    "lon": -123.4272217,
+    "type": "veterinary",
+    "name": "Helmcken Veterinary Clinic"
+  },
+  {
+    "lat": 48.4477221,
+    "lon": -123.4976898,
+    "type": "restaurant",
+    "name": "Three Gringos Mexican Grill"
+  },
+  {
+    "lat": 48.4479725,
+    "lon": -123.4009861,
+    "type": "restaurant",
+    "name": "Il Greco"
+  },
+  {
+    "lat": 48.4233201,
+    "lon": -123.3545838,
+    "type": "pharmacy",
+    "name": "Victoria Compounding Pharmacy"
+  },
+  {
+    "lat": 48.4488194,
+    "lon": -123.398274,
+    "type": "pharmacy",
+    "name": NaN
+  },
+  {
+    "lat": 48.4485854,
+    "lon": -123.3982804,
+    "type": "hairdresser",
+    "name": "Simplified Hair Shoppe"
+  },
+  {
+    "lat": 48.3537396,
+    "lon": -123.5800646,
+    "type": "restaurant",
+    "name": "Glenrosa Farm Restaurant"
+  },
+  {
+    "lat": 48.4298692,
+    "lon": -123.4128831,
+    "type": "restaurant",
+    "name": "Kwao Thai Restaurant"
+  },
+  {
+    "lat": 48.4297576,
+    "lon": -123.4111089,
+    "type": "hairdresser",
+    "name": "Island Haircutting"
+  },
+  {
+    "lat": 48.4298313,
+    "lon": -123.411113,
+    "type": "convenience",
+    "name": "Great Canadian Dollar Store"
+  },
+  {
+    "lat": 48.4296068,
+    "lon": -123.411131,
+    "type": "clinic",
+    "name": "Esquimalt Optical"
+  },
+  {
+    "lat": 48.4292238,
+    "lon": -123.4100003,
+    "type": "pharmacy",
+    "name": "Pharmasave"
+  },
+  {
+    "lat": 48.4145306,
+    "lon": -123.3570735,
+    "type": "restaurant",
+    "name": "The next"
+  },
+  {
+    "lat": 48.4461151,
+    "lon": -123.3717092,
+    "type": "restaurant",
+    "name": "The Ruby"
+  },
+  {
+    "lat": 48.4264224,
+    "lon": -123.364358,
+    "type": "supermarket",
+    "name": "Bulk Barn"
+  },
+  {
+    "lat": 48.4663294,
+    "lon": -123.3612979,
+    "type": "convenience",
+    "name": "Anar Food and Grocery"
+  },
+  {
+    "lat": 48.4683687,
+    "lon": -123.3641174,
+    "type": "clinic",
+    "name": "Island Sexual Health"
+  },
+  {
+    "lat": 48.4308503,
+    "lon": -123.3673319,
+    "type": "hairdresser",
+    "name": "Parlor Hair Boutique"
+  },
+  {
+    "lat": 48.430337,
+    "lon": -123.3677317,
+    "type": "restaurant",
+    "name": "Jam Cafe"
+  },
+  {
+    "lat": 48.455359,
+    "lon": -123.3757308,
+    "type": "restaurant",
+    "name": "Power House Living Foods Co."
+  },
+  {
+    "lat": 48.4499622,
+    "lon": -123.4263417,
+    "type": "restaurant",
+    "name": "Gyrosa"
+  },
+  {
+    "lat": 48.4499805,
+    "lon": -123.426429,
+    "type": "hairdresser",
+    "name": "First Choice Haircutters"
+  },
+  {
+    "lat": 48.4762785,
+    "lon": -123.3323264,
+    "type": "restaurant",
+    "name": "Sushi Mago"
+  },
+  {
+    "lat": 48.4505589,
+    "lon": -123.3683727,
+    "type": "restaurant",
+    "name": "Bin 4 Burger Lounge"
+  },
+  {
+    "lat": 48.4234306,
+    "lon": -123.361139,
+    "type": "optician",
+    "name": "Victoria Vision Eye Care"
+  },
+  {
+    "lat": 48.4270166,
+    "lon": -123.3577131,
+    "type": "community_centre",
+    "name": "Our Place Society"
+  },
+  {
+    "lat": 48.4273412,
+    "lon": -123.3528048,
+    "type": "convenience",
+    "name": "Circle K"
+  },
+  {
+    "lat": 48.450798,
+    "lon": -123.3867408,
+    "type": "restaurant",
+    "name": "Brady's Fish & Chips"
+  },
+  {
+    "lat": 48.4918253,
+    "lon": -123.3876331,
+    "type": "restaurant",
+    "name": "Rawthentic"
+  },
+  {
+    "lat": 48.4241533,
+    "lon": -123.3620757,
+    "type": "restaurant",
+    "name": "Original Pho"
+  },
+  {
+    "lat": 48.4242216,
+    "lon": -123.362763,
+    "type": "restaurant",
+    "name": "Good Ovening Korean Pub and Oven Roasted Chicken"
+  },
+  {
+    "lat": 48.4241666,
+    "lon": -123.3621996,
+    "type": "restaurant",
+    "name": "Fish Hook"
+  },
+  {
+    "lat": 48.4268124,
+    "lon": -123.362151,
+    "type": "restaurant",
+    "name": "Shuck Taylor's"
+  },
+  {
+    "lat": 48.4263348,
+    "lon": -123.3617066,
+    "type": "hairdresser",
+    "name": "Victory Barbers and Brand"
+  },
+  {
+    "lat": 48.4969277,
+    "lon": -123.3833994,
+    "type": "veterinary",
+    "name": "Broadmead Veterinary Clinic"
+  },
+  {
+    "lat": 48.4933736,
+    "lon": -123.3881489,
+    "type": "laundry",
+    "name": "Scrub Your Duds"
+  },
+  {
+    "lat": 48.492913,
+    "lon": -123.3880163,
+    "type": "veterinary",
+    "name": "Royal Oak Vet Clinic"
+  },
+  {
+    "lat": 48.4274585,
+    "lon": -123.3688967,
+    "type": "restaurant",
+    "name": "Il Terrazzo"
+  },
+  {
+    "lat": 48.4969202,
+    "lon": -123.3826203,
+    "type": "restaurant",
+    "name": "Poke Fresh"
+  },
+  {
+    "lat": 48.4497524,
+    "lon": -123.3690509,
+    "type": "restaurant",
+    "name": "Royal Spice Fine Indian Cuisine"
+  },
+  {
+    "lat": 48.451556,
+    "lon": -123.37512,
+    "type": "restaurant",
+    "name": "Jade Fountain Restaurant"
+  },
+  {
+    "lat": 48.4378054,
+    "lon": -123.3125206,
+    "type": "restaurant",
+    "name": "Machi Sushi"
+  },
+  {
+    "lat": 48.4234448,
+    "lon": -123.365988,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.4431401,
+    "lon": -123.3859264,
+    "type": "restaurant",
+    "name": "Hecklers Bar & Grill"
+  },
+  {
+    "lat": 48.426837,
+    "lon": -123.3650296,
+    "type": "restaurant",
+    "name": "Kizuna Ramen"
+  },
+  {
+    "lat": 48.4303364,
+    "lon": -123.3679188,
+    "type": "hairdresser",
+    "name": "Lavish.salon"
+  },
+  {
+    "lat": 48.4230459,
+    "lon": -123.3681116,
+    "type": "restaurant",
+    "name": "Tractor"
+  },
+  {
+    "lat": 48.4214668,
+    "lon": -123.3664122,
+    "type": "hairdresser",
+    "name": "Luna"
+  },
+  {
+    "lat": 48.4269403,
+    "lon": -123.3690811,
+    "type": "restaurant",
+    "name": "Ferris' Burger & Oyster Bar"
+  },
+  {
+    "lat": 48.4275793,
+    "lon": -123.364838,
+    "type": "restaurant",
+    "name": "The Mint"
+  },
+  {
+    "lat": 48.4294677,
+    "lon": -123.3682128,
+    "type": "restaurant",
+    "name": "Don Mee Seafood Restaurant"
+  },
+  {
+    "lat": 48.4298192,
+    "lon": -123.366884,
+    "type": "restaurant",
+    "name": "Brasserie L'\u00e9cole"
+  },
+  {
+    "lat": 48.42817,
+    "lon": -123.3693999,
+    "type": "restaurant",
+    "name": "Fuego"
+  },
+  {
+    "lat": 48.4294766,
+    "lon": -123.3673656,
+    "type": "restaurant",
+    "name": "Ocean Garden"
+  },
+  {
+    "lat": 48.4244768,
+    "lon": -123.3664079,
+    "type": "restaurant",
+    "name": "Pagliacci's"
+  },
+  {
+    "lat": 48.4266997,
+    "lon": -123.364614,
+    "type": "restaurant",
+    "name": "Hope Key"
+  },
+  {
+    "lat": 48.4226725,
+    "lon": -123.3544883,
+    "type": "restaurant",
+    "name": "My Thai Caf\u00e9"
+  },
+  {
+    "lat": 48.4222944,
+    "lon": -123.3656783,
+    "type": "restaurant",
+    "name": "Browns Social House"
+  },
+  {
+    "lat": 48.4238019,
+    "lon": -123.3683789,
+    "type": "college",
+    "name": "Inlingua"
+  },
+  {
+    "lat": 48.4392931,
+    "lon": -123.506256,
+    "type": "restaurant",
+    "name": "The Chopped Leaf"
+  },
+  {
+    "lat": 48.4393316,
+    "lon": -123.5062249,
+    "type": "restaurant",
+    "name": "The Noodle Box"
+  },
+  {
+    "lat": 48.4395107,
+    "lon": -123.5061211,
+    "type": "restaurant",
+    "name": "Original Joe's"
+  },
+  {
+    "lat": 48.439408,
+    "lon": -123.5061807,
+    "type": "restaurant",
+    "name": "Sizzling Tandoor"
+  },
+  {
+    "lat": 48.4278287,
+    "lon": -123.3637638,
+    "type": "restaurant",
+    "name": "John's Place"
+  },
+  {
+    "lat": 48.4210431,
+    "lon": -123.3713347,
+    "type": "restaurant",
+    "name": "Steamship Grill & Bar"
+  },
+  {
+    "lat": 48.4279321,
+    "lon": -123.3686514,
+    "type": "restaurant",
+    "name": "Green Cuisine"
+  },
+  {
+    "lat": 48.4420186,
+    "lon": -123.40162,
+    "type": "fuel",
+    "name": "Petro-Canada"
+  },
+  {
+    "lat": 48.4277892,
+    "lon": -123.3633982,
+    "type": "restaurant",
+    "name": "Nubo Japanese Tapas"
+  },
+  {
+    "lat": 48.427676,
+    "lon": -123.3627872,
+    "type": "community_centre",
+    "name": "Downtown Community Centre"
+  },
+  {
+    "lat": 48.4410308,
+    "lon": -123.3385491,
+    "type": "community_centre",
+    "name": "Oaklands Community Centre"
+  },
+  {
+    "lat": 48.4245382,
+    "lon": -123.3633893,
+    "type": "restaurant",
+    "name": "Serena's Pizzeria and Hoagies"
+  },
+  {
+    "lat": 48.4238612,
+    "lon": -123.3624162,
+    "type": "restaurant",
+    "name": "Yalla"
+  },
+  {
+    "lat": 48.4178271,
+    "lon": -123.3723004,
+    "type": "library",
+    "name": "GVPL: sx\u02b7e\u014bx\u02b7\u0259\u014b t\u0259\u014b\u0259x\u02b7 James Bay Branch"
+  },
+  {
+    "lat": 48.4267179,
+    "lon": -123.3692715,
+    "type": "restaurant",
+    "name": "El Furniture Warehouse"
+  },
+  {
+    "lat": 48.4228708,
+    "lon": -123.366105,
+    "type": "restaurant",
+    "name": "Cora"
+  },
+  {
+    "lat": 48.4267222,
+    "lon": -123.3616615,
+    "type": "restaurant",
+    "name": "Superbaba"
+  },
+  {
+    "lat": 48.4399275,
+    "lon": -123.35941,
+    "type": "supermarket",
+    "name": "Island Afrikan Supermarket"
+  },
+  {
+    "lat": 48.425269,
+    "lon": -123.36489,
+    "type": "restaurant",
+    "name": "James Joyce Bistro and Peacock Billiards"
+  },
+  {
+    "lat": 48.4259396,
+    "lon": -123.3533994,
+    "type": "hairdresser",
+    "name": "Gemi Hair Products"
+  },
+  {
+    "lat": 48.4261102,
+    "lon": -123.3612503,
+    "type": "restaurant",
+    "name": "Zambri's"
+  },
+  {
+    "lat": 48.4263833,
+    "lon": -123.3611372,
+    "type": "restaurant",
+    "name": "Taosis Ramen"
+  },
+  {
+    "lat": 48.4619928,
+    "lon": -123.3322442,
+    "type": "restaurant",
+    "name": NaN
+  },
+  {
+    "lat": 48.4261062,
+    "lon": -123.3698466,
+    "type": "restaurant",
+    "name": "The Local"
+  },
+  {
+    "lat": 48.4974337,
+    "lon": -123.3820144,
+    "type": "restaurant",
+    "name": NaN
+  },
+  {
+    "lat": 48.4971322,
+    "lon": -123.3817297,
+    "type": "restaurant",
+    "name": "Fudo Japanese Restaurant"
+  },
+  {
+    "lat": 48.4291406,
+    "lon": -123.3672973,
+    "type": "convenience",
+    "name": "Silk Road Tea"
+  },
+  {
+    "lat": 48.4419671,
+    "lon": -123.3686053,
+    "type": "restaurant",
+    "name": "Spoons Diner"
+  },
+  {
+    "lat": 48.4436023,
+    "lon": -123.3690115,
+    "type": "hairdresser",
+    "name": "Wow Hair Design"
+  },
+  {
+    "lat": 48.449706,
+    "lon": -123.3692456,
+    "type": "restaurant",
+    "name": "Lot 1 Pasta Bar"
+  },
+  {
+    "lat": 48.4248239,
+    "lon": -123.365048,
+    "type": "restaurant",
+    "name": "Cactus Club Cafe"
+  },
+  {
+    "lat": 48.4237483,
+    "lon": -123.3561377,
+    "type": "restaurant",
+    "name": "J&J Wonton Noodle House"
+  },
+  {
+    "lat": 48.4240875,
+    "lon": -123.365742,
+    "type": "restaurant",
+    "name": "Freshii"
+  },
+  {
+    "lat": 48.45424,
+    "lon": -123.375719,
+    "type": "restaurant",
+    "name": "The Chopped Leaf"
+  },
+  {
+    "lat": 48.4558831,
+    "lon": -123.3766426,
+    "type": "restaurant",
+    "name": "Brown's Social House"
+  },
+  {
+    "lat": 48.4248122,
+    "lon": -123.3659933,
+    "type": "restaurant",
+    "name": "Bento"
+  },
+  {
+    "lat": 48.4562776,
+    "lon": -123.3759747,
+    "type": "hairdresser",
+    "name": "Taylor & Colt"
+  },
+  {
+    "lat": 48.4242745,
+    "lon": -123.3675426,
+    "type": "restaurant",
+    "name": "Ebiz\u014d Sushi"
+  },
+  {
+    "lat": 48.4564484,
+    "lon": -123.373667,
+    "type": "restaurant",
+    "name": "Boston Pizza"
+  },
+  {
+    "lat": 48.4233174,
+    "lon": -123.3672197,
+    "type": "restaurant",
+    "name": "The Courtney Room"
+  },
+  {
+    "lat": 48.4171829,
+    "lon": -123.3726684,
+    "type": "supermarket",
+    "name": "Red Barn Market"
+  },
+  {
+    "lat": 48.4158256,
+    "lon": -123.3741014,
+    "type": "hairdresser",
+    "name": "Burt's Barbershop"
+  },
+  {
+    "lat": 48.4160059,
+    "lon": -123.3741713,
+    "type": "restaurant",
+    "name": "The Coriander Indian"
+  },
+  {
+    "lat": 48.4157033,
+    "lon": -123.374292,
+    "type": "pharmacy",
+    "name": "James Bay Pharmasave"
+  },
+  {
+    "lat": 48.4286308,
+    "lon": -123.3676199,
+    "type": "restaurant",
+    "name": "Momi Noodle"
+  },
+  {
+    "lat": 48.4215129,
+    "lon": -123.3679561,
+    "type": "library",
+    "name": "Library Lounge"
+  },
+  {
+    "lat": 48.4217472,
+    "lon": -123.3674768,
+    "type": "restaurant",
+    "name": "Q at the Empress"
+  },
+  {
+    "lat": 48.4212455,
+    "lon": -123.3664586,
+    "type": "community_centre",
+    "name": "NeighbourSpace"
+  },
+  {
+    "lat": 48.4224712,
+    "lon": -123.3641836,
+    "type": "restaurant",
+    "name": "Vista 18"
+  },
+  {
+    "lat": 48.4294854,
+    "lon": -123.366601,
+    "type": "restaurant",
+    "name": "Indian Aroma Restaurant"
+  },
+  {
+    "lat": 48.429497,
+    "lon": -123.329929,
+    "type": "pharmacy",
+    "name": "Fort Royal Pharmacy"
+  },
+  {
+    "lat": 48.4295561,
+    "lon": -123.3297843,
+    "type": "restaurant",
+    "name": "CairoMum"
+  },
+  {
+    "lat": 48.4224244,
+    "lon": -123.3751456,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4239753,
+    "lon": -123.3623904,
+    "type": "restaurant",
+    "name": "be love"
+  },
+  {
+    "lat": 48.4261161,
+    "lon": -123.3702062,
+    "type": "restaurant",
+    "name": "Finn\u2019s Seafood Chops Cocktails"
+  },
+  {
+    "lat": 48.4155751,
+    "lon": -123.3756501,
+    "type": "restaurant",
+    "name": "Heron Rock Bistro"
+  },
+  {
+    "lat": 48.4245227,
+    "lon": -123.3632374,
+    "type": "restaurant",
+    "name": "Pho Vy"
+  },
+  {
+    "lat": 48.4311651,
+    "lon": -123.400794,
+    "type": "clinic",
+    "name": "Esquimalt Urgent & Primary Care Centre"
+  },
+  {
+    "lat": 48.4311108,
+    "lon": -123.400898,
+    "type": "restaurant",
+    "name": "Pizza Hut"
+  },
+  {
+    "lat": 48.4301933,
+    "lon": -123.4005591,
+    "type": "hairdresser",
+    "name": "Esquimalt 912 Hair Design"
+  },
+  {
+    "lat": 48.4301326,
+    "lon": -123.4004758,
+    "type": "hairdresser",
+    "name": "Head Street Barber"
+  },
+  {
+    "lat": 48.4303183,
+    "lon": -123.4014477,
+    "type": "restaurant",
+    "name": "Lum's Chinese Restaurant"
+  },
+  {
+    "lat": 48.4305076,
+    "lon": -123.4011267,
+    "type": "hairdresser",
+    "name": "Carlton Barber Shop"
+  },
+  {
+    "lat": 48.4305439,
+    "lon": -123.401059,
+    "type": "restaurant",
+    "name": "Bunny's Nook Kitchen"
+  },
+  {
+    "lat": 48.4303806,
+    "lon": -123.4013206,
+    "type": "restaurant",
+    "name": "Spice Valley Indian Cuisine"
+  },
+  {
+    "lat": 48.4356198,
+    "lon": -123.4001297,
+    "type": "sports_centre",
+    "name": "Island Elite Cheerleading"
+  },
+  {
+    "lat": 48.4380366,
+    "lon": -123.5108029,
+    "type": "restaurant",
+    "name": "Baan Thai"
+  },
+  {
+    "lat": 48.4391571,
+    "lon": -123.5116955,
+    "type": "restaurant",
+    "name": "Sushi Langford"
+  },
+  {
+    "lat": 48.4395209,
+    "lon": -123.510914,
+    "type": "restaurant",
+    "name": "Freshii"
+  },
+  {
+    "lat": 48.4544821,
+    "lon": -123.39484,
+    "type": "clinic",
+    "name": "Tillicum Medical Clinic"
+  },
+  {
+    "lat": 48.4479753,
+    "lon": -123.4266555,
+    "type": "restaurant",
+    "name": "Clover Sushi"
+  },
+  {
+    "lat": 48.4239525,
+    "lon": -123.3576447,
+    "type": "restaurant",
+    "name": "Cafe Brio"
+  },
+  {
+    "lat": 48.4270459,
+    "lon": -123.3698755,
+    "type": "restaurant",
+    "name": "Chimac"
+  },
+  {
+    "lat": 48.4384173,
+    "lon": -123.3699678,
+    "type": "supermarket",
+    "name": "BC Ale Trail"
+  },
+  {
+    "lat": 48.4344847,
+    "lon": -123.5153551,
+    "type": "restaurant",
+    "name": "My Name Is Sushi"
+  },
+  {
+    "lat": 48.4462931,
+    "lon": -123.3351252,
+    "type": "hairdresser",
+    "name": "Lizzy Lee & Me"
+  },
+  {
+    "lat": 48.4612438,
+    "lon": -123.4949376,
+    "type": "restaurant",
+    "name": "Persimmon Tree"
+  },
+  {
+    "lat": 48.4288744,
+    "lon": -123.3586716,
+    "type": "supermarket",
+    "name": "Daily Fresh"
+  },
+  {
+    "lat": 48.4330475,
+    "lon": -123.3815322,
+    "type": "pharmacy",
+    "name": "Pharmasave"
+  },
+  {
+    "lat": 48.4796469,
+    "lon": -123.4113547,
+    "type": "restaurant",
+    "name": "Cherries Breakfast Bistro"
+  },
+  {
+    "lat": 48.479462,
+    "lon": -123.4105588,
+    "type": "convenience",
+    "name": "Mac\u2019s"
+  },
+  {
+    "lat": 48.4379914,
+    "lon": -123.3129819,
+    "type": "hairdresser",
+    "name": "Salon Modello"
+  },
+  {
+    "lat": 48.4266994,
+    "lon": -123.3700749,
+    "type": "restaurant",
+    "name": "Uni Modern Japanese"
+  },
+  {
+    "lat": 48.4292237,
+    "lon": -123.4171781,
+    "type": "restaurant",
+    "name": "Vietnam Garden Restaurant"
+  },
+  {
+    "lat": 48.4304765,
+    "lon": -123.3454901,
+    "type": "shelter",
+    "name": "Fernwood Square Gazebo"
+  },
+  {
+    "lat": 48.4301277,
+    "lon": -123.4160186,
+    "type": "restaurant",
+    "name": "Syriana"
+  },
+  {
+    "lat": 48.4484993,
+    "lon": -123.4987709,
+    "type": "restaurant",
+    "name": "Langfords Fountain Diner"
+  },
+  {
+    "lat": 48.4499268,
+    "lon": -123.3852967,
+    "type": "restaurant",
+    "name": "Kuku's"
+  },
+  {
+    "lat": 48.4507404,
+    "lon": -123.386453,
+    "type": "laundry",
+    "name": "Scrubby's Laundromat"
+  },
+  {
+    "lat": 48.4627163,
+    "lon": -123.3853564,
+    "type": "veterinary",
+    "name": "McKenzie Veterinary Services"
+  },
+  {
+    "lat": 48.468666,
+    "lon": -123.363206,
+    "type": "restaurant",
+    "name": "White Spot"
+  },
+  {
+    "lat": 48.5494137,
+    "lon": -123.3916325,
+    "type": "veterinary",
+    "name": NaN
+  },
+  {
+    "lat": 48.4470452,
+    "lon": -123.3343779,
+    "type": "pharmacy",
+    "name": "Shoppers Drug Mart"
+  },
+  {
+    "lat": 48.4920065,
+    "lon": -123.387933,
+    "type": "pharmacy",
+    "name": "Shoppers Drug Mart"
+  },
+  {
+    "lat": 48.5241749,
+    "lon": -123.3684582,
+    "type": "pharmacy",
+    "name": "IDA"
+  },
+  {
+    "lat": 48.4385082,
+    "lon": -123.358513,
+    "type": "pharmacy",
+    "name": "Quadra Village Drug Mart"
+  },
+  {
+    "lat": 48.4562881,
+    "lon": -123.3935281,
+    "type": "restaurant",
+    "name": "Des Panjaab"
+  },
+  {
+    "lat": 48.5241748,
+    "lon": -123.3684583,
+    "type": "pharmacy",
+    "name": "IDA"
+  },
+  {
+    "lat": 48.4476762,
+    "lon": -123.4982902,
+    "type": "restaurant",
+    "name": "Pizza Hut"
+  },
+  {
+    "lat": 48.4388272,
+    "lon": -123.4077963,
+    "type": "place_of_worship",
+    "name": "St. George Ukrainian and St. Gabriel Ethiopian Orthodox \u1270\u12cb\u1205\u12f6 Church"
+  },
+  {
+    "lat": 48.4307552,
+    "lon": -123.4014479,
+    "type": "restaurant",
+    "name": "Sushi Story"
+  },
+  {
+    "lat": 48.4309309,
+    "lon": -123.401655,
+    "type": "restaurant",
+    "name": "Parthenon Pizza"
+  },
+  {
+    "lat": 48.4308773,
+    "lon": -123.4015874,
+    "type": "restaurant",
+    "name": "The Blue Nile"
+  },
+  {
+    "lat": 48.4300002,
+    "lon": -123.4174721,
+    "type": "supermarket",
+    "name": "Red Barn Market"
+  },
+  {
+    "lat": 48.4591486,
+    "lon": -123.3322086,
+    "type": "clinic",
+    "name": "Snore MD"
+  },
+  {
+    "lat": 48.4590038,
+    "lon": -123.3322249,
+    "type": "restaurant",
+    "name": "Little Thai Place"
+  },
+  {
+    "lat": 48.4596857,
+    "lon": -123.3321864,
+    "type": "pharmacy",
+    "name": "Heart Pharmacy IDA"
+  },
+  {
+    "lat": 48.4587836,
+    "lon": -123.3326558,
+    "type": "laundry",
+    "name": "Squeaky's Laundromat"
+  },
+  {
+    "lat": 48.4615013,
+    "lon": -123.297314,
+    "type": "restaurant",
+    "name": "Thai Lemongrass"
+  },
+  {
+    "lat": 48.476781,
+    "lon": -123.3324183,
+    "type": "restaurant",
+    "name": "Torquay Village Restaurant"
+  },
+  {
+    "lat": 48.4767148,
+    "lon": -123.332519,
+    "type": "restaurant",
+    "name": "Naughty Nellie's Fish & Chips"
+  },
+  {
+    "lat": 48.4381369,
+    "lon": -123.5122266,
+    "type": "restaurant",
+    "name": "Pho Vy"
+  },
+  {
+    "lat": 48.4398559,
+    "lon": -123.5122194,
+    "type": "place_of_worship",
+    "name": "Redeemer Lutheran Church"
+  },
+  {
+    "lat": 48.4218038,
+    "lon": -123.3752636,
+    "type": "restaurant",
+    "name": "Pendray Tea House"
+  },
+  {
+    "lat": 48.4522514,
+    "lon": -123.3810314,
+    "type": "restaurant",
+    "name": "Uptown Bistro"
+  },
+  {
+    "lat": 48.4294902,
+    "lon": -123.3659542,
+    "type": "restaurant",
+    "name": "Bao"
+  },
+  {
+    "lat": 48.429281,
+    "lon": -123.3647172,
+    "type": "restaurant",
+    "name": "Sura Korean Restaurant"
+  },
+  {
+    "lat": 48.4290202,
+    "lon": -123.364719,
+    "type": "restaurant",
+    "name": "Island Pok\u00e9"
+  },
+  {
+    "lat": 48.4291506,
+    "lon": -123.3647181,
+    "type": "restaurant",
+    "name": "Green Leaf Vietnamese Bistro"
+  },
+  {
+    "lat": 48.4257261,
+    "lon": -123.365301,
+    "type": "pharmacy",
+    "name": "Shoppers Drug Mart"
+  },
+  {
+    "lat": 48.4252002,
+    "lon": -123.3591754,
+    "type": "restaurant",
+    "name": "Sakura Sushi"
+  },
+  {
+    "lat": 48.4228755,
+    "lon": -123.3677457,
+    "type": "restaurant",
+    "name": "10 Acres Commons"
+  },
+  {
+    "lat": 48.4236647,
+    "lon": -123.3685205,
+    "type": "restaurant",
+    "name": "Frankie's Modern Diner"
+  },
+  {
+    "lat": 48.4243807,
+    "lon": -123.3686928,
+    "type": "restaurant",
+    "name": "Gozen Sushi Bar Izakaya"
+  },
+  {
+    "lat": 48.4246183,
+    "lon": -123.3688443,
+    "type": "restaurant",
+    "name": "Le Petit Saigon"
+  },
+  {
+    "lat": 48.426749,
+    "lon": -123.3699256,
+    "type": "restaurant",
+    "name": "Fiamo Pizza & Wine Bar"
+  },
+  {
+    "lat": 48.4391503,
+    "lon": -123.5104526,
+    "type": "restaurant",
+    "name": "Liberty Kitchen"
+  },
+  {
+    "lat": 48.4286715,
+    "lon": -123.3673249,
+    "type": "restaurant",
+    "name": "Varsha Indian Kitchen"
+  },
+  {
+    "lat": 48.4286584,
+    "lon": -123.3685065,
+    "type": "restaurant",
+    "name": "Virtuous Pie"
+  },
+  {
+    "lat": 48.4298258,
+    "lon": -123.3640606,
+    "type": "supermarket",
+    "name": "No Frills"
+  },
+  {
+    "lat": 48.4280222,
+    "lon": -123.369385,
+    "type": "restaurant",
+    "name": "Cafe Mexico"
+  },
+  {
+    "lat": 48.4314557,
+    "lon": -123.3649125,
+    "type": "restaurant",
+    "name": "Red Cedar Cafe"
+  },
+  {
+    "lat": 48.4307241,
+    "lon": -123.3642548,
+    "type": "restaurant",
+    "name": "Bangkok Modern Thai Cuisine"
+  },
+  {
+    "lat": 48.4608559,
+    "lon": -123.3312668,
+    "type": "hairdresser",
+    "name": "Shelbourne Barbers"
+  },
+  {
+    "lat": 48.4608114,
+    "lon": -123.331127,
+    "type": "restaurant",
+    "name": "Heart of Asia"
+  },
+  {
+    "lat": 48.425185,
+    "lon": -123.356803,
+    "type": "restaurant",
+    "name": "Pizza Hut"
+  },
+  {
+    "lat": 48.4423391,
+    "lon": -123.5111084,
+    "type": "restaurant",
+    "name": "Original Pho Eatery"
+  },
+  {
+    "lat": 48.4414234,
+    "lon": -123.321733,
+    "type": "restaurant",
+    "name": "Hot House Pizza"
+  },
+  {
+    "lat": 48.4263604,
+    "lon": -123.3395196,
+    "type": "restaurant",
+    "name": "Tartan Toque"
+  },
+  {
+    "lat": 48.4297687,
+    "lon": -123.3668565,
+    "type": "place_of_worship",
+    "name": "Tam Kung Temple"
+  },
+  {
+    "lat": 48.5378128,
+    "lon": -123.3898732,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.4274875,
+    "lon": -123.355612,
+    "type": "supermarket",
+    "name": "Save-On-Foods"
+  },
+  {
+    "lat": 48.4343452,
+    "lon": -123.5154661,
+    "type": "convenience",
+    "name": "Circle K"
+  },
+  {
+    "lat": 48.4376587,
+    "lon": -123.3076788,
+    "type": "restaurant",
+    "name": "Nohra Thai Kitchen"
+  },
+  {
+    "lat": 48.437723,
+    "lon": -123.307866,
+    "type": "restaurant",
+    "name": "AsUsual Cafe"
+  },
+  {
+    "lat": 48.4373513,
+    "lon": -123.307801,
+    "type": "hairdresser",
+    "name": "Envisage Hair Design"
+  },
+  {
+    "lat": 48.4375875,
+    "lon": -123.3074688,
+    "type": "hairdresser",
+    "name": "Oak Bay Barbershoppe"
+  },
+  {
+    "lat": 48.4240618,
+    "lon": -123.362827,
+    "type": "restaurant",
+    "name": "L'Ap\u00e9ro"
+  },
+  {
+    "lat": 48.4237357,
+    "lon": -123.3629172,
+    "type": "restaurant",
+    "name": "The Pink Bicycle (closed)"
+  },
+  {
+    "lat": 48.4238344,
+    "lon": -123.3628877,
+    "type": "restaurant",
+    "name": "Pho Tru"
+  },
+  {
+    "lat": 48.4236572,
+    "lon": -123.3629274,
+    "type": "restaurant",
+    "name": "Tourist Wine Bar"
+  },
+  {
+    "lat": 48.4238997,
+    "lon": -123.3628737,
+    "type": "restaurant",
+    "name": "Menbow Ramen Bar"
+  },
+  {
+    "lat": 48.4236943,
+    "lon": -123.362923,
+    "type": "hairdresser",
+    "name": "Nomi Salon"
+  },
+  {
+    "lat": 48.4693024,
+    "lon": -123.33042,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.4562724,
+    "lon": -123.3927003,
+    "type": "restaurant",
+    "name": "Cosmos Pizza & Pasta"
+  },
+  {
+    "lat": 48.4562833,
+    "lon": -123.3931176,
+    "type": "hairdresser",
+    "name": "Tillicum Barbers"
+  },
+  {
+    "lat": 48.456279,
+    "lon": -123.3930316,
+    "type": "hairdresser",
+    "name": "Christine\u2019s Hair And Nails"
+  },
+  {
+    "lat": 48.456286,
+    "lon": -123.3934268,
+    "type": "laundry",
+    "name": "Tillicum Laundry and Drycleaning"
+  },
+  {
+    "lat": 48.4424427,
+    "lon": -123.4021501,
+    "type": "hairdresser",
+    "name": "Spirals Hair Studio"
+  },
+  {
+    "lat": 48.5015881,
+    "lon": -123.4152599,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4284793,
+    "lon": -123.4179271,
+    "type": "social_facility",
+    "name": "Rainbow Kitchen"
+  },
+  {
+    "lat": 48.4902395,
+    "lon": -123.3870591,
+    "type": "physiotherapist",
+    "name": "BETA Therapeutics"
+  },
+  {
+    "lat": 48.4230163,
+    "lon": -123.3606048,
+    "type": "sports_centre",
+    "name": "YMCA-YWCA Downtown"
+  },
+  {
+    "lat": 48.460513,
+    "lon": -123.4651258,
+    "type": "physiotherapist",
+    "name": "Physio HQ"
+  },
+  {
+    "lat": 48.4278675,
+    "lon": -123.3189167,
+    "type": "school",
+    "name": "Canadian College of Performing Arts"
+  },
+  {
+    "lat": 48.4261873,
+    "lon": -123.3239754,
+    "type": "laundry",
+    "name": NaN
+  },
+  {
+    "lat": 48.4394208,
+    "lon": -123.3691706,
+    "type": "laundry",
+    "name": NaN
+  },
+  {
+    "lat": 48.4384492,
+    "lon": -123.3636077,
+    "type": "pharmacy",
+    "name": "Fort Royal Pharmacy Hillside"
+  },
+  {
+    "lat": 48.4290716,
+    "lon": -123.369466,
+    "type": "restaurant",
+    "name": "The Sour Pickle Cafe"
+  },
+  {
+    "lat": 48.4243948,
+    "lon": -123.3021519,
+    "type": "laundry",
+    "name": NaN
+  },
+  {
+    "lat": 48.4272832,
+    "lon": -123.3695731,
+    "type": "hairdresser",
+    "name": "JagHed Couture"
+  },
+  {
+    "lat": 48.4275937,
+    "lon": -123.3692358,
+    "type": "restaurant",
+    "name": "Birdman"
+  },
+  {
+    "lat": 48.4548328,
+    "lon": -123.3920531,
+    "type": "community_centre",
+    "name": "Les Passmore Seniors Activity Centre"
+  },
+  {
+    "lat": 48.4613664,
+    "lon": -123.3345156,
+    "type": "supermarket",
+    "name": "SaanniSunny Asian Market"
+  },
+  {
+    "lat": 48.4523301,
+    "lon": -123.3762392,
+    "type": "restaurant",
+    "name": "Delicious Pizza & Pasta"
+  },
+  {
+    "lat": 48.4176726,
+    "lon": -123.3702977,
+    "type": "clinic",
+    "name": "Olive Fertility Centre Victoria"
+  },
+  {
+    "lat": 48.4613888,
+    "lon": -123.2979713,
+    "type": "restaurant",
+    "name": "Mutsuki-An Japanese Restaurant"
+  },
+  {
+    "lat": 48.4153647,
+    "lon": -123.384685,
+    "type": "restaurant",
+    "name": "Breakwater Bistro & Bar"
+  },
+  {
+    "lat": 48.4281037,
+    "lon": -123.3632464,
+    "type": "restaurant",
+    "name": "Roll & Roll by Nubo"
+  },
+  {
+    "lat": 48.4211069,
+    "lon": -123.3731394,
+    "type": "restaurant",
+    "name": "Belleville's"
+  },
+  {
+    "lat": 48.4919369,
+    "lon": -123.3876448,
+    "type": "restaurant",
+    "name": "Tandoori Flavour"
+  },
+  {
+    "lat": 48.495648,
+    "lon": -123.3888345,
+    "type": "restaurant",
+    "name": "The Village"
+  },
+  {
+    "lat": 48.4957162,
+    "lon": -123.388839,
+    "type": "restaurant",
+    "name": "Q Pizza"
+  },
+  {
+    "lat": 48.4957907,
+    "lon": -123.388912,
+    "type": "restaurant",
+    "name": "Yokidomo Sushi"
+  },
+  {
+    "lat": 48.4303199,
+    "lon": -123.3673584,
+    "type": "restaurant",
+    "name": "End Dive"
+  },
+  {
+    "lat": 48.4381814,
+    "lon": -123.3643794,
+    "type": "restaurant",
+    "name": "Fountain Restaurant"
+  },
+  {
+    "lat": 48.4277718,
+    "lon": -123.3559565,
+    "type": "restaurant",
+    "name": "Quesadas Burritos & Tacos"
+  },
+  {
+    "lat": 48.4265799,
+    "lon": -123.3222926,
+    "type": "restaurant",
+    "name": "Tapas on Oak"
+  },
+  {
+    "lat": 48.4293538,
+    "lon": -123.3710728,
+    "type": "restaurant",
+    "name": "Cafe Malabar"
+  },
+  {
+    "lat": 48.4401465,
+    "lon": -123.3543305,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4397337,
+    "lon": -123.3560384,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4258724,
+    "lon": -123.339063,
+    "type": "social_facility",
+    "name": "Threshold Housing"
+  },
+  {
+    "lat": 48.4258234,
+    "lon": -123.3391757,
+    "type": "alternative",
+    "name": "Urban Lotus"
+  },
+  {
+    "lat": 48.4309028,
+    "lon": -123.325415,
+    "type": "social_facility",
+    "name": "Restorative Justice Victoria"
+  },
+  {
+    "lat": 48.4291912,
+    "lon": -123.3692655,
+    "type": "restaurant",
+    "name": "Eva Schnitzelhous"
+  },
+  {
+    "lat": 48.427886,
+    "lon": -123.3647695,
+    "type": "restaurant",
+    "name": "The Palms Restaurant & Lounge"
+  },
+  {
+    "lat": 48.4213898,
+    "lon": -123.3648496,
+    "type": "restaurant",
+    "name": "Fire+ Water Restaurant"
+  },
+  {
+    "lat": 48.4284031,
+    "lon": -123.3607017,
+    "type": "restaurant",
+    "name": "Cook & Dan Polish Delicatessen & Cafe"
+  },
+  {
+    "lat": 48.4242482,
+    "lon": -123.363037,
+    "type": "restaurant",
+    "name": "Burger Crush"
+  },
+  {
+    "lat": 48.4239336,
+    "lon": -123.3601748,
+    "type": "restaurant",
+    "name": "Sookjai Thai"
+  },
+  {
+    "lat": 48.429949,
+    "lon": -123.3647213,
+    "type": "restaurant",
+    "name": "Blue Nile African Restaurant"
+  },
+  {
+    "lat": 48.4287257,
+    "lon": -123.3701127,
+    "type": "restaurant",
+    "name": "Bray's"
+  },
+  {
+    "lat": 48.4287673,
+    "lon": -123.3697475,
+    "type": "restaurant",
+    "name": "Nubo Kitchen + Bar"
+  },
+  {
+    "lat": 48.4287954,
+    "lon": -123.3694528,
+    "type": "restaurant",
+    "name": "Mentora Ramen"
+  },
+  {
+    "lat": 48.4289957,
+    "lon": -123.3694587,
+    "type": "restaurant",
+    "name": "Chubby Dumpling"
+  },
+  {
+    "lat": 48.4335338,
+    "lon": -123.3807516,
+    "type": "restaurant",
+    "name": "Browns Crafthouse"
+  },
+  {
+    "lat": 48.4372007,
+    "lon": -123.3587334,
+    "type": "hairdresser",
+    "name": "Liberty Barbers"
+  },
+  {
+    "lat": 48.4274994,
+    "lon": -123.3527892,
+    "type": "restaurant",
+    "name": "Standard Pizza"
+  },
+  {
+    "lat": 48.427562,
+    "lon": -123.3529902,
+    "type": "restaurant",
+    "name": "Sun Wah"
+  },
+  {
+    "lat": 48.426909,
+    "lon": -123.3687947,
+    "type": "clinic",
+    "name": "Foundry Victoria"
+  },
+  {
+    "lat": 48.4308484,
+    "lon": -123.3450059,
+    "type": "restaurant",
+    "name": "Fernwood Pizza Company"
+  },
+  {
+    "lat": 48.4270968,
+    "lon": -123.335471,
+    "type": "supermarket",
+    "name": "Urban Grocer"
+  },
+  {
+    "lat": 48.4321512,
+    "lon": -123.3234478,
+    "type": "pharmacy",
+    "name": "The Medicine Shoppe"
+  },
+  {
+    "lat": 48.4324334,
+    "lon": -123.3226262,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.4451732,
+    "lon": -123.3339572,
+    "type": "pharmacy",
+    "name": "Pharmasave"
+  },
+  {
+    "lat": 48.4450362,
+    "lon": -123.3343542,
+    "type": "restaurant",
+    "name": "Sushi Island"
+  },
+  {
+    "lat": 48.47651,
+    "lon": -123.33233,
+    "type": "pharmacy",
+    "name": "The Medicine Shoppe"
+  },
+  {
+    "lat": 48.4765149,
+    "lon": -123.3327985,
+    "type": "convenience",
+    "name": "7-Eleven"
+  },
+  {
+    "lat": 48.4576617,
+    "lon": -123.3327529,
+    "type": "veterinary",
+    "name": "Lifeline Animal Clinic"
+  },
+  {
+    "lat": 48.42638,
+    "lon": -123.31537,
+    "type": "pharmacy",
+    "name": "Fort Royal Pharmacy"
+  },
+  {
+    "lat": 48.42613,
+    "lon": -123.31572,
+    "type": "restaurant",
+    "name": "Bon Sushi"
+  },
+  {
+    "lat": 48.4262336,
+    "lon": -123.3215627,
+    "type": "restaurant",
+    "name": "Kissako Sushi"
+  },
+  {
+    "lat": 48.4266661,
+    "lon": -123.3242744,
+    "type": "restaurant",
+    "name": "Panda Island Chinese Cuisine"
+  },
+  {
+    "lat": 48.4266359,
+    "lon": -123.3345956,
+    "type": "clinic",
+    "name": "Oak Bay Medical Clinic"
+  },
+  {
+    "lat": 48.4155961,
+    "lon": -123.3489558,
+    "type": "veterinary",
+    "name": "Ross Bay Animal Hospital"
+  },
+  {
+    "lat": 48.42473,
+    "lon": -123.3601,
+    "type": "pharmacy",
+    "name": "View Street Pharmacy"
+  },
+  {
+    "lat": 48.42425,
+    "lon": -123.35571,
+    "type": "restaurant",
+    "name": "Ox King Noodles"
+  },
+  {
+    "lat": 48.4233589,
+    "lon": -123.3548867,
+    "type": "restaurant",
+    "name": "Avalon Restaurant"
+  },
+  {
+    "lat": 48.4129384,
+    "lon": -123.3386599,
+    "type": "clinic",
+    "name": "Emerald Eye Care"
+  },
+  {
+    "lat": 48.41276,
+    "lon": -123.33911,
+    "type": "clinic",
+    "name": "Snore MD"
+  },
+  {
+    "lat": 48.4354625,
+    "lon": -123.3737977,
+    "type": "community_centre",
+    "name": "Hungarian Society Of Victoria"
+  },
+  {
+    "lat": 48.44013,
+    "lon": -123.3581828,
+    "type": "community_centre",
+    "name": "Issamba Centre"
+  },
+  {
+    "lat": 48.47643,
+    "lon": -123.33235,
+    "type": "restaurant",
+    "name": "Hot House Pizza"
+  },
+  {
+    "lat": 48.4719272,
+    "lon": -123.3335897,
+    "type": "restaurant",
+    "name": "Lee's House Asian Fusion Bistro"
+  },
+  {
+    "lat": 48.472025,
+    "lon": -123.3335495,
+    "type": "pharmacy",
+    "name": "University Heights Pharmacy"
+  },
+  {
+    "lat": 48.4671221,
+    "lon": -123.3330372,
+    "type": "clinic",
+    "name": "Sharp Orthodontics"
+  },
+  {
+    "lat": 48.4578662,
+    "lon": -123.3327556,
+    "type": "clinic",
+    "name": "Saanich Walk-In Denture Clinic"
+  },
+  {
+    "lat": 48.44834,
+    "lon": -123.33354,
+    "type": "physiotherapist",
+    "name": "Shelbourne Physical Therapy"
+  },
+  {
+    "lat": 48.448349,
+    "lon": -123.333858,
+    "type": "clinic",
+    "name": "Victoria Family Chiropractic"
+  },
+  {
+    "lat": 48.44417,
+    "lon": -123.33554,
+    "type": "veterinary",
+    "name": "City Pets Animal Clinic"
+  },
+  {
+    "lat": 48.4508681,
+    "lon": -123.3878186,
+    "type": "pharmacy",
+    "name": "Forbes IDA Pharmacy"
+  },
+  {
+    "lat": 48.4294562,
+    "lon": -123.3688996,
+    "type": "restaurant",
+    "name": "Pinhalla"
+  },
+  {
+    "lat": 48.4756589,
+    "lon": -123.5312015,
+    "type": "clinic",
+    "name": "Dukes Physio"
+  },
+  {
+    "lat": 48.4777092,
+    "lon": -123.5315321,
+    "type": "restaurant",
+    "name": "Lift Poolside Bar & Grill"
+  },
+  {
+    "lat": 48.4257865,
+    "lon": -123.3637347,
+    "type": "restaurant",
+    "name": "Dosa Paragon"
+  },
+  {
+    "lat": 48.4273461,
+    "lon": -123.3652153,
+    "type": "restaurant",
+    "name": "The Ruby"
+  },
+  {
+    "lat": 48.430891,
+    "lon": -123.3270012,
+    "type": "restaurant",
+    "name": "Togo Sushi"
+  },
+  {
+    "lat": 48.4294686,
+    "lon": -123.3681331,
+    "type": "restaurant",
+    "name": "MAiiZ Tortilleria & Eatery"
+  },
+  {
+    "lat": 48.4243194,
+    "lon": -123.3561372,
+    "type": "hairdresser",
+    "name": "Cook Street Barber Shop"
+  },
+  {
+    "lat": 48.4255204,
+    "lon": -123.3692214,
+    "type": "clinic",
+    "name": "Cognito Health"
+  },
+  {
+    "lat": 48.4300348,
+    "lon": -123.365552,
+    "type": "restaurant",
+    "name": "In Er G Plant Alchemy"
+  },
+  {
+    "lat": 48.4259462,
+    "lon": -123.3631973,
+    "type": "optometrist",
+    "name": "Family Eyecare Centre of Victoria"
+  },
+  {
+    "lat": 48.455827,
+    "lon": -123.3750325,
+    "type": "optometrist",
+    "name": "Specsavers"
+  },
+  {
+    "lat": 48.45564,
+    "lon": -123.3754915,
+    "type": "clinic",
+    "name": NaN
+  },
+  {
+    "lat": 48.4239276,
+    "lon": -123.3623999,
+    "type": "restaurant",
+    "name": "La Taquisa"
+  },
+  {
+    "lat": 48.4236512,
+    "lon": -123.3577622,
+    "type": "alternative",
+    "name": "Quanta Healing and Vitality"
+  },
+  {
+    "lat": 48.4238056,
+    "lon": -123.3590387,
+    "type": "restaurant",
+    "name": "Thai Food Near Me"
+  },
+  {
+    "lat": 48.4662181,
+    "lon": -123.4348541,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4630169,
+    "lon": -123.4097717,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4239395,
+    "lon": -123.3576146,
+    "type": "clinic",
+    "name": "Aestheva Medical Aesthetics"
+  },
+  {
+    "lat": 48.4459259,
+    "lon": -123.3367763,
+    "type": "hairdresser",
+    "name": "Bella Moda"
+  },
+  {
+    "lat": 48.4458399,
+    "lon": -123.3362723,
+    "type": "hairdresser",
+    "name": "Chatters"
+  },
+  {
+    "lat": 48.4460319,
+    "lon": -123.3356856,
+    "type": "restaurant",
+    "name": "Hiro Sushi Xpress"
+  },
+  {
+    "lat": 48.4460719,
+    "lon": -123.3357103,
+    "type": "hairdresser",
+    "name": NaN
+  },
+  {
+    "lat": 48.4458929,
+    "lon": -123.3355383,
+    "type": "restaurant",
+    "name": "Noodle Fans"
+  },
+  {
+    "lat": 48.5011154,
+    "lon": -123.3889135,
+    "type": "library",
+    "name": "Greater Victoria Public Library - Bruce Hutchison Branch"
+  },
+  {
+    "lat": 48.4262103,
+    "lon": -123.3625267,
+    "type": "restaurant",
+    "name": "Roll N Bowl"
+  },
+  {
+    "lat": 48.4260149,
+    "lon": -123.3637858,
+    "type": "restaurant",
+    "name": "Saint Franks"
+  },
+  {
+    "lat": 48.4386783,
+    "lon": -123.5060782,
+    "type": "restaurant",
+    "name": "Tacofino"
+  },
+  {
+    "lat": 48.4237521,
+    "lon": -123.3684698,
+    "type": "sports_centre",
+    "name": "Axe & Grind"
+  },
+  {
+    "lat": 48.4233626,
+    "lon": -123.367572,
+    "type": "restaurant",
+    "name": "10 Acres Bistro"
+  },
+  {
+    "lat": 48.4224121,
+    "lon": -123.3662067,
+    "type": "school",
+    "name": "Pacific School of Innovation and Inquiry"
+  },
+  {
+    "lat": 48.4138084,
+    "lon": -123.3566008,
+    "type": "restaurant",
+    "name": "Thunderbird"
+  },
+  {
+    "lat": 48.4148351,
+    "lon": -123.3561534,
+    "type": "hairdresser",
+    "name": "The Village Coiffure"
+  },
+  {
+    "lat": 48.4144228,
+    "lon": -123.3563031,
+    "type": "hairdresser",
+    "name": "The Natural Hair Salon"
+  },
+  {
+    "lat": 48.4406389,
+    "lon": -123.5083049,
+    "type": "restaurant",
+    "name": "Vina Taste"
+  },
+  {
+    "lat": 48.409163,
+    "lon": -123.508799,
+    "type": "supermarket",
+    "name": "Red Barn Market"
+  },
+  {
+    "lat": 48.442645,
+    "lon": -123.510822,
+    "type": "clinic",
+    "name": "Cowichan Eyecare"
+  },
+  {
+    "lat": 48.4269268,
+    "lon": -123.3689793,
+    "type": "restaurant",
+    "name": "Block Victoria"
+  },
+  {
+    "lat": 48.4223468,
+    "lon": -123.3794773,
+    "type": "restaurant",
+    "name": "Blue Crab Seafood House"
+  },
+  {
+    "lat": 48.4267616,
+    "lon": -123.3819195,
+    "type": "restaurant",
+    "name": "Boom + Batten Restaurant & Cafe"
+  },
+  {
+    "lat": 48.4279286,
+    "lon": -123.3683369,
+    "type": "restaurant",
+    "name": "Mom's Kitchen"
+  },
+  {
+    "lat": 48.44483,
+    "lon": -123.4675927,
+    "type": "restaurant",
+    "name": "Edo Japan"
+  },
+  {
+    "lat": 48.423324,
+    "lon": -123.3689929,
+    "type": "restaurant",
+    "name": "Kinton Ramen"
+  },
+  {
+    "lat": 48.4233359,
+    "lon": -123.3684558,
+    "type": "restaurant",
+    "name": "Kebab On Fire"
+  },
+  {
+    "lat": 48.4234775,
+    "lon": -123.3684492,
+    "type": "restaurant",
+    "name": "Pizza Garden"
+  },
+  {
+    "lat": 48.438794,
+    "lon": -123.506324,
+    "type": "supermarket",
+    "name": "Bulk Barn"
+  },
+  {
+    "lat": 48.4245463,
+    "lon": -123.3688822,
+    "type": "restaurant",
+    "name": "March"
+  },
+  {
+    "lat": 48.4232869,
+    "lon": -123.3630393,
+    "type": "restaurant",
+    "name": "Taste of Village Indian Kitchen & Bar"
+  },
+  {
+    "lat": 48.4242793,
+    "lon": -123.3632764,
+    "type": "restaurant",
+    "name": "Ali Baba Pizza"
+  },
+  {
+    "lat": 48.4242924,
+    "lon": -123.3633972,
+    "type": "restaurant",
+    "name": "Beijing Bistro"
+  },
+  {
+    "lat": 48.4237613,
+    "lon": -123.3640784,
+    "type": "restaurant",
+    "name": "Japanese Village Teppan Steak & Seafood House"
+  },
+  {
+    "lat": 48.4584382,
+    "lon": -123.5030563,
+    "type": "pharmacy",
+    "name": "Costco Pharmacy"
+  },
+  {
+    "lat": 48.4570641,
+    "lon": -123.3327366,
+    "type": "library",
+    "name": "GVPL: Nellie McClung Branch"
+  },
+  {
+    "lat": 48.424736,
+    "lon": -123.3672543,
+    "type": "clinic",
+    "name": "HearingLife"
+  },
+  {
+    "lat": 48.4241331,
+    "lon": -123.3662361,
+    "type": "restaurant",
+    "name": "The Broughton Street Deli"
+  },
+  {
+    "lat": 48.4246255,
+    "lon": -123.366302,
+    "type": "hairdresser",
+    "name": "Little Barbershop Of Horrors"
+  },
+  {
+    "lat": 48.4267893,
+    "lon": -123.5022674,
+    "type": "pharmacy",
+    "name": "Fort Royal Pharmacy"
+  },
+  {
+    "lat": 48.4249204,
+    "lon": -123.3670479,
+    "type": "hairdresser",
+    "name": "Blo Blow Dry Bar"
+  },
+  {
+    "lat": 48.4249022,
+    "lon": -123.3668759,
+    "type": "hairdresser",
+    "name": "Central Barbers"
+  },
+  {
+    "lat": 48.4249892,
+    "lon": -123.36261,
+    "type": "restaurant",
+    "name": "Sarpino's Pizza"
+  },
+  {
+    "lat": 48.4246353,
+    "lon": -123.3626933,
+    "type": "restaurant",
+    "name": "Bobadog Bubble Tea & Hot Dogs"
+  },
+  {
+    "lat": 48.4355439,
+    "lon": -123.3733503,
+    "type": "restaurant",
+    "name": "Greek On the Street"
+  },
+  {
+    "lat": 48.4247429,
+    "lon": -123.3621995,
+    "type": "restaurant",
+    "name": "Baan Thai"
+  },
+  {
+    "lat": 48.4259319,
+    "lon": -123.3630484,
+    "type": "hairdresser",
+    "name": "Artist Salon"
+  },
+  {
+    "lat": 48.4550678,
+    "lon": -123.3445374,
+    "type": "restaurant",
+    "name": "The Derby Restaurant"
+  },
+  {
+    "lat": 48.432872,
+    "lon": -123.3817398,
+    "type": "clinic",
+    "name": "Acacia Westside"
+  },
+  {
+    "lat": 48.4327063,
+    "lon": -123.381471,
+    "type": "restaurant",
+    "name": "Victoria Sushi"
+  },
+  {
+    "lat": 48.4262853,
+    "lon": -123.3710363,
+    "type": "restaurant",
+    "name": "Lindo Bistro"
+  },
+  {
+    "lat": 48.4426798,
+    "lon": -123.3859617,
+    "type": "restaurant",
+    "name": "Floyd's Diner"
+  },
+  {
+    "lat": 48.4268893,
+    "lon": -123.5026433,
+    "type": "veterinary",
+    "name": "Triangle Mountain Veterinary Clinic"
+  },
+  {
+    "lat": 48.4266338,
+    "lon": -123.5022603,
+    "type": "restaurant",
+    "name": "Domino's"
+  },
+  {
+    "lat": 48.4229954,
+    "lon": -123.3538995,
+    "type": "restaurant",
+    "name": "The Breakfast Shop"
+  },
+  {
+    "lat": 48.4329954,
+    "lon": -123.5225299,
+    "type": "restaurant",
+    "name": "Pizzability Glenlake"
+  },
+  {
+    "lat": 48.4421535,
+    "lon": -123.3880778,
+    "type": "clinic",
+    "name": "Gorge Urgent and Primary Care Centre"
+  },
+  {
+    "lat": 48.4243138,
+    "lon": -123.3666936,
+    "type": "hairdresser",
+    "name": "Gold Hair Lounge"
+  },
+  {
+    "lat": 48.4264593,
+    "lon": -123.3671006,
+    "type": "restaurant",
+    "name": "Frank's Honeybun Caf\u00e9"
+  },
+  {
+    "lat": 48.446245,
+    "lon": -123.3325669,
+    "type": "convenience",
+    "name": "7-Eleven"
+  },
+  {
+    "lat": 48.4475489,
+    "lon": -123.4978063,
+    "type": "clinic",
+    "name": "MedSleep"
+  },
+  {
+    "lat": 48.407716,
+    "lon": -123.4890895,
+    "type": "pharmacy",
+    "name": NaN
+  },
+  {
+    "lat": 48.4284387,
+    "lon": -123.3641753,
+    "type": "restaurant",
+    "name": "Marilena Cafe & Raw Bar"
+  },
+  {
+    "lat": 48.4260743,
+    "lon": -123.366133,
+    "type": "hairdresser",
+    "name": "Fish Hair Salon & Tacklebox Beauty"
+  },
+  {
+    "lat": 48.4263057,
+    "lon": -123.3664066,
+    "type": "restaurant",
+    "name": "Rise n Grind"
+  },
+  {
+    "lat": 48.4287912,
+    "lon": -123.360672,
+    "type": "social_facility",
+    "name": "Downtown Outreach Housing Resource Services"
+  },
+  {
+    "lat": 48.4269964,
+    "lon": -123.3639977,
+    "type": "clinic",
+    "name": "Victoria Cool-Aid Society Community Health Centre"
+  },
+  {
+    "lat": 48.4268769,
+    "lon": -123.3645749,
+    "type": "hairdresser",
+    "name": "Salon D\u00e9j\u00e0 Vu"
+  },
+  {
+    "lat": 48.4263289,
+    "lon": -123.3636157,
+    "type": "clinic",
+    "name": "Re-coup Health & Performance Chiropractic"
+  },
+  {
+    "lat": 48.4275827,
+    "lon": -123.3691531,
+    "type": "hairdresser",
+    "name": "Shampoo Hair Bar"
+  },
+  {
+    "lat": 48.4274403,
+    "lon": -123.3678389,
+    "type": "restaurant",
+    "name": "Oni-Oni"
+  },
+  {
+    "lat": 48.4267639,
+    "lon": -123.3650488,
+    "type": "restaurant",
+    "name": "La Fogata Mexicana"
+  },
+  {
+    "lat": 48.4265302,
+    "lon": -123.3654816,
+    "type": "restaurant",
+    "name": "Victoria Pocha"
+  },
+  {
+    "lat": 48.440362,
+    "lon": -123.507535,
+    "type": "hairdresser",
+    "name": "Tommy Gun's Original Barbershop"
+  },
+  {
+    "lat": 48.4623361,
+    "lon": -123.336457,
+    "type": "social_facility",
+    "name": "Shelbourne Community Kitchen"
+  },
+  {
+    "lat": 48.429795,
+    "lon": -123.3647221,
+    "type": "hairdresser",
+    "name": "The Red Mirror Salon"
+  },
+  {
+    "lat": 48.4292415,
+    "lon": -123.3683203,
+    "type": "hairdresser",
+    "name": "Alchemy Hair Studio"
+  },
+  {
+    "lat": 48.4294712,
+    "lon": -123.3679153,
+    "type": "restaurant",
+    "name": "Kwong Tung Seafood Restaurant"
+  },
+  {
+    "lat": 48.4294705,
+    "lon": -123.367973,
+    "type": "restaurant",
+    "name": "Little Yunnan Restaurant"
+  },
+  {
+    "lat": 48.4292219,
+    "lon": -123.3690526,
+    "type": "restaurant",
+    "name": "Ohana Poke"
+  },
+  {
+    "lat": 48.4292482,
+    "lon": -123.3680584,
+    "type": "restaurant",
+    "name": "Ugly Duckling Dining & Provisions"
+  },
+  {
+    "lat": 48.4292531,
+    "lon": -123.367863,
+    "type": "restaurant",
+    "name": "The Fan Tan Caf\u00e9"
+  },
+  {
+    "lat": 48.4569998,
+    "lon": -123.3730555,
+    "type": "pharmacy",
+    "name": NaN
+  },
+  {
+    "lat": 48.4269626,
+    "lon": -123.3690766,
+    "type": "restaurant",
+    "name": "Perro Negro"
+  },
+  {
+    "lat": 48.4281274,
+    "lon": -123.3638976,
+    "type": "restaurant",
+    "name": "Rudi"
+  },
+  {
+    "lat": 48.4292588,
+    "lon": -123.3675836,
+    "type": "restaurant",
+    "name": "Matadora Taperia"
+  },
+  {
+    "lat": 48.4246881,
+    "lon": -123.407569,
+    "type": "restaurant",
+    "name": "Janevca"
+  },
+  {
+    "lat": 48.4205245,
+    "lon": -123.375717,
+    "type": "restaurant",
+    "name": "Aegir Room"
+  },
+  {
+    "lat": 48.4479763,
+    "lon": -123.4267541,
+    "type": "hairdresser",
+    "name": "All About HUE"
+  },
+  {
+    "lat": 48.4479944,
+    "lon": -123.4270376,
+    "type": "optometrist",
+    "name": "Admiral Walk Optometry Clinic"
+  },
+  {
+    "lat": 48.4472058,
+    "lon": -123.4268576,
+    "type": "veterinary",
+    "name": "Admirals Walk Pet Hospital"
+  },
+  {
+    "lat": 48.4499999,
+    "lon": -123.4264985,
+    "type": "physiotherapist",
+    "name": "Lifemark Physiotherapy"
+  },
+  {
+    "lat": 48.4478685,
+    "lon": -123.4283532,
+    "type": "community_centre",
+    "name": "SCCFS Clinical & Cultural Program"
+  },
+  {
+    "lat": 48.4479255,
+    "lon": -123.4281855,
+    "type": "laundry",
+    "name": "Avalon"
+  },
+  {
+    "lat": 48.4481327,
+    "lon": -123.4281644,
+    "type": "veterinary",
+    "name": "North West Veterinary Dermatology Services"
+  },
+  {
+    "lat": 48.4129386,
+    "lon": -123.3385722,
+    "type": "hairdresser",
+    "name": "Moura Hair Design"
+  },
+  {
+    "lat": 48.413654,
+    "lon": -123.3754318,
+    "type": "hairdresser",
+    "name": "JZie Hair Salon"
+  },
+  {
+    "lat": 48.4213317,
+    "lon": -123.3653448,
+    "type": "clinic",
+    "name": "Aria Health and Wellness Clinic"
+  },
+  {
+    "lat": 48.4212092,
+    "lon": -123.3643097,
+    "type": "clinic",
+    "name": "Clear Skin"
+  },
+  {
+    "lat": 48.423699,
+    "lon": -123.3579791,
+    "type": "clinic",
+    "name": "Connect Hearing"
+  },
+  {
+    "lat": 48.4265189,
+    "lon": -123.3570924,
+    "type": "convenience",
+    "name": "Urban Express Market"
+  },
+  {
+    "lat": 48.4475462,
+    "lon": -123.3725567,
+    "type": "clinic",
+    "name": "Mayfair Optometric Clinic"
+  },
+  {
+    "lat": 48.4259837,
+    "lon": -123.3600077,
+    "type": "restaurant",
+    "name": "OEB Breakfast Co."
+  },
+  {
+    "lat": 48.4321845,
+    "lon": -123.3791508,
+    "type": "clinic",
+    "name": "Dockside Physiotherapy"
+  },
+  {
+    "lat": 48.4160322,
+    "lon": -123.3732438,
+    "type": "restaurant",
+    "name": "Levantine"
+  },
+  {
+    "lat": 48.4554455,
+    "lon": -123.4410573,
+    "type": "clinic",
+    "name": "Vancouver Island Choice Clinic"
+  },
+  {
+    "lat": 48.4332849,
+    "lon": -123.3812298,
+    "type": "restaurant",
+    "name": "Pita Land"
+  },
+  {
+    "lat": 48.4304462,
+    "lon": -123.416002,
+    "type": "restaurant",
+    "name": "Benjamin's Cafe"
+  },
+  {
+    "lat": 48.4241289,
+    "lon": -123.3650392,
+    "type": "restaurant",
+    "name": "Unicorn Sparkles"
+  },
+  {
+    "lat": 48.4257187,
+    "lon": -123.3668777,
+    "type": "hairdresser",
+    "name": "The Natural Hair Salon"
+  },
+  {
+    "lat": 48.4308861,
+    "lon": -123.4007296,
+    "type": "pharmacy",
+    "name": "Heart Pharmacy"
+  },
+  {
+    "lat": 48.4471369,
+    "lon": -123.498635,
+    "type": "social_facility",
+    "name": "Connection Point Church and Resource Centre"
+  },
+  {
+    "lat": 48.4491505,
+    "lon": -123.5035858,
+    "type": "hairdresser",
+    "name": "Goldstream Hair Salon"
+  },
+  {
+    "lat": 48.4500907,
+    "lon": -123.5064801,
+    "type": "pharmacy",
+    "name": "The Medicine Shoppe"
+  },
+  {
+    "lat": 48.4474805,
+    "lon": -123.5019909,
+    "type": "pharmacy",
+    "name": "Langford Pharmacy"
+  },
+  {
+    "lat": 48.4478919,
+    "lon": -123.5020429,
+    "type": "restaurant",
+    "name": "Kazumi"
+  },
+  {
+    "lat": 48.4475153,
+    "lon": -123.5016124,
+    "type": "clinic",
+    "name": "PrecisionHealth"
+  },
+  {
+    "lat": 48.4485674,
+    "lon": -123.501324,
+    "type": "restaurant",
+    "name": "Pok\u00e9 Aye"
+  },
+  {
+    "lat": 48.4478392,
+    "lon": -123.5013648,
+    "type": "clinic",
+    "name": "Neuralive"
+  },
+  {
+    "lat": 48.4405761,
+    "lon": -123.4691209,
+    "type": "hairdresser",
+    "name": "The Look Hair"
+  },
+  {
+    "lat": 48.4416505,
+    "lon": -123.4695293,
+    "type": "hairdresser",
+    "name": "First Choice Hair"
+  },
+  {
+    "lat": 48.4408175,
+    "lon": -123.4701311,
+    "type": "supermarket",
+    "name": "Save-on-Foods"
+  },
+  {
+    "lat": 48.4407305,
+    "lon": -123.4699727,
+    "type": "clinic",
+    "name": "Physio HQ"
+  },
+  {
+    "lat": 48.4415449,
+    "lon": -123.4696248,
+    "type": "restaurant",
+    "name": "Burger Crush"
+  },
+  {
+    "lat": 48.4404553,
+    "lon": -123.4692906,
+    "type": "restaurant",
+    "name": "Greenleaf Pho Grill"
+  },
+  {
+    "lat": 48.4413105,
+    "lon": -123.4698396,
+    "type": "restaurant",
+    "name": "Opa! of Greece"
+  },
+  {
+    "lat": 48.4406979,
+    "lon": -123.4700469,
+    "type": "clinic",
+    "name": "Mend Mobile Health"
+  },
+  {
+    "lat": 48.4432306,
+    "lon": -123.3705496,
+    "type": "clinic",
+    "name": "MedPro Respiratory Care"
+  },
+  {
+    "lat": 48.4431311,
+    "lon": -123.3709214,
+    "type": "hairdresser",
+    "name": "Union House of Barbers"
+  },
+  {
+    "lat": 48.4427449,
+    "lon": -123.3701417,
+    "type": "restaurant",
+    "name": "Ramen Arashi"
+  },
+  {
+    "lat": 48.4430505,
+    "lon": -123.3702161,
+    "type": "clinic",
+    "name": "Coastal Integrated Health - Dr. Cameron Moffatt DO(MP)"
+  },
+  {
+    "lat": 48.443154,
+    "lon": -123.3708339,
+    "type": "restaurant",
+    "name": "Namaste Indian Cuisine"
+  },
+  {
+    "lat": 48.4256756,
+    "lon": -123.3636801,
+    "type": "hairdresser",
+    "name": "Jin Hair Salon"
+  },
+  {
+    "lat": 48.4254647,
+    "lon": -123.3638223,
+    "type": "hairdresser",
+    "name": "Terry's Barber Shop"
+  },
+  {
+    "lat": 48.423609,
+    "lon": -123.3616416,
+    "type": "college",
+    "name": "West Coast College of Massage Therapy"
+  },
+  {
+    "lat": 48.4234591,
+    "lon": -123.3632729,
+    "type": "hairdresser",
+    "name": "Esquire Barber Stylists"
+  },
+  {
+    "lat": 48.4241458,
+    "lon": -123.3636829,
+    "type": "convenience",
+    "name": "The Executive Shop"
+  },
+  {
+    "lat": 48.4235666,
+    "lon": -123.3649292,
+    "type": "convenience",
+    "name": "Easy4U Convenience"
+  },
+  {
+    "lat": 48.4240986,
+    "lon": -123.365282,
+    "type": "restaurant",
+    "name": "Hanks"
+  },
+  {
+    "lat": 48.4242804,
+    "lon": -123.3656866,
+    "type": "restaurant",
+    "name": "Chipotle"
+  },
+  {
+    "lat": 48.4238669,
+    "lon": -123.36519,
+    "type": "restaurant",
+    "name": "Smile Chicken"
+  },
+  {
+    "lat": 48.4257358,
+    "lon": -123.355935,
+    "type": "hairdresser",
+    "name": "Status"
+  },
+  {
+    "lat": 48.425187,
+    "lon": -123.3527062,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.4260479,
+    "lon": -123.3529891,
+    "type": "clinic",
+    "name": "Inner Harbour Optometry"
+  },
+  {
+    "lat": 48.4260646,
+    "lon": -123.3531234,
+    "type": "pharmacy",
+    "name": "Cridge Pharmacy"
+  },
+  {
+    "lat": 48.4453867,
+    "lon": -123.3481193,
+    "type": "community_centre",
+    "name": "Viv Shoemaker Activity Centre"
+  },
+  {
+    "lat": 48.4252724,
+    "lon": -123.3525123,
+    "type": "clinic",
+    "name": "MuscleMD"
+  },
+  {
+    "lat": 48.4252775,
+    "lon": -123.3525538,
+    "type": "clinic",
+    "name": "Dr. Thomas E. Garner"
+  },
+  {
+    "lat": 48.4252826,
+    "lon": -123.3525953,
+    "type": "clinic",
+    "name": "Dr. D. Hartford Family Practice"
+  },
+  {
+    "lat": 48.4252548,
+    "lon": -123.3525601,
+    "type": "clinic",
+    "name": "Yates Street General Practice"
+  },
+  {
+    "lat": 48.425268,
+    "lon": -123.3526837,
+    "type": "clinic",
+    "name": "Beltone Hearing Care Centre"
+  },
+  {
+    "lat": 48.4252189,
+    "lon": -123.3524853,
+    "type": "clinic",
+    "name": "PerCuro Health Services"
+  },
+  {
+    "lat": 48.4252241,
+    "lon": -123.3525267,
+    "type": "clinic",
+    "name": "Gather Clinical Counselling"
+  },
+  {
+    "lat": 48.4252293,
+    "lon": -123.3525682,
+    "type": "clinic",
+    "name": "Victoria Skin Care Centre"
+  },
+  {
+    "lat": 48.4251993,
+    "lon": -123.352492,
+    "type": "clinic",
+    "name": "The Counselling Collective"
+  },
+  {
+    "lat": 48.4252084,
+    "lon": -123.3525743,
+    "type": "clinic",
+    "name": "West Coast Medical Imaging"
+  },
+  {
+    "lat": 48.4587379,
+    "lon": -123.3777174,
+    "type": "clinic",
+    "name": "Travel Medicine & Vaccination Centre"
+  },
+  {
+    "lat": 48.4583803,
+    "lon": -123.3777148,
+    "type": "clinic",
+    "name": "Mind Body Spine"
+  },
+  {
+    "lat": 48.4582629,
+    "lon": -123.3765131,
+    "type": "clinic",
+    "name": "Active Recovery Physiotherapy"
+  },
+  {
+    "lat": 48.4378922,
+    "lon": -123.35895,
+    "type": "clinic",
+    "name": "Heart & Hands Health Collective"
+  },
+  {
+    "lat": 48.4287654,
+    "lon": -123.3587234,
+    "type": "alternative",
+    "name": "VCBC"
+  },
+  {
+    "lat": 48.4538959,
+    "lon": -123.3748595,
+    "type": "clinic",
+    "name": "Uptown Village Optometry"
+  },
+  {
+    "lat": 48.4162463,
+    "lon": -123.373152,
+    "type": "veterinary",
+    "name": "James Bay Vet Clinic"
+  },
+  {
+    "lat": 48.4163005,
+    "lon": -123.3731211,
+    "type": "clinic",
+    "name": "Cooper Mountain Centre"
+  },
+  {
+    "lat": 48.4310519,
+    "lon": -123.5425312,
+    "type": "social_facility",
+    "name": "The Veterans Food Bank of Victoria"
+  },
+  {
+    "lat": 48.4430169,
+    "lon": -123.5198365,
+    "type": "veterinary",
+    "name": "Westshore Pet Clinic"
+  },
+  {
+    "lat": 48.4372494,
+    "lon": -123.5110183,
+    "type": "clinic",
+    "name": "Pinwheel Clinic"
+  },
+  {
+    "lat": 48.4373706,
+    "lon": -123.5110688,
+    "type": "clinic",
+    "name": "Driftwood Sport & Wellness"
+  },
+  {
+    "lat": 48.4376959,
+    "lon": -123.5112041,
+    "type": "restaurant",
+    "name": "Authentic Cuisine of India"
+  },
+  {
+    "lat": 48.4381971,
+    "lon": -123.5108777,
+    "type": "hairdresser",
+    "name": "Great Clips"
+  },
+  {
+    "lat": 48.4386074,
+    "lon": -123.5117524,
+    "type": "clinic",
+    "name": "HearingLife"
+  },
+  {
+    "lat": 48.4352848,
+    "lon": -123.5140191,
+    "type": "veterinary",
+    "name": "Glenview Animal Hospital"
+  },
+  {
+    "lat": 48.451304,
+    "lon": -123.507885,
+    "type": "clinic",
+    "name": "Esquimalt Community Health Services"
+  },
+  {
+    "lat": 48.4352502,
+    "lon": -123.4932036,
+    "type": "clinic",
+    "name": "Westshore Optometric Eye Care"
+  },
+  {
+    "lat": 48.4351289,
+    "lon": -123.4932717,
+    "type": "hairdresser",
+    "name": "Tony's Hair Design & Tanning"
+  },
+  {
+    "lat": 48.4346796,
+    "lon": -123.4927353,
+    "type": "veterinary",
+    "name": "Juan de Fuca Veterinary Clinic"
+  },
+  {
+    "lat": 48.4536522,
+    "lon": -123.51035,
+    "type": "convenience",
+    "name": "Shell"
+  },
+  {
+    "lat": 48.4495198,
+    "lon": -123.502574,
+    "type": "restaurant",
+    "name": "Island Pok\u00e9"
+  },
+  {
+    "lat": 48.4495026,
+    "lon": -123.5024647,
+    "type": "clinic",
+    "name": "West End Chiropractic"
+  },
+  {
+    "lat": 48.4494626,
+    "lon": -123.5022102,
+    "type": "hairdresser",
+    "name": "West Shore Barber Shop"
+  },
+  {
+    "lat": 48.4497595,
+    "lon": -123.5013695,
+    "type": "clinic",
+    "name": "Langford Eyecare"
+  },
+  {
+    "lat": 48.4502859,
+    "lon": -123.5002667,
+    "type": "hairdresser",
+    "name": "Pink Lemonade Salon"
+  },
+  {
+    "lat": 48.450152,
+    "lon": -123.5003509,
+    "type": "clinic",
+    "name": "Chiropractic For Life"
+  },
+  {
+    "lat": 48.4480667,
+    "lon": -123.5000724,
+    "type": "clinic",
+    "name": "Motus Physiotherapy"
+  },
+  {
+    "lat": 48.4486557,
+    "lon": -123.4993583,
+    "type": "restaurant",
+    "name": "Turmeric Indian Cuisine"
+  },
+  {
+    "lat": 48.4476375,
+    "lon": -123.4994664,
+    "type": "clinic",
+    "name": "Goldstream Medical Clinic"
+  },
+  {
+    "lat": 48.4479047,
+    "lon": -123.49936,
+    "type": "social_facility",
+    "name": "March of Dimes Canada"
+  },
+  {
+    "lat": 48.4481713,
+    "lon": -123.4989702,
+    "type": "clinic",
+    "name": "Ashi Integrative Health"
+  },
+  {
+    "lat": 48.4481379,
+    "lon": -123.4983763,
+    "type": "clinic",
+    "name": "Westwind Medical Clinic"
+  },
+  {
+    "lat": 48.4474156,
+    "lon": -123.4977693,
+    "type": "veterinary",
+    "name": "Evergreen Veterinary Dentistry Services"
+  },
+  {
+    "lat": 48.4477032,
+    "lon": -123.4986549,
+    "type": "hairdresser",
+    "name": "Brothers Barbershop"
+  },
+  {
+    "lat": 48.4478512,
+    "lon": -123.4988778,
+    "type": "hairdresser",
+    "name": "Kashmir Salon"
+  },
+  {
+    "lat": 48.4483208,
+    "lon": -123.498407,
+    "type": "pharmacy",
+    "name": "Forbes Pharmacy"
+  },
+  {
+    "lat": 48.4474135,
+    "lon": -123.4967668,
+    "type": "pharmacy",
+    "name": "Atlas Drug Mart"
+  },
+  {
+    "lat": 48.4474189,
+    "lon": -123.4965812,
+    "type": "hairdresser",
+    "name": "Langford Barber Shop"
+  },
+  {
+    "lat": 48.4474694,
+    "lon": -123.4962699,
+    "type": "restaurant",
+    "name": "May Gold Village"
+  },
+  {
+    "lat": 48.4485367,
+    "lon": -123.4946668,
+    "type": "clinic",
+    "name": "IRIS Optometrists"
+  },
+  {
+    "lat": 48.4468093,
+    "lon": -123.4922945,
+    "type": "clinic",
+    "name": "Leto Chiropractic"
+  },
+  {
+    "lat": 48.4470476,
+    "lon": -123.493619,
+    "type": "restaurant",
+    "name": "Dagwoods Caf\u00e9"
+  },
+  {
+    "lat": 48.4473062,
+    "lon": -123.493893,
+    "type": "hairdresser",
+    "name": "Jetblack Hair Studio"
+  },
+  {
+    "lat": 48.4638017,
+    "lon": -123.4988151,
+    "type": "veterinary",
+    "name": "Thetis Heights Veterinary Clinic"
+  },
+  {
+    "lat": 48.4640242,
+    "lon": -123.4988297,
+    "type": "hairdresser",
+    "name": "Gibson's Barber Shop & School"
+  },
+  {
+    "lat": 48.4641186,
+    "lon": -123.4991715,
+    "type": "pharmacy",
+    "name": "Forbes Pharmacy"
+  },
+  {
+    "lat": 48.4639973,
+    "lon": -123.4992019,
+    "type": "clinic",
+    "name": "Wheelhouse Integrative Medical Clinic"
+  },
+  {
+    "lat": 48.4642364,
+    "lon": -123.499142,
+    "type": "clinic",
+    "name": "Energy Health Clinic"
+  },
+  {
+    "lat": 48.4458779,
+    "lon": -123.4681015,
+    "type": "clinic",
+    "name": "Little Ears Audiology Practice"
+  },
+  {
+    "lat": 48.4458336,
+    "lon": -123.4681347,
+    "type": "restaurant",
+    "name": "Goodview Family Restaurant"
+  },
+  {
+    "lat": 48.4461339,
+    "lon": -123.4693285,
+    "type": "veterinary",
+    "name": "Eagle Rise Animal Hospital"
+  },
+  {
+    "lat": 48.4235551,
+    "lon": -123.3675166,
+    "type": "restaurant",
+    "name": "Chobap Sushi Bar"
+  },
+  {
+    "lat": 48.4167501,
+    "lon": -123.371273,
+    "type": "social_facility",
+    "name": "James Bay Community Project"
+  },
+  {
+    "lat": 48.4226564,
+    "lon": -123.3638593,
+    "type": "college",
+    "name": "Heritage Community College"
+  },
+  {
+    "lat": 48.4224108,
+    "lon": -123.363212,
+    "type": "hairdresser",
+    "name": "Solace Salon"
+  },
+  {
+    "lat": 48.4167471,
+    "lon": -123.3710536,
+    "type": "clinic",
+    "name": "James Bay Urgent and Primary Care Centre"
+  },
+  {
+    "lat": 48.4246427,
+    "lon": -123.3682631,
+    "type": "hairdresser",
+    "name": "Headspace Barber Studio"
+  },
+  {
+    "lat": 48.4241927,
+    "lon": -123.3647321,
+    "type": "hairdresser",
+    "name": "St\u00e6rk Hair"
+  },
+  {
+    "lat": 48.4242888,
+    "lon": -123.3647117,
+    "type": "hairdresser",
+    "name": "D Hair Salon"
+  },
+  {
+    "lat": 48.4251539,
+    "lon": -123.3694019,
+    "type": "restaurant",
+    "name": "Naked Dressing"
+  },
+  {
+    "lat": 48.4241839,
+    "lon": -123.3601422,
+    "type": "restaurant",
+    "name": "Loveleen's Indian Sweets and Snacks"
+  },
+  {
+    "lat": 48.4252128,
+    "lon": -123.369345,
+    "type": "restaurant",
+    "name": "Cera Korean Tapas"
+  },
+  {
+    "lat": 48.424162,
+    "lon": -123.3598933,
+    "type": "restaurant",
+    "name": "Bimi Express Market"
+  },
+  {
+    "lat": 48.425036,
+    "lon": -123.360486,
+    "type": "clinic",
+    "name": "Kaizen Health"
+  },
+  {
+    "lat": 48.4250297,
+    "lon": -123.360414,
+    "type": "hairdresser",
+    "name": "Amplify Hair Studios"
+  },
+  {
+    "lat": 48.427504,
+    "lon": -123.3685094,
+    "type": "hairdresser",
+    "name": "Suki's"
+  },
+  {
+    "lat": 48.4273056,
+    "lon": -123.3685561,
+    "type": "clinic",
+    "name": "Hey Shauna Art Therapy Studio"
+  },
+  {
+    "lat": 48.4275026,
+    "lon": -123.3682175,
+    "type": "restaurant",
+    "name": "Al-Barak Mediterranean Grill"
+  },
+  {
+    "lat": 48.4274339,
+    "lon": -123.3685246,
+    "type": "hairdresser",
+    "name": "Stallions Barbershop"
+  },
+  {
+    "lat": 48.4290438,
+    "lon": -123.3617066,
+    "type": "restaurant",
+    "name": "Curry Shashwat"
+  },
+  {
+    "lat": 48.4610742,
+    "lon": -123.4964205,
+    "type": "hairdresser",
+    "name": "Kolab Barber Collective"
+  },
+  {
+    "lat": 48.4611057,
+    "lon": -123.4963196,
+    "type": "clinic",
+    "name": "Parkway Physiotherapy & Performance Centre"
+  },
+  {
+    "lat": 48.4612898,
+    "lon": -123.4949692,
+    "type": "clinic",
+    "name": "Eye Etiquette"
+  },
+  {
+    "lat": 48.4613965,
+    "lon": -123.4950426,
+    "type": "veterinary",
+    "name": "Millstream Veterinary Hospital"
+  },
+  {
+    "lat": 48.4615818,
+    "lon": -123.4951699,
+    "type": "restaurant",
+    "name": "Steve's Poke Bar"
+  },
+  {
+    "lat": 48.4624748,
+    "lon": -123.4960726,
+    "type": "supermarket",
+    "name": "The Market Store"
+  },
+  {
+    "lat": 48.4242045,
+    "lon": -123.3599138,
+    "type": "clinic",
+    "name": "The Queer Care Collective"
+  },
+  {
+    "lat": 48.4216939,
+    "lon": -123.3623181,
+    "type": "clinic",
+    "name": "Gather On Burdett"
+  },
+  {
+    "lat": 48.4217253,
+    "lon": -123.3625696,
+    "type": "clinic",
+    "name": "Your Path Counselling"
+  },
+  {
+    "lat": 48.4217344,
+    "lon": -123.3624368,
+    "type": "clinic",
+    "name": "Coastline Chiropractic"
+  },
+  {
+    "lat": 48.4258135,
+    "lon": -123.3670168,
+    "type": "clinic",
+    "name": "KlinikMD"
+  },
+  {
+    "lat": 48.4261526,
+    "lon": -123.3704782,
+    "type": "social_facility",
+    "name": "Victoria Child Abuse Prevention & Counselling Centre"
+  },
+  {
+    "lat": 48.4248738,
+    "lon": -123.3664012,
+    "type": "restaurant",
+    "name": "Boardwalk Burgers"
+  },
+  {
+    "lat": 48.467745,
+    "lon": -123.4270717,
+    "type": "restaurant",
+    "name": "Sushi K Japanese Restaurant"
+  },
+  {
+    "lat": 48.4326777,
+    "lon": -123.3794833,
+    "type": "restaurant",
+    "name": "Steve's Pok\u00e9 Bar"
+  },
+  {
+    "lat": 48.419152771618556,
+    "lon": -123.3663490887257,
+    "type": "social_facility",
+    "name": "The Glenshiel"
+  },
+  {
+    "lat": 48.46790171296249,
+    "lon": -123.31289688928462,
+    "type": "sports_centre",
+    "name": "Field 2"
+  },
+  {
+    "lat": 48.46340337990111,
+    "lon": -123.31100537199758,
+    "type": "university",
+    "name": "University of Victoria"
+  },
+  {
+    "lat": 48.467476184565406,
+    "lon": -123.31530425649433,
+    "type": "stadium",
+    "name": "Centennial Stadium"
+  },
+  {
+    "lat": 48.4176852968812,
+    "lon": -123.3663925631646,
+    "type": "school",
+    "name": "South Park Family School"
+  },
+  {
+    "lat": 48.46698997811539,
+    "lon": -123.3118495812308,
+    "type": "sports_centre",
+    "name": "Field 1"
+  },
+  {
+    "lat": 48.48982580806057,
+    "lon": -123.4153864691331,
+    "type": "college",
+    "name": "Camosun College - Interurban Campus"
+  },
+  {
+    "lat": 48.44799517413542,
+    "lon": -123.32270779809957,
+    "type": "college",
+    "name": "Camosun College Lansdowne"
+  },
+  {
+    "lat": 48.431485455204104,
+    "lon": -123.47799288609433,
+    "type": "university",
+    "name": "Royal Roads University"
+  },
+  {
+    "lat": 48.45298823254198,
+    "lon": -123.47787406956934,
+    "type": "school",
+    "name": "Crystal View Elementary"
+  },
+  {
+    "lat": 48.45052394231703,
+    "lon": -123.51437759729582,
+    "type": "school",
+    "name": "Spencer Middle School"
+  },
+  {
+    "lat": 48.45201909445619,
+    "lon": -123.50559418967022,
+    "type": "school",
+    "name": "Ruth King Elementary"
+  },
+  {
+    "lat": 48.44244356223344,
+    "lon": -123.52965090974656,
+    "type": "school",
+    "name": "Belmont Secondary School"
+  },
+  {
+    "lat": 48.428422552959695,
+    "lon": -123.52879075666993,
+    "type": "school",
+    "name": "Happy Valley Elementary"
+  },
+  {
+    "lat": 48.44857073809556,
+    "lon": -123.48558089552405,
+    "type": "school",
+    "name": "Savory Elementary"
+  },
+  {
+    "lat": 48.43613426002698,
+    "lon": -123.48585025619649,
+    "type": "school",
+    "name": "Colwood Elementary"
+  },
+  {
+    "lat": 48.42112768399201,
+    "lon": -123.48499012946661,
+    "type": "school",
+    "name": "Sangster Elementary"
+  },
+  {
+    "lat": 48.46624881572473,
+    "lon": -123.44266092465108,
+    "type": "school",
+    "name": "Eagle View Elementary"
+  },
+  {
+    "lat": 48.45319174380719,
+    "lon": -123.42746257475326,
+    "type": "school",
+    "name": "Shoreline Community Middle School"
+  },
+  {
+    "lat": 48.456768883359565,
+    "lon": -123.43613280558253,
+    "type": "school",
+    "name": "View Royal Elementary"
+  },
+  {
+    "lat": 48.45352167836782,
+    "lon": -123.42144443647747,
+    "type": "school",
+    "name": "Craigflower Elementary"
+  },
+  {
+    "lat": 48.45208821986413,
+    "lon": -123.39297294696009,
+    "type": "school",
+    "name": "Tillicum Elementary School"
+  },
+  {
+    "lat": 48.43403905346448,
+    "lon": -123.47455555741257,
+    "type": "library",
+    "name": NaN
+  },
+  {
+    "lat": 48.44170237432523,
+    "lon": -123.38804282319639,
+    "type": "social_facility",
+    "name": "Gorge Road Hospital"
+  },
+  {
+    "lat": 48.47010950652061,
+    "lon": -123.32008708488067,
+    "type": "sports_centre",
+    "name": "Ian H. Stewart Complex"
+  },
+  {
+    "lat": 48.409265349665525,
+    "lon": -123.49278271818625,
+    "type": "school",
+    "name": "Royal Bay Secondary School"
+  },
+  {
+    "lat": 48.45424571832624,
+    "lon": -123.39916020356635,
+    "type": "sports_centre",
+    "name": "Pearkes Recreation Centre"
+  },
+  {
+    "lat": 48.445341246963956,
+    "lon": -123.48813579823005,
+    "type": "social_facility",
+    "name": "The Priory"
+  },
+  {
+    "lat": 48.448883904498516,
+    "lon": -123.3983280588482,
+    "type": "mall",
+    "name": "Gorge Shopping Centre"
+  },
+  {
+    "lat": 48.44742254588374,
+    "lon": -123.42760465049679,
+    "type": "mall",
+    "name": "Admirals Walk Shopping Centre"
+  },
+  {
+    "lat": 48.44455466877862,
+    "lon": -123.46921930270084,
+    "type": "social_facility",
+    "name": "West Shore Lodge"
+  },
+  {
+    "lat": 48.44290823124394,
+    "lon": -123.47055770223704,
+    "type": "mall",
+    "name": NaN
+  },
+  {
+    "lat": 48.46582909927943,
+    "lon": -123.49602004687958,
+    "type": "school",
+    "name": "Millstream Elementary"
+  },
+  {
+    "lat": 48.43827763850586,
+    "lon": -123.41577870930823,
+    "type": "hospital",
+    "name": "Base Hospital"
+  },
+  {
+    "lat": 48.38995892666896,
+    "lon": -123.5231985423036,
+    "type": "school",
+    "name": "West-Mont Montessori School"
+  },
+  {
+    "lat": 48.35040923783663,
+    "lon": -123.57087959660913,
+    "type": "college",
+    "name": "Pearson College UWC"
+  },
+  {
+    "lat": 48.43412343269989,
+    "lon": -123.51708131828202,
+    "type": "social_facility",
+    "name": "The Forge Church"
+  },
+  {
+    "lat": 48.46674819173026,
+    "lon": -123.31352521613677,
+    "type": "sports_centre",
+    "name": "Field 3"
+  },
+  {
+    "lat": 48.44675421293138,
+    "lon": -123.36975327599039,
+    "type": "mall",
+    "name": "Mayfair Shopping Centre"
+  },
+  {
+    "lat": 48.438859728720736,
+    "lon": -123.369494655698,
+    "type": "place_of_worship",
+    "name": "Centennial United Church"
+  },
+  {
+    "lat": 48.438639856510356,
+    "lon": -123.36071914343772,
+    "type": "social_facility",
+    "name": "The Summit"
+  },
+  {
+    "lat": 48.47139071335725,
+    "lon": -123.31940216852824,
+    "type": "school",
+    "name": "Mount Douglas Secondary School"
+  },
+  {
+    "lat": 48.459737985441855,
+    "lon": -123.33338946858896,
+    "type": "community_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.42915042570042,
+    "lon": -123.33045723875182,
+    "type": "pharmacy",
+    "name": "I.D.A."
+  },
+  {
+    "lat": 48.42740919154829,
+    "lon": -123.33634207828837,
+    "type": "social_facility",
+    "name": NaN
+  },
+  {
+    "lat": 48.51647592319729,
+    "lon": -123.375693738138,
+    "type": "school",
+    "name": "Claremont Secondary School"
+  },
+  {
+    "lat": 48.42663299269232,
+    "lon": -123.31429207337906,
+    "type": "restaurant",
+    "name": "The Oaks Restaurant"
+  },
+  {
+    "lat": 48.46969534825013,
+    "lon": -123.31328607260454,
+    "type": "sports_centre",
+    "name": "Field 6 (Wallace Field)"
+  },
+  {
+    "lat": 48.46978487357792,
+    "lon": -123.31697740212624,
+    "type": "university",
+    "name": "University of Victoria"
+  },
+  {
+    "lat": 48.48082421341772,
+    "lon": -123.36347121049869,
+    "type": "school",
+    "name": "St. Margaret's School"
+  },
+  {
+    "lat": 48.4360615626029,
+    "lon": -123.31106031459176,
+    "type": "school",
+    "name": "Willows Elementary"
+  },
+  {
+    "lat": 48.432881653888764,
+    "lon": -123.32717759492911,
+    "type": "hospital",
+    "name": "Royal Jubilee Hospital"
+  },
+  {
+    "lat": 48.43184914471744,
+    "lon": -123.31789180241397,
+    "type": "school",
+    "name": "Oak Bay High School"
+  },
+  {
+    "lat": 48.429631880161814,
+    "lon": -123.34713057586156,
+    "type": "school",
+    "name": "Victoria High School"
+  },
+  {
+    "lat": 48.42397928199814,
+    "lon": -123.34754235072359,
+    "type": "school",
+    "name": "Central Middle School"
+  },
+  {
+    "lat": 48.46590872066378,
+    "lon": -123.32209973837973,
+    "type": "school",
+    "name": "Campus View Elementary"
+  },
+  {
+    "lat": 48.46505044783877,
+    "lon": -123.2995943363606,
+    "type": "school",
+    "name": "Frank Hobbs Elementary School"
+  },
+  {
+    "lat": 48.47099468753428,
+    "lon": -123.30634388804941,
+    "type": "school",
+    "name": "Arbutus Middle School"
+  },
+  {
+    "lat": 48.47345236081383,
+    "lon": -123.31855409784103,
+    "type": "school",
+    "name": "Maria Montessori Academy"
+  },
+  {
+    "lat": 48.46657111328569,
+    "lon": -123.33721282395345,
+    "type": "school",
+    "name": "Cedar Hill Middle School"
+  },
+  {
+    "lat": 48.44092100891316,
+    "lon": -123.33810068326387,
+    "type": "school",
+    "name": "Oaklands Elementary"
+  },
+  {
+    "lat": 48.445758483631465,
+    "lon": -123.35994152363364,
+    "type": "school",
+    "name": "Quadra Elementary"
+  },
+  {
+    "lat": 48.44627399419505,
+    "lon": -123.33611265617363,
+    "type": "mall",
+    "name": "Hillside Centre"
+  },
+  {
+    "lat": 48.44491886475082,
+    "lon": -123.32966685859544,
+    "type": "school",
+    "name": "Lansdowne Middle School - North Campus"
+  },
+  {
+    "lat": 48.43969805335756,
+    "lon": -123.3293746162865,
+    "type": "school",
+    "name": "Lansdowne Middle School - South Campus"
+  },
+  {
+    "lat": 48.451662135493194,
+    "lon": -123.32815481379619,
+    "type": "school",
+    "name": "St. Michaels University School"
+  },
+  {
+    "lat": 48.4482360458849,
+    "lon": -123.32336337929674,
+    "type": "library",
+    "name": "Alan Batey Library & Learning Commons"
+  },
+  {
+    "lat": 48.48638565201205,
+    "lon": -123.32297903465499,
+    "type": "school",
+    "name": "Torquay Elementary"
+  },
+  {
+    "lat": 48.4156160132142,
+    "lon": -123.34786325216938,
+    "type": "school",
+    "name": "Sir James Douglas Elementary"
+  },
+  {
+    "lat": 48.455376375403475,
+    "lon": -123.3752040084904,
+    "type": "mall",
+    "name": "Uptown"
+  },
+  {
+    "lat": 48.44785593300504,
+    "lon": -123.46466466275982,
+    "type": "library",
+    "name": "GVPL: Juan de Fuca Branch"
+  },
+  {
+    "lat": 48.44654487000992,
+    "lon": -123.46517069050134,
+    "type": "sports_centre",
+    "name": "Juan de Fuca Recreation Centre"
+  },
+  {
+    "lat": 48.43070601774109,
+    "lon": -123.31920893927337,
+    "type": "sports_centre",
+    "name": "Oak Bay Recreation Centre"
+  },
+  {
+    "lat": 48.43373819216304,
+    "lon": -123.32414547944072,
+    "type": "school",
+    "name": "St. Patrick's School"
+  },
+  {
+    "lat": 48.46947972068934,
+    "lon": -123.36299599963083,
+    "type": "mall",
+    "name": "Saanich Centre"
+  },
+  {
+    "lat": 48.456402661697595,
+    "lon": -123.33727599545452,
+    "type": "school",
+    "name": "Doncaster Elementary School"
+  },
+  {
+    "lat": 48.47016096590173,
+    "lon": -123.34536161588925,
+    "type": "school",
+    "name": "Braefoot Elementary School"
+  },
+  {
+    "lat": 48.4598962259255,
+    "lon": -123.33223682164005,
+    "type": "mall",
+    "name": "Shelbourne Plaza"
+  },
+  {
+    "lat": 48.4496595980924,
+    "lon": -123.34428147004724,
+    "type": "sports_centre",
+    "name": "Cedar Hill Recreation Centre"
+  },
+  {
+    "lat": 48.45402501190287,
+    "lon": -123.39588440686305,
+    "type": "mall",
+    "name": "Tillicum Centre"
+  },
+  {
+    "lat": 48.46958163791031,
+    "lon": -123.32009979893445,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.47665699649609,
+    "lon": -123.32717429882992,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.43612241652429,
+    "lon": -123.46403800008888,
+    "type": "school",
+    "name": "John Stubbs Memorial School"
+  },
+  {
+    "lat": 48.442723270656636,
+    "lon": -123.49694422571733,
+    "type": "school",
+    "name": "David Cameron Elementary"
+  },
+  {
+    "lat": 48.46065469318295,
+    "lon": -123.31700212454328,
+    "type": "place_of_worship",
+    "name": "Interfaith Chapel"
+  },
+  {
+    "lat": 48.44438753111442,
+    "lon": -123.46329019861489,
+    "type": "stadium",
+    "name": "The Q Centre"
+  },
+  {
+    "lat": 48.43127016584145,
+    "lon": -123.3542344373204,
+    "type": "stadium",
+    "name": NaN
+  },
+  {
+    "lat": 48.44042060372196,
+    "lon": -123.31806028062226,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.430718903078166,
+    "lon": -123.32395665957483,
+    "type": "supermarket",
+    "name": "Save-On-Foods"
+  },
+  {
+    "lat": 48.44350213803092,
+    "lon": -123.46777550838398,
+    "type": "restaurant",
+    "name": "Denny's"
+  },
+  {
+    "lat": 48.44217929999999,
+    "lon": -123.4708109,
+    "type": "restaurant",
+    "name": "Asian Noodle House"
+  },
+  {
+    "lat": 48.4435178391665,
+    "lon": -123.47024173058892,
+    "type": "supermarket",
+    "name": "Thrifty Foods"
+  },
+  {
+    "lat": 48.442037055332804,
+    "lon": -123.4702054975576,
+    "type": "hairdresser",
+    "name": "Advance School of Hair Design"
+  },
+  {
+    "lat": 48.44145882649206,
+    "lon": -123.50397360052864,
+    "type": "supermarket",
+    "name": "Real Canadian Superstore"
+  },
+  {
+    "lat": 48.458851282331814,
+    "lon": -123.39173064702774,
+    "type": "place_of_worship",
+    "name": "Westview Gospel Chapel"
+  },
+  {
+    "lat": 48.466593487607255,
+    "lon": -123.38343847649314,
+    "type": "place_of_worship",
+    "name": "North Douglas Pentecostal Church"
+  },
+  {
+    "lat": 48.463503203254234,
+    "lon": -123.38656836841612,
+    "type": "place_of_worship",
+    "name": "New Life Community Fellowship"
+  },
+  {
+    "lat": 48.48721369547336,
+    "lon": -123.40200983777864,
+    "type": "place_of_worship",
+    "name": "Saanich Baptist Church"
+  },
+  {
+    "lat": 48.46297596917787,
+    "lon": -123.29031376026215,
+    "type": "place_of_worship",
+    "name": "BroadView United Church"
+  },
+  {
+    "lat": 48.4320950440003,
+    "lon": -123.47836858385291,
+    "type": "sports_centre",
+    "name": "Recreation Centre"
+  },
+  {
+    "lat": 48.453873991875945,
+    "lon": -123.35906407482453,
+    "type": "school",
+    "name": "Cloverdale Traditional School"
+  },
+  {
+    "lat": 48.433078683756975,
+    "lon": -123.35100212581632,
+    "type": "school",
+    "name": "\u00c9cole George Jay Elementary"
+  },
+  {
+    "lat": 48.48485670575829,
+    "lon": -123.31294549705899,
+    "type": "school",
+    "name": "Hillcrest Elementary"
+  },
+  {
+    "lat": 48.416945770896604,
+    "lon": -123.37969558757581,
+    "type": "school",
+    "name": "James Bay Community School"
+  },
+  {
+    "lat": 48.47838430653894,
+    "lon": -123.36552954610158,
+    "type": "school",
+    "name": "Lake Hill Elementary"
+  },
+  {
+    "lat": 48.43220833152454,
+    "lon": -123.32026439681162,
+    "type": "clinic",
+    "name": "Oak Bay Optometry"
+  },
+  {
+    "lat": 48.41615626388522,
+    "lon": -123.32894042052803,
+    "type": "school",
+    "name": "\u00c9cole \u00c9l\u00e9mentaire Margaret Jenkins Elementary"
+  },
+  {
+    "lat": 48.46221985225485,
+    "lon": -123.40933296034167,
+    "type": "school",
+    "name": "Ecole Marigold Elementary"
+  },
+  {
+    "lat": 48.46246137052603,
+    "lon": -123.4064314159128,
+    "type": "school",
+    "name": "Spectrum Community School"
+  },
+  {
+    "lat": 48.467504413637336,
+    "lon": -123.39092179726546,
+    "type": "school",
+    "name": "McKenzie Elementary School"
+  },
+  {
+    "lat": 48.48052390175753,
+    "lon": -123.40221563208311,
+    "type": "school",
+    "name": "Northridge Elementary School"
+  },
+  {
+    "lat": 48.47440013778323,
+    "lon": -123.38118018574129,
+    "type": "school",
+    "name": "Rogers Elementary"
+  },
+  {
+    "lat": 48.47810112716008,
+    "lon": -123.41737491592487,
+    "type": "school",
+    "name": "Strawberry Vale Elementary"
+  },
+  {
+    "lat": 48.415082708267285,
+    "lon": -123.34760178193685,
+    "type": "community_centre",
+    "name": "Fairfield Community Place"
+  },
+  {
+    "lat": 48.427785766504314,
+    "lon": -123.32822522270975,
+    "type": "school",
+    "name": "Sundance-Bank Elementary"
+  },
+  {
+    "lat": 48.434440126978,
+    "lon": -123.38820617477771,
+    "type": "school",
+    "name": "Victoria West Elementary"
+  },
+  {
+    "lat": 48.46009683331327,
+    "lon": -123.39302929081987,
+    "type": "school",
+    "name": "Colquitz Middle School"
+  },
+  {
+    "lat": 48.47628509412457,
+    "lon": -123.39220596320797,
+    "type": "school",
+    "name": "Glanford Middle School"
+  },
+  {
+    "lat": 48.48153741003937,
+    "lon": -123.3292936617115,
+    "type": "school",
+    "name": "Gordon Head Middle School"
+  },
+  {
+    "lat": 48.41852813595576,
+    "lon": -123.3139925879231,
+    "type": "school",
+    "name": "Monterey Middle School"
+  },
+  {
+    "lat": 48.47943746205805,
+    "lon": -123.33013651440453,
+    "type": "school",
+    "name": "Lambrick Park Secondary"
+  },
+  {
+    "lat": 48.46882242270845,
+    "lon": -123.35939855544025,
+    "type": "school",
+    "name": "Reynolds Secondary"
+  },
+  {
+    "lat": 48.44080549875259,
+    "lon": -123.36256271140911,
+    "type": "school",
+    "name": "S.J. Willis Alternative School"
+  },
+  {
+    "lat": 48.43211221661661,
+    "lon": -123.33773911087809,
+    "type": "school",
+    "name": "Victor School"
+  },
+  {
+    "lat": 48.46598808893565,
+    "lon": -123.50704573652057,
+    "type": "school",
+    "name": "Lakewood Elementary"
+  },
+  {
+    "lat": 48.4418709213946,
+    "lon": -123.51233601091603,
+    "type": "veterinary",
+    "name": "West Coast Animal Veterinary Emergency Specialty Hospital"
+  },
+  {
+    "lat": 48.449027928363655,
+    "lon": -123.3591984599245,
+    "type": "place_of_worship",
+    "name": "Parkdale Evangelical Free Church"
+  },
+  {
+    "lat": 48.45698719642503,
+    "lon": -123.54850378420973,
+    "type": "school",
+    "name": "Willway Elementary"
+  },
+  {
+    "lat": 48.42380064199239,
+    "lon": -123.36603805665888,
+    "type": "place_of_worship",
+    "name": "St. Andrew's Presbyterian Church"
+  },
+  {
+    "lat": 48.425807948883346,
+    "lon": -123.36824999542851,
+    "type": "restaurant",
+    "name": "Re:Bar Modern Food"
+  },
+  {
+    "lat": 48.42525839219723,
+    "lon": -123.36913082546884,
+    "type": "restaurant",
+    "name": "Koto Japanese Restaurant"
+  },
+  {
+    "lat": 48.425421490640815,
+    "lon": -123.36280671497036,
+    "type": "place_of_worship",
+    "name": "Saint Andrew's Cathedral"
+  },
+  {
+    "lat": 48.42664265,
+    "lon": -123.36228949999999,
+    "type": "clinic",
+    "name": "Maycock Eyecare"
+  },
+  {
+    "lat": 48.52742770918698,
+    "lon": -123.37006399891641,
+    "type": "school",
+    "name": "Cordova Bay Elementary"
+  },
+  {
+    "lat": 48.52283076017494,
+    "lon": -123.43408975081914,
+    "type": "school",
+    "name": "Prospect Lake Elementary"
+  },
+  {
+    "lat": 48.50067259261619,
+    "lon": -123.35982866226317,
+    "type": "school",
+    "name": "Lochside Elementary School"
+  },
+  {
+    "lat": 48.4946740945219,
+    "lon": -123.39160395296149,
+    "type": "school",
+    "name": "Royal Oak Middle School"
+  },
+  {
+    "lat": 48.49674101841863,
+    "lon": -123.39410900166828,
+    "type": "school",
+    "name": "South Island Distance Education School"
+  },
+  {
+    "lat": 48.41994745492252,
+    "lon": -123.36839417125915,
+    "type": "library",
+    "name": "BC Archives"
+  },
+  {
+    "lat": 48.42764352428183,
+    "lon": -123.36248734579033,
+    "type": "sports_centre",
+    "name": "Crag X Climbing Centre"
+  },
+  {
+    "lat": 48.42228437055226,
+    "lon": -123.36483552736745,
+    "type": "restaurant",
+    "name": "Ithaka Greek Restaurant"
+  },
+  {
+    "lat": 48.467692019149794,
+    "lon": -123.3034325048956,
+    "type": "laundry",
+    "name": NaN
+  },
+  {
+    "lat": 48.46708999999999,
+    "lon": -123.30498999999999,
+    "type": "laundry",
+    "name": NaN
+  },
+  {
+    "lat": 48.467032176805304,
+    "lon": -123.30649019447802,
+    "type": "laundry",
+    "name": NaN
+  },
+  {
+    "lat": 48.466010351719305,
+    "lon": -123.30547726634764,
+    "type": "laundry",
+    "name": NaN
+  },
+  {
+    "lat": 48.42158909556474,
+    "lon": -123.3811420837254,
+    "type": "place_of_worship",
+    "name": "Church of Truth"
+  },
+  {
+    "lat": 48.42489198269644,
+    "lon": -123.36203027444033,
+    "type": "convenience",
+    "name": "ABR Store"
+  },
+  {
+    "lat": 48.42593502425209,
+    "lon": -123.35955264792017,
+    "type": "restaurant",
+    "name": "The Pok\u00e9 Lounge"
+  },
+  {
+    "lat": 48.42733084791146,
+    "lon": -123.36056778808529,
+    "type": "place_of_worship",
+    "name": "Central Baptist Church"
+  },
+  {
+    "lat": 48.42741334236327,
+    "lon": -123.3613643850024,
+    "type": "place_of_worship",
+    "name": "Congregation Emanu-El"
+  },
+  {
+    "lat": 48.426733366823385,
+    "lon": -123.35785007044194,
+    "type": "hairdresser",
+    "name": "Vic City Barbers"
+  },
+  {
+    "lat": 48.4253317672979,
+    "lon": -123.35874834759349,
+    "type": "supermarket",
+    "name": "Market on Yates"
+  },
+  {
+    "lat": 48.42360626701047,
+    "lon": -123.35778046504578,
+    "type": "clinic",
+    "name": "EHLA Wellness"
+  },
+  {
+    "lat": 48.42410157193387,
+    "lon": -123.35785359395281,
+    "type": "restaurant",
+    "name": "Sen Zushi"
+  },
+  {
+    "lat": 48.420526647744296,
+    "lon": -123.36441594065276,
+    "type": "place_of_worship",
+    "name": "Church of Our Lord"
+  },
+  {
+    "lat": 48.44010282877865,
+    "lon": -123.35608359483689,
+    "type": "community_centre",
+    "name": "Norway House"
+  },
+  {
+    "lat": 48.431577346206964,
+    "lon": -123.36058318949436,
+    "type": "stadium",
+    "name": "Save-On-Foods Memorial Centre"
+  },
+  {
+    "lat": 48.429168837947856,
+    "lon": -123.36339898068812,
+    "type": "restaurant",
+    "name": "Golden City"
+  },
+  {
+    "lat": 48.468116261393526,
+    "lon": -123.33472245849035,
+    "type": "supermarket",
+    "name": "Fairway Market McKenzie"
+  },
+  {
+    "lat": 48.47004502513184,
+    "lon": -123.331587366045,
+    "type": "social_facility",
+    "name": NaN
+  },
+  {
+    "lat": 48.45474850648442,
+    "lon": -123.39006956989923,
+    "type": "sports_centre",
+    "name": "Kulai Field"
+  },
+  {
+    "lat": 48.45443185871848,
+    "lon": -123.38824332048915,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.49093519322248,
+    "lon": -123.4170955808323,
+    "type": "restaurant",
+    "name": "Helmut Huber Food Services Building"
+  },
+  {
+    "lat": 48.48781626697626,
+    "lon": -123.41274018277966,
+    "type": "sports_centre",
+    "name": "Pacific Institute for Sport Education"
+  },
+  {
+    "lat": 48.49088231729809,
+    "lon": -123.40960271817188,
+    "type": "sports_centre",
+    "name": "Field #8"
+  },
+  {
+    "lat": 48.421101376293166,
+    "lon": -123.37439156480666,
+    "type": "restaurant",
+    "name": "Harbour House Restaurant"
+  },
+  {
+    "lat": 48.43282758929115,
+    "lon": -123.32740800105817,
+    "type": "place_of_worship",
+    "name": "Pemberton Memorial Chapel"
+  },
+  {
+    "lat": 48.43083007254805,
+    "lon": -123.3193844036022,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.431164235054155,
+    "lon": -123.31926456976414,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.45243185403132,
+    "lon": -123.32942741814234,
+    "type": "sports_centre",
+    "name": "Monkman Athletic Complex"
+  },
+  {
+    "lat": 48.45181359881766,
+    "lon": -123.329944607225,
+    "type": "school",
+    "name": "SMUS Middle School"
+  },
+  {
+    "lat": 48.45212290799073,
+    "lon": -123.32851362477449,
+    "type": "school",
+    "name": "School House"
+  },
+  {
+    "lat": 48.43753600603907,
+    "lon": -123.48766471186224,
+    "type": "place_of_worship",
+    "name": "Church of the Advent"
+  },
+  {
+    "lat": 48.4408989207934,
+    "lon": -123.32967321309636,
+    "type": "place_of_worship",
+    "name": "Victoria Alliance Church"
+  },
+  {
+    "lat": 48.42831903728118,
+    "lon": -123.35840693158534,
+    "type": "place_of_worship",
+    "name": "Saint John The Divine"
+  },
+  {
+    "lat": 48.42846686861564,
+    "lon": -123.33802091955094,
+    "type": "place_of_worship",
+    "name": "St. Barnabas' Church"
+  },
+  {
+    "lat": 48.46709407299728,
+    "lon": -123.42204404889313,
+    "type": "place_of_worship",
+    "name": "St. Columbia's Anglican Church"
+  },
+  {
+    "lat": 48.52493488780475,
+    "lon": -123.36885532726905,
+    "type": "place_of_worship",
+    "name": "St. David By The Sea"
+  },
+  {
+    "lat": 48.483317071079966,
+    "lon": -123.3205621047996,
+    "type": "place_of_worship",
+    "name": "St. Dunstans Anglican Church"
+  },
+  {
+    "lat": 48.4629941510655,
+    "lon": -123.29429237007105,
+    "type": "place_of_worship",
+    "name": "St. George's Anglican Church"
+  },
+  {
+    "lat": 48.53341005520498,
+    "lon": -123.38764986507472,
+    "type": "place_of_worship",
+    "name": "All Saints Of Alaska Orthodox Church"
+  },
+  {
+    "lat": 48.48535560981414,
+    "lon": -123.40568135771669,
+    "type": "place_of_worship",
+    "name": "Christian Life Church of Victoria"
+  },
+  {
+    "lat": 48.53342259183062,
+    "lon": -123.38621865039183,
+    "type": "place_of_worship",
+    "name": "Elk Lake Baptist Church"
+  },
+  {
+    "lat": 48.4297570314852,
+    "lon": -123.35913432049183,
+    "type": "place_of_worship",
+    "name": "First Baptist Church"
+  },
+  {
+    "lat": 48.46300746493789,
+    "lon": -123.33725668642413,
+    "type": "place_of_worship",
+    "name": "St. Luke's Cedar Hill Anglican Church"
+  },
+  {
+    "lat": 48.45370994292733,
+    "lon": -123.40452636773487,
+    "type": "place_of_worship",
+    "name": "House of Shiloh"
+  },
+  {
+    "lat": 48.38841658072645,
+    "lon": -123.52580010910707,
+    "type": "place_of_worship",
+    "name": "St. Mary Of The Incarnation"
+  },
+  {
+    "lat": 48.41771768056172,
+    "lon": -123.3323348374413,
+    "type": "place_of_worship",
+    "name": "St. Matthias Anglican Church"
+  },
+  {
+    "lat": 48.50271252806083,
+    "lon": -123.4046600712651,
+    "type": "place_of_worship",
+    "name": "St. Michael & All Angels Anglican Church"
+  },
+  {
+    "lat": 48.42934425680812,
+    "lon": -123.42227383279142,
+    "type": "place_of_worship",
+    "name": "St. Peter's and St. Paul's Anglican Church"
+  },
+  {
+    "lat": 48.465604873445876,
+    "lon": -123.35944001244255,
+    "type": "place_of_worship",
+    "name": "St. Peter's Anglican Church"
+  },
+  {
+    "lat": 48.44206706873619,
+    "lon": -123.31484799058764,
+    "type": "place_of_worship",
+    "name": "St. Philip's Anglican Church"
+  },
+  {
+    "lat": 48.4547522543766,
+    "lon": -123.35056342262963,
+    "type": "place_of_worship",
+    "name": "Buddhist Dharma Centre Of Victoria"
+  },
+  {
+    "lat": 48.49719492321619,
+    "lon": -123.37507556252837,
+    "type": "place_of_worship",
+    "name": "Gateway Baptist Church"
+  },
+  {
+    "lat": 48.45341975752229,
+    "lon": -123.50520041368695,
+    "type": "place_of_worship",
+    "name": "Grace Baptist Church Of Victoria"
+  },
+  {
+    "lat": 48.485647214416716,
+    "lon": -123.38149102955342,
+    "type": "place_of_worship",
+    "name": "Victoria Christian Fellowship"
+  },
+  {
+    "lat": 48.461542856893594,
+    "lon": -123.36461711880189,
+    "type": "place_of_worship",
+    "name": "Cathedral Church Of Saint John The Evangelist"
+  },
+  {
+    "lat": 48.47645679955703,
+    "lon": -123.31021949895005,
+    "type": "place_of_worship",
+    "name": "Croatian Catholic Church St. Leopold Mandic"
+  },
+  {
+    "lat": 48.423066493709705,
+    "lon": -123.34417070262343,
+    "type": "place_of_worship",
+    "name": "Franciscan Friars"
+  },
+  {
+    "lat": 48.47455095882289,
+    "lon": -123.31227428651407,
+    "type": "place_of_worship",
+    "name": "Holy Cross Catholic Church"
+  },
+  {
+    "lat": 48.43275439080062,
+    "lon": -123.39755174674798,
+    "type": "place_of_worship",
+    "name": "Our Lady Queen of Peace"
+  },
+  {
+    "lat": 48.50076870249504,
+    "lon": -123.3860451048289,
+    "type": "place_of_worship",
+    "name": "Our Lady of Fatima"
+  },
+  {
+    "lat": 48.47065194343174,
+    "lon": -123.37524920041507,
+    "type": "place_of_worship",
+    "name": "Sacred Heart Catholic Church"
+  },
+  {
+    "lat": 48.41342728025833,
+    "lon": -123.33006632767282,
+    "type": "place_of_worship",
+    "name": "St. Jean Baptiste Paroisse Francaise"
+  },
+  {
+    "lat": 48.43625622500805,
+    "lon": -123.31988516086383,
+    "type": "place_of_worship",
+    "name": "St. Patrick's Parish"
+  },
+  {
+    "lat": 48.43063000930568,
+    "lon": -123.35249221640056,
+    "type": "place_of_worship",
+    "name": "Ukrainian Catholic Church of St. Nicholas"
+  },
+  {
+    "lat": 48.47061927269793,
+    "lon": -123.4218240827051,
+    "type": "place_of_worship",
+    "name": "Christ Community Church"
+  },
+  {
+    "lat": 48.471924976469566,
+    "lon": -123.34464021951385,
+    "type": "place_of_worship",
+    "name": "Christadelphian Ecclesia"
+  },
+  {
+    "lat": 48.440965555608074,
+    "lon": -123.39878240663866,
+    "type": "place_of_worship",
+    "name": "Church of the Nazarene"
+  },
+  {
+    "lat": 48.43241172335371,
+    "lon": -123.34985024789414,
+    "type": "place_of_worship",
+    "name": "Cornerstone Christian Fellowship"
+  },
+  {
+    "lat": 48.426769194209236,
+    "lon": -123.35009358049673,
+    "type": "place_of_worship",
+    "name": "First Church of Christ, Scientist"
+  },
+  {
+    "lat": 48.43423164165929,
+    "lon": -123.36077347428241,
+    "type": "place_of_worship",
+    "name": "Keystone Victoria"
+  },
+  {
+    "lat": 48.462286322416624,
+    "lon": -123.33681207523149,
+    "type": "place_of_worship",
+    "name": "Lutheran Church of the Cross"
+  },
+  {
+    "lat": 48.431034574148654,
+    "lon": -123.33868028930253,
+    "type": "place_of_worship",
+    "name": "Shambhala Meditation Centre"
+  },
+  {
+    "lat": 48.444099139448596,
+    "lon": -123.36110301395058,
+    "type": "place_of_worship",
+    "name": "The Church of Jesus Christ of Latter-day Saints"
+  },
+  {
+    "lat": 48.48900860155901,
+    "lon": -123.400677379791,
+    "type": "place_of_worship",
+    "name": "The Church of Jesus Christ of Latter-day Saints"
+  },
+  {
+    "lat": 48.428815294001886,
+    "lon": -123.36118542633685,
+    "type": "place_of_worship",
+    "name": "The Redeemed Christian Church of God"
+  },
+  {
+    "lat": 48.44568278395151,
+    "lon": -123.34337349397362,
+    "type": "place_of_worship",
+    "name": "Victoria Chinese Alliance Church"
+  },
+  {
+    "lat": 48.444231451372524,
+    "lon": -123.3746004842462,
+    "type": "place_of_worship",
+    "name": "Community of Christ"
+  },
+  {
+    "lat": 48.43704625299228,
+    "lon": -123.32447708972448,
+    "type": "place_of_worship",
+    "name": "Hope Lutheran Church"
+  },
+  {
+    "lat": 48.457859819475615,
+    "lon": -123.49160552106918,
+    "type": "place_of_worship",
+    "name": "Jehovah's Witnesses"
+  },
+  {
+    "lat": 48.47641227318523,
+    "lon": -123.32458508696911,
+    "type": "place_of_worship",
+    "name": "Lambrick Park Church"
+  },
+  {
+    "lat": 48.44179145231276,
+    "lon": -123.34439301633627,
+    "type": "place_of_worship",
+    "name": "Lutheran Church Of The Good Shepherd"
+  },
+  {
+    "lat": 48.42667453959585,
+    "lon": -123.32591267506933,
+    "type": "place_of_worship",
+    "name": "Oak Bay Gospel Assembly"
+  },
+  {
+    "lat": 48.43890764875388,
+    "lon": -123.34519224776562,
+    "type": "place_of_worship",
+    "name": "Oaklands Gospel Chapel"
+  },
+  {
+    "lat": 48.49705705975738,
+    "lon": -123.39213788901945,
+    "type": "place_of_worship",
+    "name": "Saanich Community Church Mennonite Brethren"
+  },
+  {
+    "lat": 48.43362579849131,
+    "lon": -123.35857313188104,
+    "type": "place_of_worship",
+    "name": "The BC Muslim Association"
+  },
+  {
+    "lat": 48.43654655,
+    "lon": -123.36433600000001,
+    "type": "place_of_worship",
+    "name": "Victoria Foursquare Gospel Church"
+  },
+  {
+    "lat": 48.433687156571985,
+    "lon": -123.36092921407001,
+    "type": "place_of_worship",
+    "name": "Chinese Pentecostal Church"
+  },
+  {
+    "lat": 48.43027655941934,
+    "lon": -123.36113127531513,
+    "type": "place_of_worship",
+    "name": "Chinese Presbyterian Church"
+  },
+  {
+    "lat": 48.434517271717006,
+    "lon": -123.49348449976634,
+    "type": "place_of_worship",
+    "name": "Colwood Pentecostal Church"
+  },
+  {
+    "lat": 48.43024000876296,
+    "lon": -123.35973869766619,
+    "type": "place_of_worship",
+    "name": "Coastline Church"
+  },
+  {
+    "lat": 48.48018155730721,
+    "lon": -123.32222162511859,
+    "type": "school",
+    "name": "Arts Calibre Academy"
+  },
+  {
+    "lat": 48.50135106458635,
+    "lon": -123.3868746674857,
+    "type": "place_of_worship",
+    "name": "Greek Orthodox Church of the Saviour"
+  },
+  {
+    "lat": 48.42044670928138,
+    "lon": -123.35689255039883,
+    "type": "place_of_worship",
+    "name": "I AM Sanctuary"
+  },
+  {
+    "lat": 48.44368065117488,
+    "lon": -123.32749112250674,
+    "type": "place_of_worship",
+    "name": "Knox Presbyterian Church"
+  },
+  {
+    "lat": 48.42908235556219,
+    "lon": -123.33407685587571,
+    "type": "place_of_worship",
+    "name": "Religious Society Of Friends"
+  },
+  {
+    "lat": 48.410946,
+    "lon": -123.34704950000001,
+    "type": "place_of_worship",
+    "name": "Saint Sophia Orthodox Church"
+  },
+  {
+    "lat": 48.44928173259778,
+    "lon": -123.39922225090454,
+    "type": "place_of_worship",
+    "name": "Trinity Presbyterian Church"
+  },
+  {
+    "lat": 48.53346137397253,
+    "lon": -123.43676135473123,
+    "type": "place_of_worship",
+    "name": "First Unitarian Church of Victoria"
+  },
+  {
+    "lat": 48.44458584908322,
+    "lon": -123.37711029633115,
+    "type": "place_of_worship",
+    "name": "Gurdwara Singh Sabha"
+  },
+  {
+    "lat": 48.43597369776663,
+    "lon": -123.38913382882698,
+    "type": "place_of_worship",
+    "name": "High Point Community Church"
+  },
+  {
+    "lat": 48.42828642363673,
+    "lon": -123.35350906013406,
+    "type": "place_of_worship",
+    "name": "Inner Quest Foundation"
+  },
+  {
+    "lat": 48.47003757624524,
+    "lon": -123.38070931574973,
+    "type": "place_of_worship",
+    "name": "The Salvation Army Victoria Citadel"
+  },
+  {
+    "lat": 48.5175011078065,
+    "lon": -123.37732846191267,
+    "type": "place_of_worship",
+    "name": "Cordova Bay United Church"
+  },
+  {
+    "lat": 48.428496469631405,
+    "lon": -123.4176056768769,
+    "type": "place_of_worship",
+    "name": "Esquimalt United Church"
+  },
+  {
+    "lat": 48.429184018387204,
+    "lon": -123.35795642828425,
+    "type": "place_of_worship",
+    "name": "First Metropolitan United Church"
+  },
+  {
+    "lat": 48.46954193280529,
+    "lon": -123.39614155390143,
+    "type": "place_of_worship",
+    "name": "Inglesia Ni Cristo Church"
+  },
+  {
+    "lat": 48.45045068434837,
+    "lon": -123.5074525401758,
+    "type": "place_of_worship",
+    "name": "Gordon United Church"
+  },
+  {
+    "lat": 48.416713699999995,
+    "lon": -123.3725468,
+    "type": "place_of_worship",
+    "name": "James Bay United Church"
+  },
+  {
+    "lat": 48.4248826767115,
+    "lon": -123.32030055551395,
+    "type": "place_of_worship",
+    "name": "Oak Bay United Church"
+  },
+  {
+    "lat": 48.47914602249909,
+    "lon": -123.41091094174477,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.4481761759309,
+    "lon": -123.37213077935614,
+    "type": "convenience",
+    "name": "7-Eleven"
+  },
+  {
+    "lat": 48.470491634854525,
+    "lon": -123.36436492977258,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.495561896815715,
+    "lon": -123.38878138360877,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.46005019482898,
+    "lon": -123.49660494704709,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.468977921543186,
+    "lon": -123.33332821112913,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.43025267194093,
+    "lon": -123.4164931954269,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.45823775916252,
+    "lon": -123.33253302461794,
+    "type": "convenience",
+    "name": "Town Pantry"
+  },
+  {
+    "lat": 48.41253495,
+    "lon": -123.3367,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.4606277,
+    "lon": -123.36117944999997,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.457640530274396,
+    "lon": -123.39140162318749,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.45511348089376,
+    "lon": -123.36009263137056,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.4582756,
+    "lon": -123.37881880000002,
+    "type": "convenience",
+    "name": "7-Eleven"
+  },
+  {
+    "lat": 48.45048324879705,
+    "lon": -123.42457988241092,
+    "type": "convenience",
+    "name": "Circle K"
+  },
+  {
+    "lat": 48.46903490000159,
+    "lon": -123.33231957419083,
+    "type": "convenience",
+    "name": "Petro-Canada"
+  },
+  {
+    "lat": 48.44800705,
+    "lon": -123.49626284999998,
+    "type": "convenience",
+    "name": "Town Pantry"
+  },
+  {
+    "lat": 48.42412151753597,
+    "lon": -123.34486863117682,
+    "type": "fuel",
+    "name": "Shell"
+  },
+  {
+    "lat": 48.43674349480908,
+    "lon": -123.48804445442676,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.45248170050412,
+    "lon": -123.37444164596596,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.44990275010924,
+    "lon": -123.38471812010897,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.43252527088843,
+    "lon": -123.35886541763323,
+    "type": "convenience",
+    "name": "On the Run"
+  },
+  {
+    "lat": 48.44593137536717,
+    "lon": -123.3338119063145,
+    "type": "convenience",
+    "name": "Chevron"
+  },
+  {
+    "lat": 48.4688691,
+    "lon": -123.31879545,
+    "type": "convenience",
+    "name": "Town Pantry"
+  },
+  {
+    "lat": 48.42406661300299,
+    "lon": -123.34525683297719,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.457752633483764,
+    "lon": -123.45901437064333,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.42618628371766,
+    "lon": -123.32407138022725,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.46146291482866,
+    "lon": -123.33247753099116,
+    "type": "convenience",
+    "name": "Neighbors"
+  },
+  {
+    "lat": 48.44622105214783,
+    "lon": -123.33256022279419,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.42897315143718,
+    "lon": -123.37758413509567,
+    "type": "convenience",
+    "name": "Shell Select"
+  },
+  {
+    "lat": 48.45533961821753,
+    "lon": -123.35909284746378,
+    "type": "convenience",
+    "name": "Petro-Canada"
+  },
+  {
+    "lat": 48.44241860190053,
+    "lon": -123.46873711468153,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.44138520238286,
+    "lon": -123.40190391452748,
+    "type": "convenience",
+    "name": "7-Eleven"
+  },
+  {
+    "lat": 48.49189311963496,
+    "lon": -123.3870056448599,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.43078366441359,
+    "lon": -123.34815581621538,
+    "type": "community_centre",
+    "name": "Fernwood Community Centre"
+  },
+  {
+    "lat": 48.43627874093196,
+    "lon": -123.38744455672682,
+    "type": "restaurant",
+    "name": "Crown Palace"
+  },
+  {
+    "lat": 48.437319628047604,
+    "lon": -123.38822358304637,
+    "type": "community_centre",
+    "name": "Victoria West Community YMCA"
+  },
+  {
+    "lat": 48.43851395,
+    "lon": -123.41038689999999,
+    "type": "convenience",
+    "name": "Colville Grocery"
+  },
+  {
+    "lat": 48.50137798198441,
+    "lon": -123.3893422271416,
+    "type": "sports_centre",
+    "name": "Saanich Commonwealth Place"
+  },
+  {
+    "lat": 48.43175577572689,
+    "lon": -123.3803786789701,
+    "type": "social_facility",
+    "name": "Edith Gunning Court"
+  },
+  {
+    "lat": 48.431550105561044,
+    "lon": -123.38057433624985,
+    "type": "social_facility",
+    "name": "Edith Gunning Court"
+  },
+  {
+    "lat": 48.43222852513474,
+    "lon": -123.38257395758092,
+    "type": "community_centre",
+    "name": "Leonardo Da Vinci Centre"
+  },
+  {
+    "lat": 48.4423569294153,
+    "lon": -123.37889754768052,
+    "type": "social_facility",
+    "name": "Selkirk Place"
+  },
+  {
+    "lat": 48.44209672953596,
+    "lon": -123.37806385622835,
+    "type": "social_facility",
+    "name": "Selkirk Place"
+  },
+  {
+    "lat": 48.440858359581966,
+    "lon": -123.37844624368074,
+    "type": "school",
+    "name": "Selkirk Montessori School"
+  },
+  {
+    "lat": 48.442515429588916,
+    "lon": -123.34256585680477,
+    "type": "social_facility",
+    "name": "Hillside Seniors Health Centre"
+  },
+  {
+    "lat": 48.44354066818978,
+    "lon": -123.33774656222704,
+    "type": "clinic",
+    "name": "Victoria Eye"
+  },
+  {
+    "lat": 48.47249971136075,
+    "lon": -123.38381496144314,
+    "type": "place_of_worship",
+    "name": "Victoria Christian Reformed Church"
+  },
+  {
+    "lat": 48.47197066518962,
+    "lon": -123.38386666327055,
+    "type": "school",
+    "name": "Pacific Christian School"
+  },
+  {
+    "lat": 48.47323647261207,
+    "lon": -123.3843667457752,
+    "type": "school",
+    "name": "Pacific Christian School"
+  },
+  {
+    "lat": 48.42905119432663,
+    "lon": -123.40938497131789,
+    "type": "sports_centre",
+    "name": "Archie Browning Sports Centre"
+  },
+  {
+    "lat": 48.36407535508716,
+    "lon": -123.55471458018334,
+    "type": "school",
+    "name": "Hans Helgesen Elementary"
+  },
+  {
+    "lat": 48.434345214847795,
+    "lon": -123.4186804882241,
+    "type": "sports_centre",
+    "name": "Naden Athletic Centre - NAD88"
+  },
+  {
+    "lat": 48.45788018157505,
+    "lon": -123.3141228157665,
+    "type": "place_of_worship",
+    "name": "Emmanuel Baptist Church"
+  },
+  {
+    "lat": 48.47240372542254,
+    "lon": -123.29933210474829,
+    "type": "social_facility",
+    "name": "Queen Alexandra Building"
+  },
+  {
+    "lat": 48.37989432092081,
+    "lon": -123.53155234311824,
+    "type": "convenience",
+    "name": "Metchosin Country Store"
+  },
+  {
+    "lat": 48.53537964036593,
+    "lon": -123.37504053216182,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.53390425448214,
+    "lon": -123.37598607293393,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.42559030805031,
+    "lon": -123.36447922073535,
+    "type": "restaurant",
+    "name": "Toro"
+  },
+  {
+    "lat": 48.41624424886631,
+    "lon": -123.37394780942107,
+    "type": "community_centre",
+    "name": "James Bay New Horizons Activity Centre"
+  },
+  {
+    "lat": 48.379320350567724,
+    "lon": -123.53104621738112,
+    "type": "community_centre",
+    "name": "Metchosin Community Hall"
+  },
+  {
+    "lat": 48.419297048077354,
+    "lon": -123.34234261915623,
+    "type": "shelter",
+    "name": "Bruce Pavilion"
+  },
+  {
+    "lat": 48.44388442950489,
+    "lon": -123.46259318446039,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.460718731850015,
+    "lon": -123.49594094217973,
+    "type": "pharmacy",
+    "name": "Pharmasave"
+  },
+  {
+    "lat": 48.46118342869811,
+    "lon": -123.49554428096977,
+    "type": "restaurant",
+    "name": "Milestones"
+  },
+  {
+    "lat": 48.456605373428935,
+    "lon": -123.37305378093204,
+    "type": "supermarket",
+    "name": "Save-On-Foods"
+  },
+  {
+    "lat": 48.41685221246481,
+    "lon": -123.38264924172776,
+    "type": "community_centre",
+    "name": "Polish White Eagle Hall"
+  },
+  {
+    "lat": 48.41832355557108,
+    "lon": -123.38436306612712,
+    "type": "community_centre",
+    "name": "Edelweiss Club"
+  },
+  {
+    "lat": 48.4156688766018,
+    "lon": -123.3323318665036,
+    "type": "social_facility",
+    "name": "Glengarry Hospital"
+  },
+  {
+    "lat": 48.463955004322415,
+    "lon": -123.5465261825027,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.465592227736934,
+    "lon": -123.5481038663623,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.422136381318154,
+    "lon": -123.49508394379066,
+    "type": "school",
+    "name": "Wishart Elementary"
+  },
+  {
+    "lat": 48.4349342115202,
+    "lon": -123.49291328946177,
+    "type": "mall",
+    "name": "Hatley Park Centre"
+  },
+  {
+    "lat": 48.456694483862634,
+    "lon": -123.45110371252225,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.455902064550344,
+    "lon": -123.39541745445436,
+    "type": "restaurant",
+    "name": "Montana's"
+  },
+  {
+    "lat": 48.41841526008603,
+    "lon": -123.48620640801373,
+    "type": "school",
+    "name": "Dunsmuir Middle School"
+  },
+  {
+    "lat": 48.44966002642602,
+    "lon": -123.50102101440943,
+    "type": "convenience",
+    "name": "Devonshire Flowers & Food"
+  },
+  {
+    "lat": 48.448789693742036,
+    "lon": -123.4999297809754,
+    "type": "veterinary",
+    "name": "Belmont Langford Veterinary Hospital"
+  },
+  {
+    "lat": 48.448063735361885,
+    "lon": -123.49647251775633,
+    "type": "restaurant",
+    "name": "Bin 4 Burger Lounge"
+  },
+  {
+    "lat": 48.448724820744204,
+    "lon": -123.49974162642218,
+    "type": "restaurant",
+    "name": "Browns Socialhouse"
+  },
+  {
+    "lat": 48.4477428,
+    "lon": -123.49714705,
+    "type": "restaurant",
+    "name": "Jones BBQ"
+  },
+  {
+    "lat": 48.42226908067951,
+    "lon": -123.35946072529784,
+    "type": "place_of_worship",
+    "name": "Christ Church Cathedral"
+  },
+  {
+    "lat": 48.425684450000006,
+    "lon": -123.36257170000002,
+    "type": "restaurant",
+    "name": "Foo"
+  },
+  {
+    "lat": 48.437607549999996,
+    "lon": -123.51396499999998,
+    "type": "restaurant",
+    "name": "Golden Lion"
+  },
+  {
+    "lat": 48.46319896380938,
+    "lon": -123.44283073419186,
+    "type": "social_facility",
+    "name": "Our Place Therapeutic Recovery Community"
+  },
+  {
+    "lat": 48.442206869130814,
+    "lon": -123.343280550965,
+    "type": "social_facility",
+    "name": "Aberdeen Hospital"
+  },
+  {
+    "lat": 48.41650070077842,
+    "lon": -123.37277255015339,
+    "type": "convenience",
+    "name": "Circle K"
+  },
+  {
+    "lat": 48.41561330230497,
+    "lon": -123.37348485704563,
+    "type": "restaurant",
+    "name": "Real Thai Restaurant"
+  },
+  {
+    "lat": 48.445537050000006,
+    "lon": -123.39449494999998,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.44544395759066,
+    "lon": -123.39274123892362,
+    "type": "restaurant",
+    "name": "Marhaba Restaurant"
+  },
+  {
+    "lat": 48.451045665157196,
+    "lon": -123.3962142267215,
+    "type": "place_of_worship",
+    "name": "Kingdom Hall of Jehovah's Witnesses"
+  },
+  {
+    "lat": 48.42852430899548,
+    "lon": -123.30739619578027,
+    "type": "school",
+    "name": "Glenlyon Norfolk School - Beach Drive Campus"
+  },
+  {
+    "lat": 48.417925495713526,
+    "lon": -123.31901600502243,
+    "type": "school",
+    "name": "St. Michaels University School - Junior School"
+  },
+  {
+    "lat": 48.42806644759805,
+    "lon": -123.31880114849675,
+    "type": "place_of_worship",
+    "name": "St Mary the Virgin"
+  },
+  {
+    "lat": 48.429410698603846,
+    "lon": -123.31827267190077,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42962019433928,
+    "lon": -123.3180414180448,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42575219629857,
+    "lon": -123.31522029797554,
+    "type": "sports_centre",
+    "name": "Monterey Recreation Centre"
+  },
+  {
+    "lat": 48.42517641267031,
+    "lon": -123.36652717690271,
+    "type": "mall",
+    "name": "The Bay Centre"
+  },
+  {
+    "lat": 48.4379339168968,
+    "lon": -123.35798498694294,
+    "type": "supermarket",
+    "name": "Fairway Market Quadra Village"
+  },
+  {
+    "lat": 48.4267204213687,
+    "lon": -123.31579894300177,
+    "type": "pharmacy",
+    "name": "Pharmasave"
+  },
+  {
+    "lat": 48.46599837753822,
+    "lon": -123.36184870294291,
+    "type": "restaurant",
+    "name": "The Keg"
+  },
+  {
+    "lat": 48.44837992354107,
+    "lon": -123.36868461367622,
+    "type": "restaurant",
+    "name": "Red Robin"
+  },
+  {
+    "lat": 48.47996615697849,
+    "lon": -123.54786292946484,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.450429167588716,
+    "lon": -123.50638279847139,
+    "type": "restaurant",
+    "name": "Sabhai Thai"
+  },
+  {
+    "lat": 48.449012746899086,
+    "lon": -123.4947736350591,
+    "type": "restaurant",
+    "name": "Boston Pizza"
+  },
+  {
+    "lat": 48.42955584999999,
+    "lon": -123.3560804,
+    "type": "veterinary",
+    "name": "Fernwood Veterinary Clinic"
+  },
+  {
+    "lat": 48.43469724513613,
+    "lon": -123.36077917633328,
+    "type": "social_facility",
+    "name": "Next Steps Emergency Shelter"
+  },
+  {
+    "lat": 48.43102182764073,
+    "lon": -123.35820046500965,
+    "type": "social_facility",
+    "name": "Silver Threads Service"
+  },
+  {
+    "lat": 48.43510714999999,
+    "lon": -123.36137915000002,
+    "type": "restaurant",
+    "name": "Xin Korean Restaurant"
+  },
+  {
+    "lat": 48.49486755107249,
+    "lon": -123.51357724439924,
+    "type": "community_centre",
+    "name": "District of Highlands Community Hall"
+  },
+  {
+    "lat": 48.45549444870009,
+    "lon": -123.31113004920476,
+    "type": "sports_centre",
+    "name": "Henderson Recreation Centre"
+  },
+  {
+    "lat": 48.453367874199515,
+    "lon": -123.31311455983756,
+    "type": "school",
+    "name": "Victoria International High School - Uplands Campus"
+  },
+  {
+    "lat": 48.42923623916646,
+    "lon": -123.30907222938036,
+    "type": "school",
+    "name": "Play Field - Glenlyon Norfolk School - Beach Drive Campus"
+  },
+  {
+    "lat": 48.42032500388445,
+    "lon": -123.33014079712376,
+    "type": "school",
+    "name": "Glenlyon Norfolk School - Pemberton Woods Campus"
+  },
+  {
+    "lat": 48.38062959079932,
+    "lon": -123.5310212583028,
+    "type": "place_of_worship",
+    "name": "Saint Mary the Virgin Anglican Church"
+  },
+  {
+    "lat": 48.43867571676644,
+    "lon": -123.48871933395321,
+    "type": "place_of_worship",
+    "name": "St. John the Baptist Heritage Church"
+  },
+  {
+    "lat": 48.44284823657399,
+    "lon": -123.5208691541185,
+    "type": "community_centre",
+    "name": "Eagle Ridge Community Centre"
+  },
+  {
+    "lat": 48.44255178201599,
+    "lon": -123.51214181435249,
+    "type": "restaurant",
+    "name": "White Spot"
+  },
+  {
+    "lat": 48.44177686724979,
+    "lon": -123.51143834671338,
+    "type": "convenience",
+    "name": "7-Eleven"
+  },
+  {
+    "lat": 48.45568750939268,
+    "lon": -123.46075255222371,
+    "type": "mall",
+    "name": "6 Mile Market"
+  },
+  {
+    "lat": 48.44759717190539,
+    "lon": -123.49828870332124,
+    "type": "mall",
+    "name": "Goldstream Station"
+  },
+  {
+    "lat": 48.448907337848055,
+    "lon": -123.49790892138327,
+    "type": "mall",
+    "name": "Langford Centre"
+  },
+  {
+    "lat": 48.43400526895426,
+    "lon": -123.36621090446495,
+    "type": "place_of_worship",
+    "name": "Mustard Seed Street Church"
+  },
+  {
+    "lat": 48.42646124438976,
+    "lon": -123.37045320539424,
+    "type": "restaurant",
+    "name": "Dosa Paragon"
+  },
+  {
+    "lat": 48.411527328638165,
+    "lon": -123.36869126016317,
+    "type": "restaurant",
+    "name": "Beacon Drive In"
+  },
+  {
+    "lat": 48.43344472638989,
+    "lon": -123.3572981750593,
+    "type": "sports_centre",
+    "name": "Crystal Pool and Fitness Centre"
+  },
+  {
+    "lat": 48.43655437822926,
+    "lon": -123.35796899130246,
+    "type": "school",
+    "name": "Vancouver Island School of Art"
+  },
+  {
+    "lat": 48.44257473195256,
+    "lon": -123.52949716928934,
+    "type": "school",
+    "name": NaN
+  },
+  {
+    "lat": 48.415214736032304,
+    "lon": -123.37489042417822,
+    "type": "supermarket",
+    "name": "Thrifty Foods James Bay"
+  },
+  {
+    "lat": 48.44593970293011,
+    "lon": -123.53353374715618,
+    "type": "sports_centre",
+    "name": "YMCA/YWCA Westhills"
+  },
+  {
+    "lat": 48.47773072994448,
+    "lon": -123.53166100140434,
+    "type": "sports_centre",
+    "name": "North Langford Recreation Centre"
+  },
+  {
+    "lat": 48.446523850000005,
+    "lon": -123.49535905,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46181205441467,
+    "lon": -123.33211877108317,
+    "type": "mall",
+    "name": "Shelbourne Village Square"
+  },
+  {
+    "lat": 48.467785390650434,
+    "lon": -123.42910725742736,
+    "type": "supermarket",
+    "name": "Quality Foods"
+  },
+  {
+    "lat": 48.45484165857327,
+    "lon": -123.37384462526293,
+    "type": "pharmacy",
+    "name": "Shoppers Drug Mart"
+  },
+  {
+    "lat": 48.448522997235706,
+    "lon": -123.39890049169904,
+    "type": "supermarket",
+    "name": "Fairway Market Gorge Centre"
+  },
+  {
+    "lat": 48.45894182278209,
+    "lon": -123.4993819463327,
+    "type": "supermarket",
+    "name": "Save-On-Foods"
+  },
+  {
+    "lat": 48.447576845864525,
+    "lon": -123.36831552821477,
+    "type": "supermarket",
+    "name": "H Mart"
+  },
+  {
+    "lat": 48.43910273909716,
+    "lon": -123.3593465411701,
+    "type": "restaurant",
+    "name": "Part and Parcel"
+  },
+  {
+    "lat": 48.44884430261673,
+    "lon": -123.42689542945217,
+    "type": "mall",
+    "name": "Nelson Square"
+  },
+  {
+    "lat": 48.37926702520587,
+    "lon": -123.53202034030186,
+    "type": "restaurant",
+    "name": "My-Chosen Cafe"
+  },
+  {
+    "lat": 48.48156748602414,
+    "lon": -123.39071209749244,
+    "type": "veterinary",
+    "name": "Grace Veterinary Hospital"
+  },
+  {
+    "lat": 48.48065017556444,
+    "lon": -123.39018568920929,
+    "type": "veterinary",
+    "name": "Glanford Animal Hospital"
+  },
+  {
+    "lat": 48.52457559902567,
+    "lon": -123.38939539895215,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.44711671018047,
+    "lon": -123.42820573851266,
+    "type": "supermarket",
+    "name": "Thrifty Foods Admirals Walk"
+  },
+  {
+    "lat": 48.4474498350425,
+    "lon": -123.42677952649579,
+    "type": "restaurant",
+    "name": "Apple Tree Family Restaurant"
+  },
+  {
+    "lat": 48.44942479962467,
+    "lon": -123.42649688049468,
+    "type": "pharmacy",
+    "name": "Rexall"
+  },
+  {
+    "lat": 48.50781065,
+    "lon": -123.3956693,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46152988256109,
+    "lon": -123.40414346152656,
+    "type": "school",
+    "name": "St. Joseph's Elementary School"
+  },
+  {
+    "lat": 48.46186180238509,
+    "lon": -123.40329484810351,
+    "type": "place_of_worship",
+    "name": "St. Joseph the Worker Catholic Church"
+  },
+  {
+    "lat": 48.44493554906159,
+    "lon": -123.46871881074397,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.47762764328419,
+    "lon": -123.33324128702996,
+    "type": "supermarket",
+    "name": "Mount Douglas Market"
+  },
+  {
+    "lat": 48.47792172865825,
+    "lon": -123.33042552918408,
+    "type": "sports_centre",
+    "name": "Gordon Head Recreation Centre"
+  },
+  {
+    "lat": 48.50092678593765,
+    "lon": -123.41326119638664,
+    "type": "restaurant",
+    "name": "Charlotte & the Quail Restaurant"
+  },
+  {
+    "lat": 48.426744299999996,
+    "lon": -123.32156570000002,
+    "type": "restaurant",
+    "name": "Oak Bay Seafood"
+  },
+  {
+    "lat": 48.43598274085321,
+    "lon": -123.46569508076804,
+    "type": "place_of_worship",
+    "name": "Saint Peter's Protestant Chapel"
+  },
+  {
+    "lat": 48.435325602832684,
+    "lon": -123.45294645346421,
+    "type": "place_of_worship",
+    "name": "Our Lady Star of the Sea"
+  },
+  {
+    "lat": 48.4295983913989,
+    "lon": -123.3912056006669,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.43901139981572,
+    "lon": -123.5080472240412,
+    "type": "pharmacy",
+    "name": "Shoppers Drug Mart"
+  },
+  {
+    "lat": 48.44005822278885,
+    "lon": -123.50824405790203,
+    "type": "mall",
+    "name": "Westshore Town Centre"
+  },
+  {
+    "lat": 48.419791653029,
+    "lon": -123.36546016918234,
+    "type": "social_facility",
+    "name": "Tapestry - The Art of Seniors Living"
+  },
+  {
+    "lat": 48.454438247888575,
+    "lon": -123.50618443192464,
+    "type": "restaurant",
+    "name": "Mr Mikes"
+  },
+  {
+    "lat": 48.439879218052965,
+    "lon": -123.47605388571597,
+    "type": "hairdresser",
+    "name": "Maxwell's Barbershop"
+  },
+  {
+    "lat": 48.43984595616512,
+    "lon": -123.47574228242611,
+    "type": "restaurant",
+    "name": "Hardy's Bar & Grill"
+  },
+  {
+    "lat": 48.43972894552013,
+    "lon": -123.46658871376324,
+    "type": "convenience",
+    "name": "Canex"
+  },
+  {
+    "lat": 48.458414801693166,
+    "lon": -123.39057106823331,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46658609045219,
+    "lon": -123.43206732721742,
+    "type": "hospital",
+    "name": "Victoria General Hospital"
+  },
+  {
+    "lat": 48.47972250000001,
+    "lon": -123.53215300000001,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.456731163928964,
+    "lon": -123.37639242192219,
+    "type": "supermarket",
+    "name": "Whole Foods Market"
+  },
+  {
+    "lat": 48.43802518762146,
+    "lon": -123.416679779076,
+    "type": "clinic",
+    "name": "Clinic Annex - NAD 143"
+  },
+  {
+    "lat": 48.443058311603764,
+    "lon": -123.47219914149964,
+    "type": "social_facility",
+    "name": "Centre for Wellbeing"
+  },
+  {
+    "lat": 48.38902275100732,
+    "lon": -123.52135845370951,
+    "type": "shelter",
+    "name": "Teaching Shelter"
+  },
+  {
+    "lat": 48.43702754763606,
+    "lon": -123.36102417959643,
+    "type": "community_centre",
+    "name": "Quadra Village Community Centre"
+  },
+  {
+    "lat": 48.43974834607591,
+    "lon": -123.35895082903843,
+    "type": "restaurant",
+    "name": "Biryani Palace"
+  },
+  {
+    "lat": 48.44008385753443,
+    "lon": -123.35901572318463,
+    "type": "social_facility",
+    "name": "Beacon Community Services"
+  },
+  {
+    "lat": 48.4557921,
+    "lon": -123.3599122,
+    "type": "restaurant",
+    "name": "Halibut House Chinese Food"
+  },
+  {
+    "lat": 48.45545332748967,
+    "lon": -123.37679304626722,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.45560356833207,
+    "lon": -123.37683601668857,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.44945172932412,
+    "lon": -123.37094833837573,
+    "type": "veterinary",
+    "name": "VCA Central Victoria Veterinary Hospital"
+  },
+  {
+    "lat": 48.4490156833261,
+    "lon": -123.37266306514012,
+    "type": "community_centre",
+    "name": "Ukrainian Cultural Centre"
+  },
+  {
+    "lat": 48.434319804431894,
+    "lon": -123.33597674876044,
+    "type": "restaurant",
+    "name": "Kappo Marta"
+  },
+  {
+    "lat": 48.43629164209148,
+    "lon": -123.33932532334595,
+    "type": "hairdresser",
+    "name": "Eden's Barber Shop"
+  },
+  {
+    "lat": 48.46690578651676,
+    "lon": -123.42149920988695,
+    "type": "community_centre",
+    "name": "Strawberry Vale Community Hall"
+  },
+  {
+    "lat": 48.456354600000004,
+    "lon": -123.31379890000001,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.44194008031622,
+    "lon": -123.5351073358494,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.413951406717196,
+    "lon": -123.36311531502402,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.534768358433745,
+    "lon": -123.38924539455151,
+    "type": "veterinary",
+    "name": "Capital Cat Clinic"
+  },
+  {
+    "lat": 48.516506628315184,
+    "lon": -123.38286624210005,
+    "type": "veterinary",
+    "name": "Elk Lake Veterinary Hospital"
+  },
+  {
+    "lat": 48.5271210780785,
+    "lon": -123.43143176804145,
+    "type": "community_centre",
+    "name": "Prospect Lake Community Hall"
+  },
+  {
+    "lat": 48.41308904332325,
+    "lon": -123.33356136999338,
+    "type": "massage",
+    "name": "Wildwood Health & Performance"
+  },
+  {
+    "lat": 48.432433931813776,
+    "lon": -123.40518565948015,
+    "type": "school",
+    "name": NaN
+  },
+  {
+    "lat": 48.451764883693784,
+    "lon": -123.38269095897823,
+    "type": "social_facility",
+    "name": "Harriet House"
+  },
+  {
+    "lat": 48.49506196800618,
+    "lon": -123.38769113163684,
+    "type": "restaurant",
+    "name": "Fireside Grill"
+  },
+  {
+    "lat": 48.495160295875785,
+    "lon": -123.38925469114535,
+    "type": "restaurant",
+    "name": "Med Grill Restaurant"
+  },
+  {
+    "lat": 48.43157413303035,
+    "lon": -123.39977200304268,
+    "type": "pharmacy",
+    "name": "Shoppers Drug Mart"
+  },
+  {
+    "lat": 48.41994570702741,
+    "lon": -123.36154620953447,
+    "type": "social_facility",
+    "name": "St. Mary's Hospital"
+  },
+  {
+    "lat": 48.44811549581264,
+    "lon": -123.37685442196761,
+    "type": "sports_centre",
+    "name": "Victoria West Football Club"
+  },
+  {
+    "lat": 48.426025982798556,
+    "lon": -123.40568701421711,
+    "type": "school",
+    "name": "\u00c8cole Macaulay Elementary School"
+  },
+  {
+    "lat": 48.42680312799128,
+    "lon": -123.4065737141872,
+    "type": "social_facility",
+    "name": "McCauley Lodge"
+  },
+  {
+    "lat": 48.43213485864979,
+    "lon": -123.40121978433989,
+    "type": "school",
+    "name": "\u00c8cole Victor\u2013Brodeur"
+  },
+  {
+    "lat": 48.438184096381306,
+    "lon": -123.50930927292289,
+    "type": "supermarket",
+    "name": "Thrifty Foods Belmont"
+  },
+  {
+    "lat": 48.45289985,
+    "lon": -123.41539610000001,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.453961150000005,
+    "lon": -123.41408775000002,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4548628658807,
+    "lon": -123.39489294883201,
+    "type": "supermarket",
+    "name": "Save-On-Foods"
+  },
+  {
+    "lat": 48.45676980000725,
+    "lon": -123.41102592500026,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.43936550144691,
+    "lon": -123.37354817990514,
+    "type": "social_facility",
+    "name": "Bridge Street Pathways Shelter"
+  },
+  {
+    "lat": 48.44600680702368,
+    "lon": -123.45737730717252,
+    "type": "shelter",
+    "name": "Rotary Picnic Shelter"
+  },
+  {
+    "lat": 48.467774003619766,
+    "lon": -123.2954373192209,
+    "type": "university",
+    "name": "Queenswood Campus"
+  },
+  {
+    "lat": 48.4341455594584,
+    "lon": -123.38509363230506,
+    "type": "supermarket",
+    "name": "The Market Garden"
+  },
+  {
+    "lat": 48.43761208512143,
+    "lon": -123.38308980412134,
+    "type": "shelter",
+    "name": "Trans Canada Trail Pavillion"
+  },
+  {
+    "lat": 48.4393763332647,
+    "lon": -123.39328293787393,
+    "type": "restaurant",
+    "name": "Thai Green Elephant"
+  },
+  {
+    "lat": 48.42845140327414,
+    "lon": -123.37154395065367,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.45591375000001,
+    "lon": -123.377591,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42864086351147,
+    "lon": -123.41258764880514,
+    "type": "sports_centre",
+    "name": "Esquimalt Recreation Centre"
+  },
+  {
+    "lat": 48.42281624783184,
+    "lon": -123.38272270307668,
+    "type": "restaurant",
+    "name": "Pirate Pizza Company"
+  },
+  {
+    "lat": 48.42283280154948,
+    "lon": -123.38288405360855,
+    "type": "restaurant",
+    "name": "Puerto Vallarta Amigos"
+  },
+  {
+    "lat": 48.42269290901778,
+    "lon": -123.3833052024153,
+    "type": "restaurant",
+    "name": "The Fish Store"
+  },
+  {
+    "lat": 48.42262999916017,
+    "lon": -123.3827696457211,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42258067624799,
+    "lon": -123.38262135889853,
+    "type": "restaurant",
+    "name": "Coco Grill"
+  },
+  {
+    "lat": 48.496878061956785,
+    "lon": -123.41643713925244,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.43526014478168,
+    "lon": -123.41171307683275,
+    "type": "school",
+    "name": "Rockheights Middle School"
+  },
+  {
+    "lat": 48.43501036215719,
+    "lon": -123.41098286231728,
+    "type": "library",
+    "name": NaN
+  },
+  {
+    "lat": 48.44954292582742,
+    "lon": -123.38396633330255,
+    "type": "restaurant",
+    "name": "Persian Grill House"
+  },
+  {
+    "lat": 48.4504376671021,
+    "lon": -123.38586008727795,
+    "type": "supermarket",
+    "name": NaN
+  },
+  {
+    "lat": 48.45322969888589,
+    "lon": -123.3818243370443,
+    "type": "place_of_worship",
+    "name": "New Apostolic Church"
+  },
+  {
+    "lat": 48.43809474161485,
+    "lon": -123.39826194215566,
+    "type": "school",
+    "name": NaN
+  },
+  {
+    "lat": 48.460991035195306,
+    "lon": -123.32959449927034,
+    "type": "place_of_worship",
+    "name": "Broad View United Church"
+  },
+  {
+    "lat": 48.443102894924344,
+    "lon": -123.52367470380894,
+    "type": "stadium",
+    "name": "Starlight Stadium"
+  },
+  {
+    "lat": 48.456170142390874,
+    "lon": -123.54527980244023,
+    "type": "sports_centre",
+    "name": "Island Training Centre"
+  },
+  {
+    "lat": 48.44018578939909,
+    "lon": -123.35065541608651,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.474987148309864,
+    "lon": -123.4135596119517,
+    "type": "school",
+    "name": NaN
+  },
+  {
+    "lat": 48.47543848955905,
+    "lon": -123.41310695040163,
+    "type": "school",
+    "name": NaN
+  },
+  {
+    "lat": 48.41729585000001,
+    "lon": -123.3686653,
+    "type": "convenience",
+    "name": "Bird Cages Confectionery"
+  },
+  {
+    "lat": 48.426749100211474,
+    "lon": -123.54742699370209,
+    "type": "convenience",
+    "name": NaN
+  },
+  {
+    "lat": 48.42964460934034,
+    "lon": -123.36153930631379,
+    "type": "community_centre",
+    "name": "Philippine Bayanihan Community Centre"
+  },
+  {
+    "lat": 48.428734250805995,
+    "lon": -123.41792676796705,
+    "type": "social_facility",
+    "name": "Esquimalt Neighbourhood House"
+  },
+  {
+    "lat": 48.45570218277309,
+    "lon": -123.33343072407635,
+    "type": "place_of_worship",
+    "name": "Shelbourne Street Church of Christ"
+  },
+  {
+    "lat": 48.45977879767037,
+    "lon": -123.3333387263272,
+    "type": "community_centre",
+    "name": "Jewish Community Centre"
+  },
+  {
+    "lat": 48.46203028307962,
+    "lon": -123.33436058669079,
+    "type": "restaurant",
+    "name": "The Rack Bistro"
+  },
+  {
+    "lat": 48.44437795,
+    "lon": -123.3326982,
+    "type": "social_facility",
+    "name": "Parkwood Place"
+  },
+  {
+    "lat": 48.441741424606846,
+    "lon": -123.32159123719481,
+    "type": "convenience",
+    "name": "Tomley's Market"
+  },
+  {
+    "lat": 48.491495961399316,
+    "lon": -123.41750062342783,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42688244332862,
+    "lon": -123.31987793181533,
+    "type": "social_facility",
+    "name": "Carlton House of Oak Bay"
+  },
+  {
+    "lat": 48.46209803422593,
+    "lon": -123.33455922114703,
+    "type": "restaurant",
+    "name": "Laila Laila Hotpot"
+  },
+  {
+    "lat": 48.43935520899406,
+    "lon": -123.49159633793165,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.43646041658749,
+    "lon": -123.38823563693005,
+    "type": "hairdresser",
+    "name": "Cliff's Classic Barbershop"
+  },
+  {
+    "lat": 48.43660079924596,
+    "lon": -123.38838717886463,
+    "type": "hairdresser",
+    "name": "rplace"
+  },
+  {
+    "lat": 48.43713932037984,
+    "lon": -123.370132415081,
+    "type": "restaurant",
+    "name": "Wheelies Cafe"
+  },
+  {
+    "lat": 48.438787928731585,
+    "lon": -123.37155387183623,
+    "type": "social_facility",
+    "name": "The Rock Bay Landing"
+  },
+  {
+    "lat": 48.42723272693237,
+    "lon": -123.35361068218265,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.427499850000004,
+    "lon": -123.3580906,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.43123711380845,
+    "lon": -123.32170144981427,
+    "type": "social_facility",
+    "name": "Marrion Village"
+  },
+  {
+    "lat": 48.4308403456976,
+    "lon": -123.32194092611121,
+    "type": "social_facility",
+    "name": "Shannon Oaks"
+  },
+  {
+    "lat": 48.4608740498826,
+    "lon": -123.39999449454545,
+    "type": "restaurant",
+    "name": "Trini to D Bone"
+  },
+  {
+    "lat": 48.443212467996155,
+    "lon": -123.52561053358798,
+    "type": "sports_centre",
+    "name": "BoulderHouse Langford"
+  },
+  {
+    "lat": 48.44026057724376,
+    "lon": -123.36468295103522,
+    "type": "social_facility",
+    "name": NaN
+  },
+  {
+    "lat": 48.493425910950194,
+    "lon": -123.39234819011668,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42268475000001,
+    "lon": -123.38319560000001,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42264420070166,
+    "lon": -123.38291680349069,
+    "type": "restaurant",
+    "name": "Barb's Fish & Chips"
+  },
+  {
+    "lat": 48.430103329520065,
+    "lon": -123.35190700925004,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4659507,
+    "lon": -123.3085267,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.466181950000006,
+    "lon": -123.30824005000002,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.465977764901545,
+    "lon": -123.30908390613047,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.466244881545606,
+    "lon": -123.30876694486106,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46612177932401,
+    "lon": -123.30787642918625,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4664055,
+    "lon": -123.30912565,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4664504,
+    "lon": -123.30907075000002,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46579904168833,
+    "lon": -123.30810233280481,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46599352609782,
+    "lon": -123.30802994648708,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.466110481545584,
+    "lon": -123.30892534486104,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.41628891211342,
+    "lon": -123.3845724300675,
+    "type": "veterinary",
+    "name": "Vancouver Island Veterinary Surgery"
+  },
+  {
+    "lat": 48.43819401780729,
+    "lon": -123.33331131238185,
+    "type": "veterinary",
+    "name": "Hillside Veterinary Hospital"
+  },
+  {
+    "lat": 48.43750987314878,
+    "lon": -123.32875426221955,
+    "type": "clinic",
+    "name": "Victoria Arthritis Centre"
+  },
+  {
+    "lat": 48.447243605625104,
+    "lon": -123.34424327917228,
+    "type": "veterinary",
+    "name": "Oaklands Veterinary Hospital"
+  },
+  {
+    "lat": 48.441987819856166,
+    "lon": -123.3391980596466,
+    "type": "restaurant",
+    "name": "East Garden Restaurant"
+  },
+  {
+    "lat": 48.442724885547705,
+    "lon": -123.34181895748665,
+    "type": "social_facility",
+    "name": "The Birches"
+  },
+  {
+    "lat": 48.43970728986572,
+    "lon": -123.33389377634659,
+    "type": "place_of_worship",
+    "name": "Kingdom Hall of Jehovah's Witnesses"
+  },
+  {
+    "lat": 48.44418630270079,
+    "lon": -123.33384171829209,
+    "type": "social_facility",
+    "name": "Parkwood Court"
+  },
+  {
+    "lat": 48.44646776663905,
+    "lon": -123.34672739156473,
+    "type": "social_facility",
+    "name": "Kiwanis Pavilion"
+  },
+  {
+    "lat": 48.44689,
+    "lon": -123.34449074999999,
+    "type": "restaurant",
+    "name": "Sarpino's Pizzeria"
+  },
+  {
+    "lat": 48.4697750026074,
+    "lon": -123.33173673924745,
+    "type": "social_facility",
+    "name": "The Kensington"
+  },
+  {
+    "lat": 48.47056938667992,
+    "lon": -123.33281437508285,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.468042249999996,
+    "lon": -123.33293,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46875742310142,
+    "lon": -123.33345539020189,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.469244599999996,
+    "lon": -123.33248735000002,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.506465288711034,
+    "lon": -123.40953620363261,
+    "type": "school",
+    "name": "South Island Distance Education School - Beaver Lake Campus"
+  },
+  {
+    "lat": 48.49377543057074,
+    "lon": -123.38853865203585,
+    "type": "restaurant",
+    "name": "Floyd's Diner"
+  },
+  {
+    "lat": 48.47023390062602,
+    "lon": -123.37465161141701,
+    "type": "school",
+    "name": NaN
+  },
+  {
+    "lat": 48.44711834445482,
+    "lon": -123.49633427054735,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.430684252198546,
+    "lon": -123.32728432515226,
+    "type": "restaurant",
+    "name": "White Spot"
+  },
+  {
+    "lat": 48.442347683159674,
+    "lon": -123.34308036042923,
+    "type": "social_facility",
+    "name": NaN
+  },
+  {
+    "lat": 48.42301067693001,
+    "lon": -123.34604124454023,
+    "type": "place_of_worship",
+    "name": "Grace Lutheran Church"
+  },
+  {
+    "lat": 48.4751077983249,
+    "lon": -123.32557216645539,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.47516225,
+    "lon": -123.32559610000001,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.47497974987318,
+    "lon": -123.32548219267024,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.46782784999999,
+    "lon": -123.33492515,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.468545250000005,
+    "lon": -123.3349082,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.484731652691536,
+    "lon": -123.3800280993263,
+    "type": "place_of_worship",
+    "name": "Victoria First Church of the Nazarene"
+  },
+  {
+    "lat": 48.43070924666463,
+    "lon": -123.32087769465913,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.41797915,
+    "lon": -123.37272480000001,
+    "type": "restaurant",
+    "name": "Murder Burger"
+  },
+  {
+    "lat": 48.44324756887402,
+    "lon": -123.52741328331801,
+    "type": "sports_centre",
+    "name": "Goudy Field"
+  },
+  {
+    "lat": 48.42443970696818,
+    "lon": -123.30243809253444,
+    "type": "shelter",
+    "name": "Fish Cleaning Station"
+  },
+  {
+    "lat": 48.412175536136274,
+    "lon": -123.35879512589734,
+    "type": "sports_centre",
+    "name": "Victoria Lawn Bowling Club"
+  },
+  {
+    "lat": 48.41176629999999,
+    "lon": -123.35903055,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.446196807879396,
+    "lon": -123.46556839950104,
+    "type": "sports_centre",
+    "name": "Juan de Fuca Arena"
+  },
+  {
+    "lat": 48.446381242452375,
+    "lon": -123.46279163384808,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.4469414846909,
+    "lon": -123.46460007432378,
+    "type": "sports_centre",
+    "name": NaN
+  },
+  {
+    "lat": 48.47814196167519,
+    "lon": -123.32913320419972,
+    "type": "sports_centre",
+    "name": "Gordon Head Lawn Bowling Club"
+  },
+  {
+    "lat": 48.45469408959974,
+    "lon": -123.39148519127436,
+    "type": "sports_centre",
+    "name": "Burnside Lawn Bowling Club"
+  },
+  {
+    "lat": 48.4071346398176,
+    "lon": -123.48832599143486,
+    "type": "supermarket",
+    "name": "Quality Foods"
+  },
+  {
+    "lat": 48.43000713386875,
+    "lon": -123.33076605488314,
+    "type": "social_facility",
+    "name": "Amica Jubilee House"
+  },
+  {
+    "lat": 48.45742684352393,
+    "lon": -123.3694871819372,
+    "type": "restaurant",
+    "name": "Inasal House"
+  },
+  {
+    "lat": 48.442108423478096,
+    "lon": -123.4210070342774,
+    "type": "hairdresser",
+    "name": "Hair By Nancy"
+  },
+  {
+    "lat": 48.448738284583804,
+    "lon": -123.36145747503748,
+    "type": "restaurant",
+    "name": "Shushi Ru"
+  },
+  {
+    "lat": 48.43772349026044,
+    "lon": -123.35898270741315,
+    "type": "hairdresser",
+    "name": "Serenity Hair & Nails Designs"
+  },
+  {
+    "lat": 48.43828743665279,
+    "lon": -123.35915040856129,
+    "type": "restaurant",
+    "name": "Alysa's Pho & Banh Mi"
+  },
+  {
+    "lat": 48.429535687080126,
+    "lon": -123.36783093628782,
+    "type": "convenience",
+    "name": "Fisgard Market"
+  },
+  {
+    "lat": 48.44359487249543,
+    "lon": -123.36146139011501,
+    "type": "place_of_worship",
+    "name": NaN
+  },
+  {
+    "lat": 48.41927834392631,
+    "lon": -123.36053908202202,
+    "type": "social_facility",
+    "name": "Canadian Red Cross"
+  },
+  {
+    "lat": 48.41880364684827,
+    "lon": -123.36056218880529,
+    "type": "social_facility",
+    "name": "Sunrise of Victoria"
+  },
+  {
+    "lat": 48.41552676040694,
+    "lon": -123.35566946359879,
+    "type": "restaurant",
+    "name": "Hot House Pizza"
+  },
+  {
+    "lat": 48.42847980243088,
+    "lon": -123.34863308710605,
+    "type": "social_facility",
+    "name": "Glenwarren Lodge"
+  },
+  {
+    "lat": 48.433790474914,
+    "lon": -123.35847856128035,
+    "type": "restaurant",
+    "name": "Chicken 649"
+  },
+  {
+    "lat": 48.492220250167684,
+    "lon": -123.3896077419852,
+    "type": "supermarket",
+    "name": "Country Grocer"
+  },
+  {
+    "lat": 48.44105801244283,
+    "lon": -123.37340893508112,
+    "type": "mall",
+    "name": NaN
+  },
+  {
+    "lat": 48.44923409707301,
+    "lon": -123.54233385365674,
+    "type": "school",
+    "name": "Centre Mountain Lellum Middle School"
+  },
+  {
+    "lat": 48.430212094665826,
+    "lon": -123.3449849181986,
+    "type": "community_centre",
+    "name": "Fernwood Community Association"
+  },
+  {
+    "lat": 48.44570743951244,
+    "lon": -123.34801541898493,
+    "type": "social_facility",
+    "name": "Kiwanis Village"
+  },
+  {
+    "lat": 48.45167603668774,
+    "lon": -123.42482736955392,
+    "type": "community_centre",
+    "name": "Scottish Community Centre"
+  },
+  {
+    "lat": 48.41521505000001,
+    "lon": -123.38518095,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.42414251530506,
+    "lon": -123.33950469579062,
+    "type": "social_facility",
+    "name": "Saint Charles Manor"
+  },
+  {
+    "lat": 48.4287022,
+    "lon": -123.32031679999999,
+    "type": "social_facility",
+    "name": "Kiwanis Manor"
+  },
+  {
+    "lat": 48.49695431392468,
+    "lon": -123.37826687886357,
+    "type": "social_facility",
+    "name": "Veterans Memorial Lodge"
+  },
+  {
+    "lat": 48.503551556775044,
+    "lon": -123.38672654056613,
+    "type": "social_facility",
+    "name": "Berwick Royal Oak"
+  },
+  {
+    "lat": 48.4233611235272,
+    "lon": -123.34772653663013,
+    "type": "veterinary",
+    "name": "Kindred Spirits Veterinary Hospital"
+  },
+  {
+    "lat": 48.41900725000001,
+    "lon": -123.36900024999998,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.41884414999999,
+    "lon": -123.36899704999999,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.417840963349704,
+    "lon": -123.35508313046708,
+    "type": "convenience",
+    "name": "Victoria Food & Florist"
+  },
+  {
+    "lat": 48.44357709481098,
+    "lon": -123.37532755470822,
+    "type": "school",
+    "name": "SJ Burnside Education Centre"
+  },
+  {
+    "lat": 48.438134169787375,
+    "lon": -123.5329041311562,
+    "type": "school",
+    "name": "Lighthouse Christian Academy"
+  },
+  {
+    "lat": 48.42247357510513,
+    "lon": -123.30450146761349,
+    "type": "school",
+    "name": "St. Christopher's Montessori School"
+  },
+  {
+    "lat": 48.44507147974345,
+    "lon": -123.33834467339764,
+    "type": "supermarket",
+    "name": "Thrifty Foods"
+  },
+  {
+    "lat": 48.43129835421748,
+    "lon": -123.35830753770469,
+    "type": "restaurant",
+    "name": "MoMo Sushi"
+  },
+  {
+    "lat": 48.44417814930896,
+    "lon": -123.37839632602014,
+    "type": "community_centre",
+    "name": "Burnside / Gorge Community Centre"
+  },
+  {
+    "lat": 48.50615023241888,
+    "lon": -123.44313923471006,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.4417063315296,
+    "lon": -123.38863019969595,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.43264769742206,
+    "lon": -123.45254316078078,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.407706210091625,
+    "lon": -123.49036542556588,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.407354210091626,
+    "lon": -123.49147362556586,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.414472728238266,
+    "lon": -123.48391931176094,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.414467300000005,
+    "lon": -123.48387960000001,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.41446073464937,
+    "lon": -123.48383468122665,
+    "type": "shelter",
+    "name": NaN
+  },
+  {
+    "lat": 48.44983533454291,
+    "lon": -123.49997922155596,
+    "type": "university",
+    "name": NaN
+  },
+  {
+    "lat": 48.45543730755646,
+    "lon": -123.35832479458749,
+    "type": "clinic",
+    "name": "BackFit"
+  },
+  {
+    "lat": 48.43067044241435,
+    "lon": -123.38816006224026,
+    "type": "veterinary",
+    "name": "Vic West Pet Hospital"
+  },
+  {
+    "lat": 48.436842645643004,
+    "lon": -123.37345342058181,
+    "type": "restaurant",
+    "name": "Red Kettle Restaurant"
+  },
+  {
+    "lat": 48.41529760006256,
+    "lon": -123.35684995061709,
+    "type": "restaurant",
+    "name": "The Village Taverna"
+  },
+  {
+    "lat": 48.435120450000014,
+    "lon": -123.36167375000002,
+    "type": "veterinary",
+    "name": "Harbour Veterinary Clinic"
+  },
+  {
+    "lat": 48.43845806372985,
+    "lon": -123.35914975837179,
+    "type": "restaurant",
+    "name": "Young's Restaurant"
+  },
+  {
+    "lat": 48.437976233617874,
+    "lon": -123.35902612530737,
+    "type": "supermarket",
+    "name": "Halal Urban Fresh Meats"
+  },
+  {
+    "lat": 48.437661132095286,
+    "lon": -123.35897555896487,
+    "type": "clinic",
+    "name": "Spring Wellness Acupuncture & Chinese Medicine"
+  },
+  {
+    "lat": 48.43760039815043,
+    "lon": -123.35895819831369,
+    "type": "clinic",
+    "name": "Cedar & Sage Physiotherapy"
+  },
+  {
+    "lat": 48.437406496932645,
+    "lon": -123.358317221532,
+    "type": "restaurant",
+    "name": "Emmaline's"
+  },
+  {
+    "lat": 48.446934,
+    "lon": -123.34452825000001,
+    "type": "hairdresser",
+    "name": "Roxy's Barbershop"
+  },
+  {
+    "lat": 48.436292550000005,
+    "lon": -123.33938649999999,
+    "type": "clinic",
+    "name": "Hemma Community Acupuncture"
+  },
+  {
+    "lat": 48.4343587409668,
+    "lon": -123.34530672564935,
+    "type": "clinic",
+    "name": "Rise Health"
+  },
+  {
+    "lat": 48.43615969104408,
+    "lon": -123.35036397627509,
+    "type": "restaurant",
+    "name": "Haultain Fish & Chips"
+  },
+  {
+    "lat": 48.42670217770203,
+    "lon": -123.33693911176321,
+    "type": "hairdresser",
+    "name": "Rebellion Barber Shop"
+  },
+  {
+    "lat": 48.43033900000001,
+    "lon": -123.34472385,
+    "type": "hairdresser",
+    "name": "Studio 1313"
+  },
+  {
+    "lat": 48.4303447,
+    "lon": -123.34489375,
+    "type": "restaurant",
+    "name": "Stage"
+  },
+  {
+    "lat": 48.42659295,
+    "lon": -123.32904744999998,
+    "type": "veterinary",
+    "name": "Oak Bay Pet Clinic"
+  },
+  {
+    "lat": 48.4265845,
+    "lon": -123.32470794999999,
+    "type": "fitness_centre",
+    "name": "Arbutus Physiotherapy"
+  },
+  {
+    "lat": 48.411576524344994,
+    "lon": -123.34998747400684,
+    "type": "hairdresser",
+    "name": "Shampoo Hair Bar"
+  },
+  {
+    "lat": 48.41539825000001,
+    "lon": -123.3288936,
+    "type": "pharmacy",
+    "name": "Gonzales Pharmacy"
+  },
+  {
+    "lat": 48.41219555,
+    "lon": -123.37246149999999,
+    "type": "convenience",
+    "name": "For Good Measure"
+  },
+  {
+    "lat": 48.42344041025161,
+    "lon": -123.35618397162038,
+    "type": "restaurant",
+    "name": "The Mantra"
+  },
+  {
+    "lat": 48.46431726481913,
+    "lon": -123.49957532493538,
+    "type": "restaurant",
+    "name": "The Rack West Coast Bistro"
+  },
+  {
+    "lat": 48.450749602376604,
+    "lon": -123.51035289190628,
+    "type": "convenience",
+    "name": "Goldstream Food Market"
+  },
+  {
+    "lat": 48.44568255213131,
+    "lon": -123.49912610654509,
+    "type": "social_facility",
+    "name": "The Alexander Mackie Lodge"
+  },
+  {
+    "lat": 48.447055481251134,
+    "lon": -123.3700669970885,
+    "type": "hairdresser",
+    "name": "Chatters"
+  }
+]

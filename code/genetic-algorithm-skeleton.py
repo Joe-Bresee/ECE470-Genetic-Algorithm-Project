@@ -8,7 +8,12 @@ import geopandas as gpd
 import folium
 import random
 import math
-from shapely.geometry import LineString
+from shapely.geometry import LineString, Point
+import statistics
+import json
+import os
+import osmnx as ox
+import sys
 
 from busRoutes import randomStopsOnRoute, getRouteShape
 
@@ -84,18 +89,6 @@ def haversine_m(p1, p2):
     return 2 * R * math.asin(math.sqrt(a))
 
 
-def is_feasible(point, routeCoords):
-    """
-    Hard feasibility check for a candidate stop.
-    TODO (low priority): replace placeholder logic with real checks:
-      - distance to nearest road-network edge under some threshold
-      - not within X meters of a highway/off-ramp segment
-      - not on private property / restricted zone if that data is available
-    Returns True/False.
-    """
-    return True  # stub — always feasible until real road/geometry data is wired in
-
-
 def enforce_min_spacing(stops, min_spacing):
     """
     Hard anti-clustering constraint, enforced at generation time (repair strategy).
@@ -119,9 +112,6 @@ def randomlyGenerateBusStops(routeNumber: int, generationNumber: int):
 
     for rNum, coords, color in routeShapes:
         candidate_stops = randomStopsOnRoute(coords, target_count)
-
-        # Reject-and-resample for feasibility (simple version: filter, don't loop-retry yet)
-        candidate_stops = [s for s in candidate_stops if is_feasible(s, coords)]
 
         # Hard spacing constraint applied at construction time
         candidate_stops = enforce_min_spacing(candidate_stops, GA_CONFIG["min_spacing_meters"])
@@ -196,24 +186,171 @@ def coverage(stops, coverage_radius_m=COVERAGE_RADIUS_M):
             total += da["population"] * equity_mult
     return total
 
-
 def spacing_penalty(stops):
-    # NOTE: hard min-spacing is now enforced at generation time (enforce_min_spacing).
-    # This soft penalty can instead reward *even* spacing rather than just minimum spacing —
-    # e.g. penalize high variance in gap distances between consecutive stops.
-    return -1
+    # rewards even spacing
+    if len(stops) < 3:
+        return 0
+
+    gaps = [haversine_m(stops[i], stops[i + 1]) for i in range(len(stops) - 1)]
+    gap_variance = statistics.variance(gaps)
+
+    return gap_variance
+
+
+POI_TAGS = {
+    "amenity": [
+        "school", "hospital", "clinic", "college", "university", "library",
+        "pharmacy", "community_centre", "social_facility",
+        "veterinary", "place_of_worship", "shelter", "food_bank",
+        "restaurant",
+    ],
+    "shop": [
+        "supermarket", "mall", "convenience",
+        "hairdresser", "laundry",
+    ],
+    "healthcare": [
+        "optometrist", "physiotherapist", "dialysis", "alternative",
+    ],
+    "leisure": ["sports_centre", "stadium"],
+}
+
+
+def first_valid(*values):
+    for v in values:
+        if v is not None and not (isinstance(v, float) and math.isnan(v)):
+            return v
+    return None
+
+VICTORIA_BBOX = {
+    "min_lat": 48.35, "max_lat": 48.55,
+    "min_lon": -123.6, "max_lon": -123.2
+}
+def fetch_pois(bbox=VICTORIA_BBOX):
+    print("Fetching POIs for Greater Victoria bbox from OSM...")
+    ox_bbox = (bbox["min_lon"], bbox["min_lat"], bbox["max_lon"], bbox["max_lat"])  # (west, south, east, north)
+
+    pois = ox.features_from_bbox(ox_bbox, tags=POI_TAGS)
+
+    records = []
+    for _, row in pois.iterrows():
+        geom = row.geometry
+        if geom.geom_type == "Point":
+            lat, lon = geom.y, geom.x
+        else:
+            # polygons/multipolygons (campuses, hospital grounds, malls, etc.) — use centroid
+            centroid = geom.centroid
+            lat, lon = centroid.y, centroid.x
+
+        poi_type = first_valid(row.get("amenity"), row.get("shop"), row.get("leisure"), row.get("healthcare"))
+        name = row.get("name", None)
+        records.append({"lat": lat, "lon": lon, "type": poi_type, "name": name})
+
+    print(f"Fetched {len(records)} POIs")
+    return records
+
+
+def load_or_fetch_pois(cache_path="pois.json"):
+    if os.path.exists(cache_path):
+        print(f"Loading cached POIs from {cache_path}")
+        with open(cache_path) as f:
+            return json.load(f)
+    pois = fetch_pois()
+    with open(cache_path, "w") as f:
+        json.dump(pois, f, indent=2)
+    print(f"Saved {len(pois)} POIs to {cache_path}")
+    return pois
+
+POIS = load_or_fetch_pois()
+
+
+def get_pois_near_route(route_coords, pois, buffer_m=ROUTE_BUFFER_M):
+    """
+    Pre-filter step, same pattern as get_das_near_route — only keep POIs
+    actually near this route's corridor, computed once, not per-individual.
+    """
+    route_line = LineString([(lon, lat) for lat, lon in route_coords])
+    route_gdf = gpd.GeoDataFrame(geometry=[route_line], crs="EPSG:4326").to_crs(DA_CRS_METRIC)
+    buffered_route = route_gdf.geometry.iloc[0].buffer(buffer_m)
+
+    poi_points = gpd.GeoDataFrame(
+        pois,
+        geometry=[Point(p["lon"], p["lat"]) for p in pois],
+        crs="EPSG:4326"
+    ).to_crs(DA_CRS_METRIC)
+
+    nearby_idx = poi_points.sindex.query(buffered_route, predicate="intersects")
+    return [pois[i] for i in nearby_idx]
+
+
+# Precompute once, using the same route geometry already pulled for DAS_NEAR_ROUTE
+POIS_NEAR_ROUTE = get_pois_near_route(_route_coords_for_filter, POIS)
+
+print(f"Filtered to {len(POIS_NEAR_ROUTE)} POIs near route {ROUTE_NUMBER} (out of {len(POIS)} total)")
+
+POI_WEIGHT = {
+    "hospital": 3,
+    "clinic": 2,
+    "pharmacy": 2,
+    "school": 2,
+    "college": 2,
+    "university": 2,
+    "library": 1,
+    "community_centre": 2,
+    "social_facility": 3,
+    "supermarket": 2,
+    "mall": 2,
+    "convenience": 1,
+    "restaurant": 1,
+    "sports_centre": 1,
+    "stadium": 1,
+    "veterinary": 1,
+    "place_of_worship": 1,
+    "shelter": 3,
+    "food_bank": 3,
+    "hairdresser": 1,
+    "laundry": 1,
+    "optometrist": 1,
+    "physiotherapist": 1,
+    "dialysis": 3,
+    "alternative": 1,
+}
+POI_RADIUS_M = 400  # same walkability radius as coverage(), for consistency
 
 
 def destination_bonus(stops):
-    # TODO: manual/curated list of POIs (schools, hospitals, grocery, malls) with (lat, lon).
-    # For each stop, sum bonus for POIs within some radius, e.g.:
-    # sum(POI_WEIGHT[poi.type] for poi in POIS if haversine_m(stop, poi.coords) < POI_RADIUS)
-    return -1
+    total = 0
+    for poi in POIS_NEAR_ROUTE:
+        poi_coords = (poi["lat"], poi["lon"])
+        is_reachable = any(haversine_m(stop, poi_coords) < POI_RADIUS_M for stop in stops)
+        if is_reachable:
+            total += POI_WEIGHT.get(poi["type"], 1)  # default weight 1 for unlisted types
+    return min(total, sys.maxsize) #TODO: Figure out correct destination bonus cap per stop
 
 
 def averageWalkingDistanceToStop(stops):
-    # TODO: for each population point/DA centroid, distance to nearest stop; average across DAs.
-    return -1
+    """
+    For each DA near the route, find the distance to its nearest stop.
+    Return the population-weighted average across all DAs.
+    Population-weighting matters here: a DA with 900 people being 600m from
+    a stop should count more than a DA with 40 people being 600m from a stop.
+    """
+    if not stops or not DAS_NEAR_ROUTE:
+        return 0
+
+    total_weighted_distance = 0
+    total_population = 0
+
+    for dguid in DAS_NEAR_ROUTE:
+        da = EQUITY_LOOKUP[dguid]
+        nearest_dist = min(haversine_m(da["centroid"], stop) for stop in stops)
+
+        total_weighted_distance += nearest_dist * da["population"]
+        total_population += da["population"]
+
+    if total_population == 0:
+        return 0
+
+    return total_weighted_distance / total_population
 
 
 def estimated_travel_time(stops):
