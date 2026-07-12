@@ -1,5 +1,4 @@
-# TODO: find where commute data actually is, its currently zero.
-# TODO: accidentally deleted some sort of something in data/.
+# TODO: accidentally deleted some sort of something in data/ ?
 
 import folium
 import geopandas as gpd
