@@ -132,6 +132,11 @@ def weightFunction(stops):
         - estimated_travel_time(stops) * WEIGHTS["w_travel_time"]
         + transfer_bonus(stops) * WEIGHTS["w_transfer"]
     )
+    for name, fn in [("coverage", coverage), ("walking_dist", averageWalkingDistanceToStop),
+                  ("spacing", spacing_penalty), ("dest_bonus", destination_bonus),
+                  ("travel_time", estimated_travel_time), ("transfer", transfer_bonus)]:
+        vals = [fn(b["stops"]) for b in randomlyGeneratedBusStops]
+        print(f"{name}: min={min(vals):.1f} max={max(vals):.1f} mean={sum(vals)/len(vals):.1f}")
     return fitness
 
 # module level vars used in coverage calculation.
@@ -354,10 +359,6 @@ def averageWalkingDistanceToStop(stops):
 
 
 def estimated_travel_time(stops):
-    """
-    NEW: penalizes route slowness as stop count grows.
-    TODO: replace flat per-stop dwell time with something informed by ridership data https://www.bctransit.com/plans-and-projects/service-performance/ SEE THE MD.
-    """
     BASE_TRAVEL_TIME_S = 900       # placeholder base route time in seconds
     AVG_DWELL_TIME_S = 20          # placeholder seconds lost per stop (accel/decel + boarding)
     return BASE_TRAVEL_TIME_S + len(stops) * AVG_DWELL_TIME_S
