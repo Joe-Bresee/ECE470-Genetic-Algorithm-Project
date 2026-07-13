@@ -161,7 +161,6 @@ def mapBusStops(stops, routeNumber):
         
 
     ROUTE_NUMBERS = [95, 26]
-    NUMBER_OF_STOPS = 50
 
 
     shapes = pd.read_csv("shapes.txt")
@@ -211,7 +210,7 @@ def mapBusStops(stops, routeNumber):
 
 def runGeneticAlgorithm():
 
-    candidateSpots, sigma = getPoints()
+    candidateSpots, sigma = getPoints(GA_CONFIG["NUM_EVENLY_SPACED_POINTS"])  # Get candidate spots and sigma from evenly spaced points
 
     # This is the initial population
     population = createInitialPopulation()
@@ -232,6 +231,8 @@ def runGeneticAlgorithm():
         population  = createNextGeneration(evaluatedPopulation, candidateSpots, sigma)
 
     mapBusStops(bestIndividual["stops"], bestIndividual["routeNumber"]).save("best_bus_stops.html")
+
+    print(f"Best bus stops saved to best_bus_stops.html with fitness: {bestIndividual['fitness']:.7f}")
 
    
 runGeneticAlgorithm()

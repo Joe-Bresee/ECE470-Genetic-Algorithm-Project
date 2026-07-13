@@ -18,6 +18,8 @@ GA_CONFIG = {
 
     "min_spacing_meters": 200,      # hard anti-clustering constraint
     "transfer_radius_meters": 100,  # for connectivity bonus
+
+    "NUM_EVENLY_SPACED_POINTS": 200,  # Number of evenly spaced points to generate along the route, this is used for mutations
 }
 
 ROUTE_NUMBER = 95

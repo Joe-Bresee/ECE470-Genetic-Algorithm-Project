@@ -55,12 +55,12 @@ def evenlySpacedPointsOnRoute(coords, numPoints):
     return points
 
 
-def getPoints():
+def getPoints(numPoints=10):
 
     print("Generating evenly spaced points along the route...")
     # This needs to not be hardcoded
     ROUTE_NUMBER = 95
-    NUMBER_OF_POINTS = 10
+    NUMBER_OF_POINTS = numPoints
 
     shapes = pd.read_csv("shapes.txt")
     routes = pd.read_csv("routes.txt")
@@ -78,7 +78,7 @@ def getPoints():
     avgSpacing = totalLength / (len(candidateStops) - 1)
     sigma = avgSpacing * 3
 
-    return candidateStops, sigma
+    # return candidateStops, sigma
 
     # Uncomment this if you want to visualize the points on a map
     # -----------------------------------------------------------
@@ -90,7 +90,7 @@ def getPoints():
 
     # folium.PolyLine(coords, color=color, weight=5, tooltip=f"Route {routeNumber}").add_to(m)
 
-    # for lat, lon in points:
+    # for lat, lon in candidateStops:
     #     folium.CircleMarker(
     #         location=[lat, lon],
     #         radius=4,
@@ -102,3 +102,7 @@ def getPoints():
 
     # m.save("evenlySpacedStops.html")
     # print(f"Saved {len(points)} evenly spaced points to evenlySpacedStops.html")
+
+# getPoints(200)
+
+
