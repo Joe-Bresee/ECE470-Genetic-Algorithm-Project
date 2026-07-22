@@ -1,12 +1,15 @@
 import pandas as pd
 import folium
 import math
+from config import ROUTE_NUMBER
+from config import GA_CONFIG
+from weight_function import haversine_m
 
 from busRoutes import getRouteShape 
 
 
 def segmentLength(p1, p2):
-    return math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
+    return haversine_m(p1, p2)
 
 
 def evenlySpacedPointsOnRoute(coords, numPoints):
@@ -55,31 +58,28 @@ def evenlySpacedPointsOnRoute(coords, numPoints):
     return points
 
 
-def getPoints(numPoints=10):
-
+def getPoints():
     print("Generating evenly spaced points along the route...")
-    # This needs to not be hardcoded
-    ROUTE_NUMBER = 95
-    NUMBER_OF_POINTS = numPoints
+    NUMBER_OF_POINTS = GA_CONFIG.get("NUM_EVENLY_SPACED_POINTS", 200)
 
     shapes = pd.read_csv("shapes.txt")
     routes = pd.read_csv("routes.txt")
     trips = pd.read_csv("trips.txt")
 
     routeShapes = getRouteShape(ROUTE_NUMBER, routes, trips, shapes)
-    routeNumber, coords, color = routeShapes[0]
+    _, coords, _ = routeShapes[0]
 
     candidateStops = evenlySpacedPointsOnRoute(coords, NUMBER_OF_POINTS)
 
     totalLength = sum(
-        segmentLength(candidateStops[i], candidateStops[i + 1])
+        haversine_m(candidateStops[i], candidateStops[i + 1])
         for i in range(len(candidateStops) - 1)
     )
     avgSpacing = totalLength / (len(candidateStops) - 1)
     sigma = avgSpacing * 3
 
-    # return candidateStops, sigma
-
+    print(f"Calculated meter-based sigma: {sigma}")
+    return candidateStops, sigma
     # Uncomment this if you want to visualize the points on a map
     # -----------------------------------------------------------
 

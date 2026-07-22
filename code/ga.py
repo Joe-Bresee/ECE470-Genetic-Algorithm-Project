@@ -1,10 +1,12 @@
-from weight_function import randomlyGenerateBusStops, weightFunction
+from weight_function import randomlyGenerateBusStops, weightFunction, haversine_m
 from config import GA_CONFIG, ROUTE_NUMBER, WEIGHTS
 import random
+random.seed(42)
 import math
 import folium
 import pandas as pd
 from evenlySpacedBusStops import getPoints
+from busRoutes import randomStopsOnRoute, getRouteShape
 
 
 def createInitialPopulation():
@@ -74,21 +76,18 @@ def crossoverTwoParents(parent1, parent2):
         "fitness": None
     }
 
-def segmentLength(p1, p2):
-    return math.sqrt((p2[0] - p1[0])**2 + (p2[1] - p1[1])**2)
-
-
-# We should actually pass in a proper sigma value, rn its hardcoded
-def mutate(child, candidate_stops, sigma=0.195424042632881): 
-
+def mutate(child, candidate_stops, sigma=300.0): # sigma properly tuned in meters
     stops = child["stops"]
+    if not stops:
+        return child
+    
     idxToMutate = random.randrange(len(stops))
     oldStop = stops[idxToMutate]
 
-    distances = [segmentLength(oldStop, candidate) for candidate in candidate_stops]
+    # Use haversine_m so distances are strictly in meters, matching sigma
+    distances = [haversine_m(oldStop, candidate) for candidate in candidate_stops]
 
     weights = [math.exp(-d**2 / (2 * sigma**2)) for d in distances]
-
     newStop = random.choices(candidate_stops, weights=weights, k=1)[0]
 
     newStops = stops.copy()
@@ -115,8 +114,6 @@ def createNextGeneration(population, candidate_stops, sigma):
         mutatedChildren.append(child)
 
     return mutatedChildren  
-
-    return children
 
 
 
@@ -148,51 +145,25 @@ def populationDiversity(population):
 
 
 def mapBusStops(stops, routeNumber):
-    
-    # Center map around average stop location
     avg_lat = sum(lat for lat, lon in stops) / len(stops)
     avg_lon = sum(lon for lat, lon in stops) / len(stops)
 
-    m = folium.Map(
-        location=[avg_lat, avg_lon],
-        zoom_start=13
-    )
-
-        
+    m = folium.Map(location=[avg_lat, avg_lon], zoom_start=13)
 
     ROUTE_NUMBERS = [95, 26]
-
 
     shapes = pd.read_csv("shapes.txt")
     routes = pd.read_csv("routes.txt")
     trips = pd.read_csv("trips.txt")
 
-    # Collect all shapes first to center the map properly
-    allCoords = []
-    routeShapes = []
-
-
-    for i, routeNumber in enumerate(ROUTE_NUMBERS):
-        route = routes[routes["route_short_name"] == str(routeNumber)]
-        routeId = route["route_id"].iloc[0]
-        routeColor = route["route_color"].iloc[0]
-
-        routeTrips = trips[trips["route_id"] == routeId]
-        shape_id = routeTrips.iloc[0]["shape_id"]
-
-        shape = shapes[shapes["shape_id"] == shape_id].sort_values("shape_pt_sequence")
-
-        coords = list(zip(shape["shape_pt_lat"], shape["shape_pt_lon"]))
-        allCoords.extend(coords)
-        routeShapes.append((routeNumber, coords, f"#{routeColor}"))
-
-
-        for routeNumber, coords, color in routeShapes:
+    for otherRouteNumber in ROUTE_NUMBERS:
+        routeShapesForThis = getRouteShape(otherRouteNumber, routes, trips, shapes)
+        for rNum, coords, color in routeShapesForThis:
             folium.PolyLine(
                 coords,
                 color=color,
                 weight=5,
-                tooltip=f"Route {routeNumber}"
+                tooltip=f"Route {rNum}"
             ).add_to(m)
 
     for lat, lon in stops:
@@ -210,7 +181,7 @@ def mapBusStops(stops, routeNumber):
 
 def runGeneticAlgorithm():
 
-    candidateSpots, sigma = getPoints(GA_CONFIG["NUM_EVENLY_SPACED_POINTS"])  # Get candidate spots and sigma from evenly spaced points
+    candidateSpots, sigma = getPoints()
 
     # This is the initial population
     population = createInitialPopulation()
@@ -225,6 +196,9 @@ def runGeneticAlgorithm():
         bestIndividual = getBestIndividual(evaluatedPopulation)
         worstIndividual = getWorstIndividual(evaluatedPopulation)
 
+        weightFunction(bestIndividual["stops"], verbose=True)
+        weightFunction(worstIndividual["stops"], verbose=True)
+
         print(f"Best individual fitness: {bestIndividual['fitness']:.7f}")
         # print(f"Worst individual fitness: {worstIndividual['fitness']:.2f}")
         # print(f"Population diversity: {populationDiversity(evaluatedPopulation)}")
@@ -232,9 +206,6 @@ def runGeneticAlgorithm():
 
     mapBusStops(bestIndividual["stops"], bestIndividual["routeNumber"]).save("best_bus_stops.html")
 
-    print(f"Best bus stops saved to best_bus_stops.html with fitness: {bestIndividual['fitness']:.7f}")
-
    
 runGeneticAlgorithm()
-
 

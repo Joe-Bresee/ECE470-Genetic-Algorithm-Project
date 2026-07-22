@@ -85,7 +85,7 @@ ROUTE_COORDS = _routeShapes[0][1]  # coords for the single route we're optimizin
 
 
 def segmentLength(p1, p2):
-    return math.sqrt((p2[0] - p1[0]) ** 2 + (p2[1] - p1[1]) ** 2)
+    return haversine_m(p1, p2)  # note i was working with lat and long data so I changed this to find distance using lat long coords
 
 
 def buildCumulativeDist(routeCoords):
@@ -101,41 +101,57 @@ CUMULATIVE_DIST = buildCumulativeDist(ROUTE_COORDS)
 def positionAlongRoute(point, routeCoords=ROUTE_COORDS, cumulativeDist=CUMULATIVE_DIST):
     """
     Projects a point onto the route polyline, returns distance-along-route.
-    Used so spacing_penalty doesn't need stops pre-sorted in route order —
-    crossover/mutation in ga.py don't guarantee that ordering is preserved.
+    Uses a local equirectangular approximation (meters) for the projection
+    so it's consistent with haversine-based segmentLength/cumulativeDist.
     """
     best_dist_along = 0
     best_perp_dist = float("inf")
+
     for i in range(len(routeCoords) - 1):
         p1, p2 = routeCoords[i], routeCoords[i + 1]
-        segVec = (p2[0] - p1[0], p2[1] - p1[1])
+
+        lat0 = math.radians(p1[0])
+        R = 6371000
+
+        def toXY(p):
+            x = math.radians(p[1] - p1[1]) * R * math.cos(lat0)
+            y = math.radians(p[0] - p1[0]) * R
+            return (x, y)
+
+        p1xy = (0.0, 0.0)
+        p2xy = toXY(p2)
+        pointxy = toXY(point)
+
+        segVec = (p2xy[0] - p1xy[0], p2xy[1] - p1xy[1])
         segLenSq = segVec[0] ** 2 + segVec[1] ** 2
         if segLenSq == 0:
             continue
-        toPoint = (point[0] - p1[0], point[1] - p1[1])
+
+        toPoint = (pointxy[0] - p1xy[0], pointxy[1] - p1xy[1])
         t = (toPoint[0] * segVec[0] + toPoint[1] * segVec[1]) / segLenSq
         t = max(0, min(1, t))
-        proj = (p1[0] + t * segVec[0], p1[1] + t * segVec[1])
-        perp_dist = segmentLength(point, proj)
+
+        projxy = (p1xy[0] + t * segVec[0], p1xy[1] + t * segVec[1])
+        perp_dist = math.hypot(pointxy[0] - projxy[0], pointxy[1] - projxy[1])
+
         if perp_dist < best_perp_dist:
             best_perp_dist = perp_dist
             best_dist_along = cumulativeDist[i] + t * segmentLength(p1, p2)
+
     return best_dist_along
 
 
 def spacing_penalty(stops):
-    """
-    Soft penalty rewarding even spacing along the route (hard minimum spacing
-    is already enforced at generation time via enforce_min_spacing).
-    """
     if len(stops) < 2:
         return 0
     positions = sorted(positionAlongRoute(s) for s in stops)
     gaps = [positions[i + 1] - positions[i] for i in range(len(positions) - 1)]
     totalLength = CUMULATIVE_DIST[-1]
     idealGap = totalLength / (len(stops) - 1)
-    deviation = sum((g - idealGap) ** 2 for g in gaps)
-    return deviation
+    if idealGap == 0:
+        return 0
+    mean_sq_deviation = sum((g - idealGap) ** 2 for g in gaps) / len(gaps)
+    return mean_sq_deviation / (idealGap ** 2)
 
 
 # --- Equity-weighted coverage ---
@@ -176,6 +192,19 @@ DAS_NEAR_ROUTE = get_das_near_route(ROUTE_COORDS)
 print(f"Filtered to {len(DAS_NEAR_ROUTE)} DAs near route {ROUTE_NUMBER} (out of {len(_equity_gdf)} total)")
 
 
+def _compute_max_coverage_value():
+    """Max possible equity-weighted population if every nearby DA were covered."""
+    total = 0
+    for dguid in DAS_NEAR_ROUTE:
+        da = EQUITY_LOOKUP[dguid]
+        equity_mult = 1.0 + (da["income"] * 0.5) + (da["transit"] * 0.5)
+        total += da["population"] * equity_mult
+    return total
+
+
+MAX_COVERAGE_VALUE = _compute_max_coverage_value()
+
+
 def coverage(stops, coverage_radius_m=COVERAGE_RADIUS_M):
     total = 0
     for dguid in DAS_NEAR_ROUTE:
@@ -183,29 +212,23 @@ def coverage(stops, coverage_radius_m=COVERAGE_RADIUS_M):
         if any(haversine_m(stop, da["centroid"]) < coverage_radius_m for stop in stops):
             equity_mult = 1.0 + (da["income"] * 0.5) + (da["transit"] * 0.5)
             total += da["population"] * equity_mult
-    return total
+    return total / MAX_COVERAGE_VALUE if MAX_COVERAGE_VALUE else 0
 
 
 def averageWalkingDistanceToStop(stops):
-    """
-    Population-weighted average distance from each DA centroid to its nearest stop.
-    """
     if not stops or not DAS_NEAR_ROUTE:
         return 0
-
     total_weighted_distance = 0
     total_population = 0
-
     for dguid in DAS_NEAR_ROUTE:
         da = EQUITY_LOOKUP[dguid]
         nearest_dist = min(haversine_m(da["centroid"], stop) for stop in stops)
         total_weighted_distance += nearest_dist * da["population"]
         total_population += da["population"]
-
     if total_population == 0:
         return 0
-
-    return total_weighted_distance / total_population
+    avg_dist_m = total_weighted_distance / total_population
+    return avg_dist_m / COVERAGE_RADIUS_M
 
 
 # --- POI-based destination bonus ---
@@ -245,7 +268,6 @@ def fetch_pois(bbox=VICTORIA_BBOX):
         if geom.geom_type == "Point":
             lat, lon = geom.y, geom.x
         else:
-            # polygons/multipolygons (campuses, hospital grounds, malls, etc.) — use centroid
             centroid = geom.centroid
             lat, lon = centroid.y, centroid.x
 
@@ -322,51 +344,86 @@ POI_WEIGHT = {
     "alternative": 1,
 }
 POI_RADIUS_M = 400  # same walkability radius as coverage(), for consistency
-MAX_DESTINATION_BONUS = 30  # TODO: tune against real observed distribution once GA is running end-to-end
+
+
+def _compute_max_destination_value():
+    """Max possible destination score if every nearby POI were reachable."""
+    return sum(POI_WEIGHT.get(poi["type"], 1) for poi in POIS_NEAR_ROUTE)
+
+
+MAX_DESTINATION_VALUE = _compute_max_destination_value()
 
 
 def destination_bonus(stops):
-    # For each POI near the route, award bonus once if ANY stop reaches it within POI_RADIUS_M —
-    # avoids double-counting the same POI across multiple nearby stops.
     total = 0
     for poi in POIS_NEAR_ROUTE:
         poi_coords = (poi["lat"], poi["lon"])
-        is_reachable = any(haversine_m(stop, poi_coords) < POI_RADIUS_M for stop in stops)
-        if is_reachable:
-            total += POI_WEIGHT.get(poi["type"], 1)  # default weight 1 for unlisted types
-    return min(total, MAX_DESTINATION_BONUS)
+        if any(haversine_m(stop, poi_coords) < POI_RADIUS_M for stop in stops):
+            total += POI_WEIGHT.get(poi["type"], 1)
+    return total / MAX_DESTINATION_VALUE if MAX_DESTINATION_VALUE else 0
+
+
+def normalized_stop_count(stops):
+    min_s, max_s = GA_CONFIG["min_stops"], GA_CONFIG["max_stops"]
+    if max_s == min_s:
+        return 0
+    return (len(stops) - min_s) / (max_s - min_s)
+    # 0 at min_stops, 1 at max_stops
 
 
 def estimated_travel_time(stops):
-    """
-    Penalizes route slowness as stop count grows.
-    TODO: replace flat per-stop dwell time with something informed by ridership data
-    https://www.bctransit.com/plans-and-projects/service-performance/
-    """
-    BASE_TRAVEL_TIME_S = 900       # placeholder base route time in seconds
-    AVG_DWELL_TIME_S = 20          # placeholder seconds lost per stop (accel/decel + boarding)
-    return BASE_TRAVEL_TIME_S + len(stops) * AVG_DWELL_TIME_S
+    if len(stops) < 2:
+        return 0
+    AVG_BUS_SPEED_MPS = 6.94
+    AVG_DWELL_TIME_S = 25
+    total_distance_m = sum(haversine_m(stops[i], stops[i + 1]) for i in range(len(stops) - 1))
+    drive_time_s = total_distance_m / AVG_BUS_SPEED_MPS
+    dwell_time_s = len(stops) * AVG_DWELL_TIME_S
+    return (drive_time_s + dwell_time_s) / 3600
 
 
 def transfer_bonus(stops):
-    """Rewards stops placed near other routes' existing stops (enables transfers)."""
-    bonus = 0
-    for s in stops:
-        if any(haversine_m(s, other) <= GA_CONFIG["transfer_radius_meters"] for other in OTHER_ROUTE_STOPS):
-            bonus += 1
-    return bonus
-
-
-def weightFunction(stops):
-    fitness = (
-        coverage(stops) * WEIGHTS["w_coverage"]
-        - averageWalkingDistanceToStop(stops) * WEIGHTS["w_walking_distance"]
-        - spacing_penalty(stops) * WEIGHTS["w_spacing_penalty"]
-        + destination_bonus(stops) * WEIGHTS["w_destination_bonus"]
-        - len(stops) * WEIGHTS["w_cost_per_stop"]
-        - estimated_travel_time(stops) * WEIGHTS["w_travel_time"]
-        + transfer_bonus(stops) * WEIGHTS["w_transfer"]
-
-        # TODO: print outputs
+    if not stops:
+        return 0
+    bonus = sum(
+        1 for s in stops
+        if any(haversine_m(s, other) <= GA_CONFIG["transfer_radius_meters"] for other in OTHER_ROUTE_STOPS)
     )
+    return bonus / len(stops)
+
+
+def weightFunction(stops, verbose=False):
+    raw_coverage = coverage(stops)
+    raw_walking = averageWalkingDistanceToStop(stops)
+    raw_spacing = spacing_penalty(stops)
+    raw_destination = destination_bonus(stops)
+    raw_stop_count = normalized_stop_count(stops)
+    raw_travel_time = estimated_travel_time(stops)
+    raw_transfer = transfer_bonus(stops)
+
+    fitness = (
+        raw_coverage * WEIGHTS["w_coverage"]
+        - raw_walking * WEIGHTS["w_walking_distance"]
+        - raw_spacing * WEIGHTS["w_spacing_penalty"]
+        + raw_destination * WEIGHTS["w_destination_bonus"]
+        - raw_stop_count * WEIGHTS["w_cost_per_stop"]
+        - raw_travel_time * WEIGHTS["w_travel_time"]
+        + raw_transfer * WEIGHTS["w_transfer"]
+    )
+
+    if verbose:
+        print(
+            f"raw: coverage={raw_coverage:.4f} walking={raw_walking:.4f} "
+            f"spacing={raw_spacing:.4f} destination={raw_destination:.4f} "
+            f"stops={raw_stop_count:.4f} travel_time={raw_travel_time:.4f} transfer={raw_transfer:.4f} "
+            f"| weighted: coverage={raw_coverage * WEIGHTS['w_coverage']:.4f} "
+            f"walking={-raw_walking * WEIGHTS['w_walking_distance']:.4f} "
+            f"spacing={-raw_spacing * WEIGHTS['w_spacing_penalty']:.4f} "
+            f"destination={raw_destination * WEIGHTS['w_destination_bonus']:.4f} "
+            f"cost={-raw_stop_count * WEIGHTS['w_cost_per_stop']:.4f} "
+            f"travel={-raw_travel_time * WEIGHTS['w_travel_time']:.4f} "
+            f"transfer={raw_transfer * WEIGHTS['w_transfer']:.4f} "
+            f"| total={fitness:.4f}"
+        )
+
     return fitness
