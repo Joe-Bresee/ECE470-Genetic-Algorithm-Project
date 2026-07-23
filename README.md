@@ -1,5 +1,7 @@
 # Public Transit Stop Placer
 
+Quinn Webster, Joe Bresee, Scott Garneau
+
 This project explores how to place bus stops for a transit route in a way that improves rider access without making the stop spacing unrealistic. The goal is to find a stop layout that balances coverage, walking distance, transfer opportunities, and proximity to useful destinations.
 
 The implementation uses a genetic algorithm. It starts from candidate stop locations along a route, evaluates each candidate layout with a weighted fitness function, and then iteratively evolves better stop sets over multiple generations.
