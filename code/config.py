@@ -13,8 +13,8 @@ GA_CONFIG = {
     # "num_parents_mating": 300,
     "mutation_probability": 0.8,  # Probability of mutation for each child
 
-    "min_stops": 20,                 # variable stop count
-    "max_stops": 24,
+    "min_stops": 43,                 # variable stop count
+    "max_stops": 46,
 
     "min_spacing_meters": 200,      # hard anti-clustering constraint
     "transfer_radius_meters": 100,  # for connectivity bonus
@@ -22,7 +22,7 @@ GA_CONFIG = {
     "NUM_EVENLY_SPACED_POINTS": 200,  # Number of evenly spaced points to generate along the route, this is used for mutations
 }
 
-ROUTE_NUMBER = 95
+ROUTE_NUMBER = 26
 
 WEIGHTS = {
     "w_coverage": 10,           # equity-weighted population coverage, in [0,1]
@@ -33,3 +33,7 @@ WEIGHTS = {
     "w_travel_time": 1,         # route duration in hours, typically 2-4
     "w_transfer": 5,            # fraction of stops enabling transfer, in [0,1]
 }
+
+# Route 95: 24 actual stops
+# Route 14: 58 actual stops
+# Route 26: 44 actual stops
