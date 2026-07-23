@@ -1,5 +1,6 @@
-from weight_function import randomlyGenerateBusStops, weightFunction, haversine_m
-from config import GA_CONFIG, ROUTE_NUMBER, WEIGHTS
+from weight_function import randomlyGenerateBusStops, weightFunction, haversine_m, buildRouteContext
+# from config import GA_CONFIG, ROUTE_NUMBER, WEIGHTS
+from config import GA_CONFIG, WEIGHTS, ROUTE_NUMBERS
 import random
 random.seed(42)
 import math
@@ -9,18 +10,18 @@ from evenlySpacedBusStops import getPoints
 from busRoutes import randomStopsOnRoute, getRouteShape
 
 
-def createInitialPopulation():
+def createInitialPopulation(routeNumber):
 
     randomlyGeneratedBusStops = []  # List of dicts {"routeNumber": int, "stops": List of (lat, lon)}
 
     for _ in range(GA_CONFIG["initial_population_size"]):
-        randomlyGeneratedBusStops.append(randomlyGenerateBusStops(ROUTE_NUMBER))
+        randomlyGeneratedBusStops.append(randomlyGenerateBusStops(routeNumber))
 
     return randomlyGeneratedBusStops
 
-def evaluatePopulation(population):
+def evaluatePopulation(population, routeContext):
     for busStopInfo in population: 
-        fitnessScore = weightFunction(busStopInfo["stops"])
+        fitnessScore = weightFunction(busStopInfo["stops"], routeContext, False)
         busStopInfo["fitness"] = fitnessScore
     return population
 
@@ -144,21 +145,60 @@ def populationDiversity(population):
     return len(unique)
 
 
-def mapBusStops(stops, routeNumber):
-    avg_lat = sum(lat for lat, lon in stops) / len(stops)
-    avg_lon = sum(lon for lat, lon in stops) / len(stops)
+# def mapBusStops(stops, routeNumber):
+#     avg_lat = sum(lat for lat, lon in stops) / len(stops)
+#     avg_lon = sum(lon for lat, lon in stops) / len(stops)
+
+#     m = folium.Map(location=[avg_lat, avg_lon], zoom_start=13)
+
+#     ROUTE_NUMBERS = [95]
+
+#     shapes = pd.read_csv("shapes.txt")
+#     routes = pd.read_csv("routes.txt")
+#     trips = pd.read_csv("trips.txt")
+
+#     for otherRouteNumber in ROUTE_NUMBERS:
+#         routeShapesForThis = getRouteShape(otherRouteNumber, routes, trips, shapes)
+#         for rNum, coords, color in routeShapesForThis:
+#             folium.PolyLine(
+#                 coords,
+#                 color=color,
+#                 weight=5,
+#                 tooltip=f"Route {rNum}"
+#             ).add_to(m)
+
+#     for lat, lon in stops:
+#         folium.CircleMarker(
+#             location=[lat, lon],
+#             radius=6,
+#             color="blue",
+#             fill=True,
+#             fill_color="white",
+#             fill_opacity=1,
+#             tooltip=f"Route {routeNumber} stop"
+#         ).add_to(m)
+
+#     return m
+
+def mapBusStops(bestPerRoute):
+    all_stops = [stop for individual in bestPerRoute for stop in individual["stops"]]
+    avg_lat = sum(lat for lat, lon in all_stops) / len(all_stops)
+    avg_lon = sum(lon for lat, lon in all_stops) / len(all_stops)
 
     m = folium.Map(location=[avg_lat, avg_lon], zoom_start=13)
-
-    ROUTE_NUMBERS = [95, 26]
 
     shapes = pd.read_csv("shapes.txt")
     routes = pd.read_csv("routes.txt")
     trips = pd.read_csv("trips.txt")
 
-    for otherRouteNumber in ROUTE_NUMBERS:
-        routeShapesForThis = getRouteShape(otherRouteNumber, routes, trips, shapes)
-        for rNum, coords, color in routeShapesForThis:
+    colors = ["blue", "red", "green", "purple"]  # cycle if you have >4 routes
+
+    for i, individual in enumerate(bestPerRoute):
+        routeNumber = individual["routeNumber"]
+        color = colors[i % len(colors)]
+
+        routeShapesForThis = getRouteShape(routeNumber, routes, trips, shapes)
+        for rNum, coords, shapeColor in routeShapesForThis:
             folium.PolyLine(
                 coords,
                 color=color,
@@ -166,46 +206,83 @@ def mapBusStops(stops, routeNumber):
                 tooltip=f"Route {rNum}"
             ).add_to(m)
 
-    for lat, lon in stops:
-        folium.CircleMarker(
-            location=[lat, lon],
-            radius=6,
-            color="blue",
-            fill=True,
-            fill_color="white",
-            fill_opacity=1,
-            tooltip=f"Route {routeNumber} stop"
-        ).add_to(m)
+        for lat, lon in individual["stops"]:
+            folium.CircleMarker(
+                location=[lat, lon],
+                radius=6,
+                color=color,
+                fill=True,
+                fill_color="white",
+                fill_opacity=1,
+                tooltip=f"Route {routeNumber} stop"
+            ).add_to(m)
 
     return m
 
-def runGeneticAlgorithm():
+# def runGeneticAlgorithmForRoute(routeNumber):
 
-    candidateSpots, sigma = getPoints()
+#     print("getting candidate spots")
 
-    # This is the initial population
-    population = createInitialPopulation()
+#     candidateSpots, sigma = getPoints(routeNumber)
 
-    # Currently doing a fixed number of generations, but we could also do a convergence check
-    # Once the weight function is better, we will switch
+#     print("Creating popoulation")
+
+#     # This is the initial population
+#     population = createInitialPopulation()
+
+#     # Currently doing a fixed number of generations, but we could also do a convergence check
+#     # Once the weight function is better, we will switch
+#     for generation in range(GA_CONFIG["num_generations"]):
+#         print(f"Generation {generation + 1}/{GA_CONFIG['num_generations']}")
+
+#         evaluatedPopulation = evaluatePopulation(population)
+
+#         bestIndividual = getBestIndividual(evaluatedPopulation)
+#         worstIndividual = getWorstIndividual(evaluatedPopulation)
+
+#         weightFunction(bestIndividual["stops"], verbose=True)
+#         weightFunction(worstIndividual["stops"], verbose=True)
+
+#         print(f"Best individual fitness: {bestIndividual['fitness']:.7f}")
+#         # print(f"Worst individual fitness: {worstIndividual['fitness']:.2f}")
+#         # print(f"Population diversity: {populationDiversity(evaluatedPopulation)}")
+#         population  = createNextGeneration(evaluatedPopulation, candidateSpots, sigma)
+
+#     mapBusStops(bestIndividual["stops"], bestIndividual["routeNumber"]).save("best_bus_stops.html")
+
+
+def runGeneticAlgorithmForRoute(routeNumber):
+
+    print("Route context")
+
+    routeContext = buildRouteContext(routeNumber, ROUTE_NUMBERS)
+    
+    print("getting candidate spots")
+
+    candidateSpots, sigma = getPoints(routeNumber)
+
+    print("Getting population")
+
+    population = createInitialPopulation(routeNumber)
+
     for generation in range(GA_CONFIG["num_generations"]):
-        print(f"Generation {generation + 1}/{GA_CONFIG['num_generations']}")
-
-        evaluatedPopulation = evaluatePopulation(population)
-
+        evaluatedPopulation = evaluatePopulation(population, routeContext)
         bestIndividual = getBestIndividual(evaluatedPopulation)
-        worstIndividual = getWorstIndividual(evaluatedPopulation)
+        weightFunction(bestIndividual["stops"], routeContext, verbose=True)
+        population = createNextGeneration(evaluatedPopulation, candidateSpots, sigma)
 
-        weightFunction(bestIndividual["stops"], verbose=True)
-        weightFunction(worstIndividual["stops"], verbose=True)
-
-        print(f"Best individual fitness: {bestIndividual['fitness']:.7f}")
-        # print(f"Worst individual fitness: {worstIndividual['fitness']:.2f}")
-        # print(f"Population diversity: {populationDiversity(evaluatedPopulation)}")
-        population  = createNextGeneration(evaluatedPopulation, candidateSpots, sigma)
-
-    mapBusStops(bestIndividual["stops"], bestIndividual["routeNumber"]).save("best_bus_stops.html")
-
+    return bestIndividual
    
+
+def runGeneticAlgorithm():
+    bestPerRoute = []
+    for routeNumber in ROUTE_NUMBERS:
+        print("Working on route number", routeNumber)
+        best = runGeneticAlgorithmForRoute(routeNumber)
+        bestPerRoute.append(best)
+
+    mapBusStops(bestPerRoute).save("best_bus_stops.html")
+
+
 runGeneticAlgorithm()
 

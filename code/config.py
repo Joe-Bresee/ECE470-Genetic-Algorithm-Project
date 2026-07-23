@@ -13,8 +13,8 @@ GA_CONFIG = {
     # "num_parents_mating": 300,
     "mutation_probability": 0.8,  # Probability of mutation for each child
 
-    "min_stops": 20,                 # variable stop count
-    "max_stops": 24,
+    "min_stops": 25,                 # variable stop count
+    "max_stops": 30,
 
     "min_spacing_meters": 200,      # hard anti-clustering constraint
     "transfer_radius_meters": 100,  # for connectivity bonus
@@ -22,7 +22,9 @@ GA_CONFIG = {
     "NUM_EVENLY_SPACED_POINTS": 200,  # Number of evenly spaced points to generate along the route, this is used for mutations
 }
 
-ROUTE_NUMBER = 95
+# ROUTE_NUMBER = 95
+
+ROUTE_NUMBERS = [95, 14, 26]
 
 WEIGHTS = {
     "w_coverage": 10,           # equity-weighted population coverage, in [0,1]

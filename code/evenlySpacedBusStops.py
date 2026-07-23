@@ -1,7 +1,7 @@
 import pandas as pd
 import folium
 import math
-from config import ROUTE_NUMBER
+# from config import ROUTE_NUMBER
 from config import GA_CONFIG
 from weight_function import haversine_m
 
@@ -58,7 +58,7 @@ def evenlySpacedPointsOnRoute(coords, numPoints):
     return points
 
 
-def getPoints():
+def getPoints(routeNumber):
     print("Generating evenly spaced points along the route...")
     NUMBER_OF_POINTS = GA_CONFIG.get("NUM_EVENLY_SPACED_POINTS", 200)
 
@@ -66,7 +66,7 @@ def getPoints():
     routes = pd.read_csv("routes.txt")
     trips = pd.read_csv("trips.txt")
 
-    routeShapes = getRouteShape(ROUTE_NUMBER, routes, trips, shapes)
+    routeShapes = getRouteShape(routeNumber, routes, trips, shapes)
     _, coords, _ = routeShapes[0]
 
     candidateStops = evenlySpacedPointsOnRoute(coords, NUMBER_OF_POINTS)

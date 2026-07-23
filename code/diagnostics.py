@@ -1,6 +1,6 @@
 from ga import createInitialPopulation
 from weight_function import coverage, averageWalkingDistanceToStop, spacing_penalty, destination_bonus, estimated_travel_time, transfer_bonus, positionAlongRoute
-from config import ROUTE_NUMBER
+# from config import ROUTE_NUMBER
 
 population = createInitialPopulation()
 for b in population[:3]:

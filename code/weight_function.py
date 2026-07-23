@@ -12,7 +12,9 @@ import osmnx as ox
 from shapely.geometry import LineString, Point
 
 from busRoutes import randomStopsOnRoute, getRouteShape
-from config import GA_CONFIG, ROUTE_NUMBER, WEIGHTS
+# from config import GA_CONFIG, ROUTE_NUMBER, WEIGHTS
+from config import GA_CONFIG, WEIGHTS
+
 
 shapes = pd.read_csv("shapes.txt")
 routes = pd.read_csv("routes.txt")
@@ -32,9 +34,9 @@ def get_stops_for_routes(route_numbers, routes_df, trips_df, stop_times_df, stop
 
 
 # Precompute once, not per-generation — used by transfer/connectivity bonus
-OTHER_ROUTE_NUMBERS_HARDCODED = [95, 14, 26]
-_other_route_numbers = [r for r in OTHER_ROUTE_NUMBERS_HARDCODED if r != ROUTE_NUMBER]
-OTHER_ROUTE_STOPS = get_stops_for_routes(_other_route_numbers, routes, trips, stop_times, stops)
+# OTHER_ROUTE_NUMBERS_HARDCODED = [95, 14, 26]
+# _other_route_numbers = [r for r in OTHER_ROUTE_NUMBERS_HARDCODED if r != ROUTE_NUMBER]
+# OTHER_ROUTE_STOPS = get_stops_for_routes(_other_route_numbers, routes, trips, stop_times, stops)
 
 # TODO (later): swap to all other routes instead of the hardcoded three
 # _all_route_numbers = routes["route_short_name"].unique().tolist()
@@ -80,8 +82,8 @@ def randomlyGenerateBusStops(routeNumber: int):
 
 
 # --- Route-position helpers, used by spacing_penalty ---
-_routeShapes = getRouteShape(ROUTE_NUMBER, routes, trips, shapes)
-ROUTE_COORDS = _routeShapes[0][1]  # coords for the single route we're optimizing
+# _routeShapes = getRouteShape(ROUTE_NUMBER, routes, trips, shapes)
+# ROUTE_COORDS = _routeShapes[0][1]  # coords for the single route we're optimizing
 
 
 def segmentLength(p1, p2):
@@ -95,10 +97,12 @@ def buildCumulativeDist(routeCoords):
     return cumulativeDist
 
 
-CUMULATIVE_DIST = buildCumulativeDist(ROUTE_COORDS)
+# CUMULATIVE_DIST = buildCumulativeDist(ROUTE_COORDS)
 
 
-def positionAlongRoute(point, routeCoords=ROUTE_COORDS, cumulativeDist=CUMULATIVE_DIST):
+# def positionAlongRoute(point, routeCoords=ROUTE_COORDS, cumulativeDist=CUMULATIVE_DIST):
+def positionAlongRoute(point, routeCoords, cumulativeDist):
+
     """
     Projects a point onto the route polyline, returns distance-along-route.
     Uses a local equirectangular approximation (meters) for the projection
@@ -141,12 +145,15 @@ def positionAlongRoute(point, routeCoords=ROUTE_COORDS, cumulativeDist=CUMULATIV
     return best_dist_along
 
 
-def spacing_penalty(stops):
+# def spacing_penalty(stops):
+def spacing_penalty(stops, routeCoords, cumulativeDist):
     if len(stops) < 2:
         return 0
-    positions = sorted(positionAlongRoute(s) for s in stops)
+    # positions = sorted(positionAlongRoute(s) for s in stops)
+    positions = sorted(positionAlongRoute(s, routeCoords, cumulativeDist) for s in stops)
+
     gaps = [positions[i + 1] - positions[i] for i in range(len(positions) - 1)]
-    totalLength = CUMULATIVE_DIST[-1]
+    totalLength = cumulativeDist[-1]
     idealGap = totalLength / (len(stops) - 1)
     if idealGap == 0:
         return 0
@@ -188,39 +195,43 @@ def get_das_near_route(route_coords, buffer_m=ROUTE_BUFFER_M):
     return _equity_gdf.iloc[nearby_idx]["DGUID"].tolist()
 
 
-DAS_NEAR_ROUTE = get_das_near_route(ROUTE_COORDS)
-print(f"Filtered to {len(DAS_NEAR_ROUTE)} DAs near route {ROUTE_NUMBER} (out of {len(_equity_gdf)} total)")
+# DAS_NEAR_ROUTE = get_das_near_route(ROUTE_COORDS)
+# print(f"Filtered to {len(DAS_NEAR_ROUTE)} DAs near route {ROUTE_NUMBER} (out of {len(_equity_gdf)} total)")
 
 
-def _compute_max_coverage_value():
-    """Max possible equity-weighted population if every nearby DA were covered."""
+# def _compute_max_coverage_value():
+#     """Max possible equity-weighted population if every nearby DA were covered."""
+#     total = 0
+#     for dguid in DAS_NEAR_ROUTE:
+#         da = EQUITY_LOOKUP[dguid]
+#         equity_mult = 1.0 + (da["income"] * 0.5) + (da["transit"] * 0.5)
+#         total += da["population"] * equity_mult
+#     return total
+
+
+# MAX_COVERAGE_VALUE = _compute_max_coverage_value()
+
+
+# def coverage(stops, coverage_radius_m=COVERAGE_RADIUS_M):
+def coverage(stops, das_near_route, max_coverage_value, coverage_radius_m=COVERAGE_RADIUS_M):
+
     total = 0
-    for dguid in DAS_NEAR_ROUTE:
-        da = EQUITY_LOOKUP[dguid]
-        equity_mult = 1.0 + (da["income"] * 0.5) + (da["transit"] * 0.5)
-        total += da["population"] * equity_mult
-    return total
-
-
-MAX_COVERAGE_VALUE = _compute_max_coverage_value()
-
-
-def coverage(stops, coverage_radius_m=COVERAGE_RADIUS_M):
-    total = 0
-    for dguid in DAS_NEAR_ROUTE:
+    for dguid in das_near_route:
         da = EQUITY_LOOKUP[dguid]
         if any(haversine_m(stop, da["centroid"]) < coverage_radius_m for stop in stops):
             equity_mult = 1.0 + (da["income"] * 0.5) + (da["transit"] * 0.5)
             total += da["population"] * equity_mult
-    return total / MAX_COVERAGE_VALUE if MAX_COVERAGE_VALUE else 0
+    return total / max_coverage_value if max_coverage_value else 0
 
 
-def averageWalkingDistanceToStop(stops):
-    if not stops or not DAS_NEAR_ROUTE:
+# def averageWalkingDistanceToStop(stops):
+def averageWalkingDistanceToStop(stops, das_near_route):
+
+    if not stops or not das_near_route:
         return 0
     total_weighted_distance = 0
     total_population = 0
-    for dguid in DAS_NEAR_ROUTE:
+    for dguid in das_near_route:
         da = EQUITY_LOOKUP[dguid]
         nearest_dist = min(haversine_m(da["centroid"], stop) for stop in stops)
         total_weighted_distance += nearest_dist * da["population"]
@@ -313,8 +324,8 @@ def get_pois_near_route(route_coords, pois, buffer_m=ROUTE_BUFFER_M):
     return [pois[i] for i in nearby_idx]
 
 
-POIS_NEAR_ROUTE = get_pois_near_route(ROUTE_COORDS, POIS)
-print(f"Filtered to {len(POIS_NEAR_ROUTE)} POIs near route {ROUTE_NUMBER} (out of {len(POIS)} total)")
+# POIS_NEAR_ROUTE = get_pois_near_route(ROUTE_COORDS, POIS)
+# print(f"Filtered to {len(POIS_NEAR_ROUTE)} POIs near route {ROUTE_NUMBER} (out of {len(POIS)} total)")
 
 POI_WEIGHT = {
     "hospital": 3,
@@ -346,21 +357,23 @@ POI_WEIGHT = {
 POI_RADIUS_M = 400  # same walkability radius as coverage(), for consistency
 
 
-def _compute_max_destination_value():
-    """Max possible destination score if every nearby POI were reachable."""
-    return sum(POI_WEIGHT.get(poi["type"], 1) for poi in POIS_NEAR_ROUTE)
+# def _compute_max_destination_value():
+#     """Max possible destination score if every nearby POI were reachable."""
+#     return sum(POI_WEIGHT.get(poi["type"], 1) for poi in POIS_NEAR_ROUTE)
 
 
-MAX_DESTINATION_VALUE = _compute_max_destination_value()
+# MAX_DESTINATION_VALUE = _compute_max_destination_value()
 
 
-def destination_bonus(stops):
+# def destination_bonus(stops):
+def destination_bonus(stops, pois_near_route, max_destination_value):
+
     total = 0
-    for poi in POIS_NEAR_ROUTE:
+    for poi in pois_near_route:
         poi_coords = (poi["lat"], poi["lon"])
         if any(haversine_m(stop, poi_coords) < POI_RADIUS_M for stop in stops):
             total += POI_WEIGHT.get(poi["type"], 1)
-    return total / MAX_DESTINATION_VALUE if MAX_DESTINATION_VALUE else 0
+    return total / max_destination_value if max_destination_value else 0
 
 
 def normalized_stop_count(stops):
@@ -382,24 +395,34 @@ def estimated_travel_time(stops):
     return (drive_time_s + dwell_time_s) / 3600
 
 
-def transfer_bonus(stops):
+# def transfer_bonus(stops):
+def transfer_bonus(stops, other_route_stops):
+
     if not stops:
         return 0
     bonus = sum(
         1 for s in stops
-        if any(haversine_m(s, other) <= GA_CONFIG["transfer_radius_meters"] for other in OTHER_ROUTE_STOPS)
+        if any(haversine_m(s, other) <= GA_CONFIG["transfer_radius_meters"] for other in other_route_stops)
     )
     return bonus / len(stops)
 
 
-def weightFunction(stops, verbose=False):
-    raw_coverage = coverage(stops)
-    raw_walking = averageWalkingDistanceToStop(stops)
-    raw_spacing = spacing_penalty(stops)
-    raw_destination = destination_bonus(stops)
+def weightFunction(stops, routeContext, verbose=False):
+    # raw_coverage = coverage(stops)
+    # raw_walking = averageWalkingDistanceToStop(stops)
+    # raw_spacing = spacing_penalty(stops)
+    # raw_destination = destination_bonus(stops)
+    # raw_stop_count = normalized_stop_count(stops)
+    # raw_travel_time = estimated_travel_time(stops)
+    # raw_transfer = transfer_bonus(stops)
+
+    raw_coverage = coverage(stops, routeContext["dasNearRoute"], routeContext["maxCoverageValue"])
+    raw_walking = averageWalkingDistanceToStop(stops, routeContext["dasNearRoute"])
+    raw_spacing = spacing_penalty(stops, routeContext["routeCoords"], routeContext["cumulativeDist"])
+    raw_destination = destination_bonus(stops, routeContext["poisNearRoute"], routeContext["maxDestinationValue"])
     raw_stop_count = normalized_stop_count(stops)
     raw_travel_time = estimated_travel_time(stops)
-    raw_transfer = transfer_bonus(stops)
+    # raw_transfer = transfer_bonus(stops, routeContext["otherRouteStops"])
 
     fitness = (
         raw_coverage * WEIGHTS["w_coverage"]
@@ -408,22 +431,65 @@ def weightFunction(stops, verbose=False):
         + raw_destination * WEIGHTS["w_destination_bonus"]
         - raw_stop_count * WEIGHTS["w_cost_per_stop"]
         - raw_travel_time * WEIGHTS["w_travel_time"]
-        + raw_transfer * WEIGHTS["w_transfer"]
+        # + raw_transfer * WEIGHTS["w_transfer"]
     )
 
-    if verbose:
-        print(
-            f"raw: coverage={raw_coverage:.4f} walking={raw_walking:.4f} "
-            f"spacing={raw_spacing:.4f} destination={raw_destination:.4f} "
-            f"stops={raw_stop_count:.4f} travel_time={raw_travel_time:.4f} transfer={raw_transfer:.4f} "
-            f"| weighted: coverage={raw_coverage * WEIGHTS['w_coverage']:.4f} "
-            f"walking={-raw_walking * WEIGHTS['w_walking_distance']:.4f} "
-            f"spacing={-raw_spacing * WEIGHTS['w_spacing_penalty']:.4f} "
-            f"destination={raw_destination * WEIGHTS['w_destination_bonus']:.4f} "
-            f"cost={-raw_stop_count * WEIGHTS['w_cost_per_stop']:.4f} "
-            f"travel={-raw_travel_time * WEIGHTS['w_travel_time']:.4f} "
-            f"transfer={raw_transfer * WEIGHTS['w_transfer']:.4f} "
-            f"| total={fitness:.4f}"
-        )
+    # if verbose:
+    #     print(
+    #         f"raw: coverage={raw_coverage:.4f} walking={raw_walking:.4f} "
+    #         f"spacing={raw_spacing:.4f} destination={raw_destination:.4f} "
+    #         # f"stops={raw_stop_count:.4f} travel_time={raw_travel_time:.4f} transfer={raw_transfer:.4f} "
+    #         f"| weighted: coverage={raw_coverage * WEIGHTS['w_coverage']:.4f} "
+    #         f"walking={-raw_walking * WEIGHTS['w_walking_distance']:.4f} "
+    #         f"spacing={-raw_spacing * WEIGHTS['w_spacing_penalty']:.4f} "
+    #         f"destination={raw_destination * WEIGHTS['w_destination_bonus']:.4f} "
+    #         f"cost={-raw_stop_count * WEIGHTS['w_cost_per_stop']:.4f} "
+    #         f"travel={-raw_travel_time * WEIGHTS['w_travel_time']:.4f} "
+    #         # f"transfer={raw_transfer * WEIGHTS['w_transfer']:.4f} "
+    #         f"| total={fitness:.4f}"
+    #     )
 
     return fitness
+
+
+def buildRouteContext(routeNumber, allRouteNumbers):
+    routeShapes = getRouteShape(routeNumber, routes, trips, shapes)
+    routeCoords = routeShapes[0][1]
+    cumulativeDist = buildCumulativeDist(routeCoords)
+
+    dasNearRoute = get_das_near_route(routeCoords)
+    maxCoverageValue = _compute_max_coverage_value(dasNearRoute)
+
+    poisNearRoute = get_pois_near_route(routeCoords, POIS)
+    maxDestinationValue = _compute_max_destination_value(poisNearRoute)
+
+    # otherRouteNumbers = [r for r in OTHER_ROUTE_NUMBERS_HARDCODED if r != routeNumber]
+    # otherRouteStops = get_stops_for_routes(otherRouteNumbers, routes, trips, stop_times, stops)
+
+    otherRouteNumbers = [r for r in allRouteNumbers if r != routeNumber]
+    otherRouteStops = get_stops_for_routes(otherRouteNumbers, routes, trips, stop_times, stops)
+
+    print(f"Filtered to {len(dasNearRoute)} DAs near route {routeNumber} (out of {len(_equity_gdf)} total)")
+    print(f"Filtered to {len(poisNearRoute)} POIs near route {routeNumber} (out of {len(POIS)} total)")
+
+    return {
+        "routeCoords": routeCoords,
+        "cumulativeDist": cumulativeDist,
+        "dasNearRoute": dasNearRoute,
+        "maxCoverageValue": maxCoverageValue,
+        "poisNearRoute": poisNearRoute,
+        "maxDestinationValue": maxDestinationValue,
+        "otherRouteStops": otherRouteStops,
+    }
+
+
+def _compute_max_coverage_value(das_near_route):
+    total = 0
+    for dguid in das_near_route:
+        da = EQUITY_LOOKUP[dguid]
+        equity_mult = 1.0 + (da["income"] * 0.5) + (da["transit"] * 0.5)
+        total += da["population"] * equity_mult
+    return total
+
+def _compute_max_destination_value(pois_near_route):
+    return sum(POI_WEIGHT.get(poi["type"], 1) for poi in pois_near_route)
