@@ -72,7 +72,7 @@ def randomlyGenerateBusStops(routeNumber: int):
 
     for rNum, coords, color in routeShapes:
         candidate_stops = randomStopsOnRoute(coords, target_count)
-        candidate_stops = enforce_min_spacing(candidate_stops, GA_CONFIG["min_spacing_meters"])
+        # candidate_stops = enforce_min_spacing(candidate_stops, GA_CONFIG["min_spacing_meters"])
         stops = candidate_stops
         routeNumber = rNum
 

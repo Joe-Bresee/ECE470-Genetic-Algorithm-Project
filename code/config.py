@@ -6,15 +6,15 @@ GA_CONFIG = {
     'desired_population_size': 100,
     # 'desired_population_size': 1000,
 
-    "num_generations": 100,
+    "num_generations": 30,
     # "num_generations": 100,
 
     "num_parents_mating": 30,
     # "num_parents_mating": 300,
     "mutation_probability": 0.8,  # Probability of mutation for each child
 
-    "min_stops": 20,                 # variable stop count
-    "max_stops": 24,
+    "min_stops": 23,                 # variable stop count
+    "max_stops": 28,
 
     "min_spacing_meters": 200,      # hard anti-clustering constraint
     "transfer_radius_meters": 100,  # for connectivity bonus
@@ -33,3 +33,7 @@ WEIGHTS = {
     "w_travel_time": 1,         # route duration in hours, typically 2-4
     "w_transfer": 5,            # fraction of stops enabling transfer, in [0,1]
 }
+
+# Route 95: 24 actual stops
+# Route 14: 58 actual stops
+# Route 26: 44 actual stops
