@@ -6,7 +6,7 @@ GA_CONFIG = {
     'desired_population_size': 100,
     # 'desired_population_size': 1000,
 
-    "num_generations": 100,
+    "num_generations": 10,
     # "num_generations": 100,
 
     "num_parents_mating": 30,
