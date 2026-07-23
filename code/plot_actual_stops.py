@@ -2,7 +2,7 @@ import pandas as pd
 import folium
 from busRoutes import getRouteShape
 
-ROUTE_NUMBERS = [95, 14, 26]
+ROUTE_NUMBERS = [26]
 
 shapes = pd.read_csv("shapes.txt")
 routes = pd.read_csv("routes.txt")
@@ -46,14 +46,14 @@ def plotActualStops(routeNumbers):
     m = folium.Map(location=[avg_lat, avg_lon], zoom_start=13)
 
     for i, routeNumber in enumerate(routeNumbers):
-        color = COLORS[i % len(COLORS)]
+        # color = COLORS[i % len(COLORS)]
 
         # Draw the route shape
         routeShapes = getRouteShape(routeNumber, routes, trips, shapes)
         for rNum, coords, shapeColor in routeShapes:
             folium.PolyLine(
                 coords,
-                color=color,
+                color="#B06E0E",
                 weight=5,
                 tooltip=f"Route {rNum}"
             ).add_to(m)
@@ -63,7 +63,7 @@ def plotActualStops(routeNumbers):
             folium.CircleMarker(
                 location=[lat, lon],
                 radius=6,
-                color=color,
+                color="blue",
                 fill=True,
                 fill_color="white",
                 fill_opacity=1,

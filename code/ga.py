@@ -150,7 +150,7 @@ def mapBusStops(stops, routeNumber):
 
     m = folium.Map(location=[avg_lat, avg_lon], zoom_start=13)
 
-    ROUTE_NUMBERS = [95, 26]
+    ROUTE_NUMBERS = [26]
 
     shapes = pd.read_csv("shapes.txt")
     routes = pd.read_csv("routes.txt")

@@ -3,8 +3,8 @@ import folium
 from busRoutes import randomStopsOnRoute
 
 
-ROUTE_NUMBERS = [95, 26]
-NUMBER_OF_STOPS = 50
+ROUTE_NUMBERS = [95]
+NUMBER_OF_STOPS = 22
 
 
 shapes = pd.read_csv("shapes.txt")
@@ -51,7 +51,7 @@ for routeNumber, coords, color in routeShapes:
         folium.CircleMarker(
             location=[lat, lon],
             radius=6,
-            color=color,
+            color="blue",
             fill=True,
             fill_color="white",
             fill_opacity=1,
