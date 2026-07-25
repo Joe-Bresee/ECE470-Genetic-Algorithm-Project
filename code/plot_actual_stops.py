@@ -2,7 +2,7 @@ import pandas as pd
 import folium
 from busRoutes import getRouteShape
 
-ROUTE_NUMBERS = [26]
+ROUTE_NUMBERS = [95]
 
 shapes = pd.read_csv("shapes.txt")
 routes = pd.read_csv("routes.txt")

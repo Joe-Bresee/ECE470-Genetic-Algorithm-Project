@@ -7,6 +7,7 @@ import folium
 import pandas as pd
 from evenlySpacedBusStops import getPoints
 from busRoutes import randomStopsOnRoute, getRouteShape
+import matplotlib.pyplot as plt
 
 
 def createInitialPopulation():
@@ -179,12 +180,30 @@ def mapBusStops(stops, routeNumber):
 
     return m
 
+
+def plotFitnessConvergence(bestHistory, worstHistory, out_path="fitness_convergence.png"):
+    generations = range(1, len(bestHistory) + 1)
+
+    plt.figure(figsize=(8, 5))
+    plt.plot(generations, bestHistory, label="Best fitness", color="green")
+    plt.plot(generations, worstHistory, label="Worst fitness", color="red")
+    plt.xlabel("Generation")
+    plt.ylabel("Fitness")
+    plt.title("GA Fitness Convergence")
+    plt.legend()
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=200)
+    print(f"Saved convergence plot to {out_path}")
+
 def runGeneticAlgorithm():
 
     candidateSpots, sigma = getPoints()
 
     # This is the initial population
     population = createInitialPopulation()
+
+    bestFitnessHistory = []
+    worstFitnessHistory = []
 
     # Currently doing a fixed number of generations, but we could also do a convergence check
     # Once the weight function is better, we will switch
@@ -199,10 +218,15 @@ def runGeneticAlgorithm():
         weightFunction(bestIndividual["stops"], verbose=True)
         weightFunction(worstIndividual["stops"], verbose=True)
 
+        bestFitnessHistory.append(bestIndividual["fitness"])
+        worstFitnessHistory.append(worstIndividual["fitness"])
+
         print(f"Best individual fitness: {bestIndividual['fitness']:.7f}")
         # print(f"Worst individual fitness: {worstIndividual['fitness']:.2f}")
         # print(f"Population diversity: {populationDiversity(evaluatedPopulation)}")
         population  = createNextGeneration(evaluatedPopulation, candidateSpots, sigma)
+
+    plotFitnessConvergence(bestFitnessHistory, worstFitnessHistory)
 
     mapBusStops(bestIndividual["stops"], bestIndividual["routeNumber"]).save("best_bus_stops.html")
 

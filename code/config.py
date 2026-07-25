@@ -6,7 +6,7 @@ GA_CONFIG = {
     'desired_population_size': 100,
     # 'desired_population_size': 1000,
 
-    "num_generations": 100,
+    "num_generations": 200,
     # "num_generations": 100,
 
     "num_parents_mating": 30,
@@ -22,7 +22,7 @@ GA_CONFIG = {
     "NUM_EVENLY_SPACED_POINTS": 200,  # Number of evenly spaced points to generate along the route, this is used for mutations
 }
 
-ROUTE_NUMBER = 26
+ROUTE_NUMBER = 95
 
 WEIGHTS = {
     "w_coverage": 10,           # equity-weighted population coverage, in [0,1]
